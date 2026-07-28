@@ -1,0 +1,158 @@
+:root {
+  color-scheme: light;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "PingFang SC",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  /* 4px / 8px spacing system */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Type scale */
+  --type-caption: 11px;
+  --type-label: 12px;
+  --type-body: 13px;
+  --type-body-large: 14px;
+  --type-section: 15px;
+  --type-title: 20px;
+  --type-page: 28px;
+  --leading-tight: 1.2;
+  --leading-control: 1.35;
+  --leading-body: 1.55;
+
+  /* Geometry */
+  --radius-control: 8px;
+  --radius-panel: 12px;
+  --radius-region: 14px;
+  --radius-card: 16px;
+  --radius-glass: 24px;
+  --radius-round: 999px;
+  --control-height-sm: 28px;
+  --control-height: 32px;
+  --control-height-lg: 36px;
+  --icon-sm: 14px;
+  --icon-md: 16px;
+  --icon-lg: 20px;
+
+  /* Motion */
+  --duration-fast: 120ms;
+  --duration-standard: 180ms;
+  --duration-slow: 220ms;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-system: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --press-scale: 0.97;
+  --surface-scale: 0.992;
+
+  /* Layers */
+  --z-base: 0;
+  --z-sticky: 20;
+  --z-popover: 60;
+  --z-sheet: 100;
+  --z-toast: 120;
+
+  /* Required semantic colors — Light */
+  --window-background: #ececef;
+  --sidebar-background: rgba(241, 241, 244, 0.9);
+  --panel-background: #ffffff;
+  --elevated-background: #ffffff;
+  --separator: rgba(60, 60, 67, 0.18);
+  --text-primary: #1d1d1f;
+  --text-secondary: #5f5f66;
+  --text-tertiary: #818188;
+  --accent: #007aff;
+  --success: #1f7a36;
+  --warning: #9a5700;
+  --danger: #c5221f;
+
+  /* Derived system colors */
+  --toolbar-background: rgba(247, 247, 249, 0.88);
+  --inspector-background: #f7f7f9;
+  --control-background: #ffffff;
+  --control-hover: #f1f1f4;
+  --control-active: #e8e8ec;
+  --row-hover: rgba(0, 122, 255, 0.055);
+  --row-selected: rgba(0, 122, 255, 0.1);
+  --accent-hover: #006ee6;
+  --accent-active: #005fc7;
+  --accent-tint: rgba(0, 122, 255, 0.1);
+  --accent-strong-tint: rgba(0, 122, 255, 0.16);
+  --success-tint: rgba(31, 122, 54, 0.1);
+  --warning-tint: rgba(154, 87, 0, 0.11);
+  --danger-tint: rgba(197, 34, 31, 0.1);
+  --focus-ring: rgba(0, 122, 255, 0.28);
+  --glass-surface: rgba(255, 255, 255, 0.56);
+  --glass-surface-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-highlight: rgba(255, 255, 255, 0.64);
+  --glass-shadow:
+    0 18px 44px rgba(31, 42, 60, 0.12),
+    0 2px 8px rgba(31, 42, 60, 0.08);
+  --scrim: rgba(18, 18, 20, 0.38);
+  --scrollbar: rgba(60, 60, 67, 0.28);
+  --sheet-shadow:
+    0 22px 70px rgba(15, 15, 18, 0.22),
+    0 2px 8px rgba(15, 15, 18, 0.12);
+  --popover-shadow:
+    0 14px 36px rgba(15, 15, 18, 0.16),
+    0 2px 8px rgba(15, 15, 18, 0.1);
+
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --window-background: #1c1c1e;
+  --sidebar-background: rgba(35, 35, 38, 0.92);
+  --panel-background: #242426;
+  --elevated-background: #303033;
+  --separator: rgba(235, 235, 245, 0.16);
+  --text-primary: #f5f5f7;
+  --text-secondary: #b8b8be;
+  --text-tertiary: #929299;
+  --accent: #0a84ff;
+  --success: #32d15b;
+  --warning: #ff9f0a;
+  --danger: #ff5147;
+  --toolbar-background: rgba(28, 28, 30, 0.9);
+  --inspector-background: #202022;
+  --control-background: #303033;
+  --control-hover: #3a3a3d;
+  --control-active: #454549;
+  --row-hover: rgba(10, 132, 255, 0.09);
+  --row-selected: rgba(10, 132, 255, 0.16);
+  --accent-hover: #409cff;
+  --accent-active: #0071dc;
+  --accent-tint: rgba(10, 132, 255, 0.15);
+  --accent-strong-tint: rgba(10, 132, 255, 0.22);
+  --success-tint: rgba(50, 209, 91, 0.13);
+  --warning-tint: rgba(255, 159, 10, 0.14);
+  --danger-tint: rgba(255, 81, 71, 0.14);
+  --focus-ring: rgba(10, 132, 255, 0.34);
+  --glass-surface: rgba(35, 35, 40, 0.56);
+  --glass-surface-strong: rgba(42, 42, 48, 0.74);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-highlight: rgba(255, 255, 255, 0.18);
+  --glass-shadow:
+    0 20px 52px rgba(0, 0, 0, 0.34),
+    0 2px 9px rgba(0, 0, 0, 0.24);
+  --scrim: rgba(0, 0, 0, 0.58);
+  --scrollbar: rgba(235, 235, 245, 0.22);
+  --sheet-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.52),
+    0 2px 10px rgba(0, 0, 0, 0.32);
+  --popover-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.42),
+    0 2px 10px rgba(0, 0, 0, 0.28);
+}

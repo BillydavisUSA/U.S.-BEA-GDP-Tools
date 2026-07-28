@@ -1,0 +1,7226 @@
+{
+  "source": "U.S. Census Bureau / OMB July 2023 delineations",
+  "counts": {
+    "msa": 393,
+    "csa": 184,
+    "total": 577
+  },
+  "areas": [
+    {
+      "id": "csa-101",
+      "type": "csa",
+      "code": "101",
+      "name": "Abilene-Sweetwater, TX",
+      "fips": [
+        "48059",
+        "48253",
+        "48353",
+        "48441"
+      ]
+    },
+    {
+      "id": "msa-10180",
+      "type": "msa",
+      "code": "10180",
+      "name": "Abilene, TX",
+      "fips": [
+        "48059",
+        "48253",
+        "48441"
+      ]
+    },
+    {
+      "id": "msa-10380",
+      "type": "msa",
+      "code": "10380",
+      "name": "Aguadilla, PR",
+      "fips": [
+        "72003",
+        "72005",
+        "72011",
+        "72071",
+        "72099",
+        "72117",
+        "72131"
+      ]
+    },
+    {
+      "id": "msa-10420",
+      "type": "msa",
+      "code": "10420",
+      "name": "Akron, OH",
+      "fips": [
+        "39133",
+        "39153"
+      ]
+    },
+    {
+      "id": "msa-10580",
+      "type": "msa",
+      "code": "10580",
+      "name": "Albany-Schenectady-Troy, NY",
+      "fips": [
+        "36001",
+        "36083",
+        "36091",
+        "36093",
+        "36095"
+      ]
+    },
+    {
+      "id": "csa-104",
+      "type": "csa",
+      "code": "104",
+      "name": "Albany-Schenectady, NY",
+      "fips": [
+        "36001",
+        "36021",
+        "36035",
+        "36057",
+        "36083",
+        "36091",
+        "36093",
+        "36095",
+        "36113",
+        "36115"
+      ]
+    },
+    {
+      "id": "msa-10500",
+      "type": "msa",
+      "code": "10500",
+      "name": "Albany, GA",
+      "fips": [
+        "13095",
+        "13177",
+        "13273",
+        "13321"
+      ]
+    },
+    {
+      "id": "msa-10540",
+      "type": "msa",
+      "code": "10540",
+      "name": "Albany, OR",
+      "fips": [
+        "41043"
+      ]
+    },
+    {
+      "id": "csa-105",
+      "type": "csa",
+      "code": "105",
+      "name": "Albuquerque-Santa Fe-Los Alamos, NM",
+      "fips": [
+        "35001",
+        "35028",
+        "35033",
+        "35039",
+        "35043",
+        "35047",
+        "35049",
+        "35057",
+        "35061"
+      ]
+    },
+    {
+      "id": "msa-10740",
+      "type": "msa",
+      "code": "10740",
+      "name": "Albuquerque, NM",
+      "fips": [
+        "35001",
+        "35043",
+        "35057",
+        "35061"
+      ]
+    },
+    {
+      "id": "msa-10780",
+      "type": "msa",
+      "code": "10780",
+      "name": "Alexandria, LA",
+      "fips": [
+        "22043",
+        "22079"
+      ]
+    },
+    {
+      "id": "csa-106",
+      "type": "csa",
+      "code": "106",
+      "name": "Allentown-Bethlehem-East Stroudsburg, PA-NJ",
+      "fips": [
+        "34041",
+        "42025",
+        "42077",
+        "42089",
+        "42095"
+      ]
+    },
+    {
+      "id": "msa-10900",
+      "type": "msa",
+      "code": "10900",
+      "name": "Allentown-Bethlehem-Easton, PA-NJ",
+      "fips": [
+        "34041",
+        "42025",
+        "42077",
+        "42095"
+      ]
+    },
+    {
+      "id": "csa-107",
+      "type": "csa",
+      "code": "107",
+      "name": "Altoona-Huntingdon, PA",
+      "fips": [
+        "42013",
+        "42061"
+      ]
+    },
+    {
+      "id": "msa-11020",
+      "type": "msa",
+      "code": "11020",
+      "name": "Altoona, PA",
+      "fips": [
+        "42013"
+      ]
+    },
+    {
+      "id": "csa-108",
+      "type": "csa",
+      "code": "108",
+      "name": "Amarillo-Borger, TX",
+      "fips": [
+        "48011",
+        "48065",
+        "48233",
+        "48359",
+        "48375",
+        "48381"
+      ]
+    },
+    {
+      "id": "msa-11100",
+      "type": "msa",
+      "code": "11100",
+      "name": "Amarillo, TX",
+      "fips": [
+        "48011",
+        "48065",
+        "48359",
+        "48375",
+        "48381"
+      ]
+    },
+    {
+      "id": "msa-11180",
+      "type": "msa",
+      "code": "11180",
+      "name": "Ames, IA",
+      "fips": [
+        "19015",
+        "19169"
+      ]
+    },
+    {
+      "id": "msa-11200",
+      "type": "msa",
+      "code": "11200",
+      "name": "Amherst Town-Northampton, MA",
+      "fips": [
+        "25015"
+      ]
+    },
+    {
+      "id": "msa-11260",
+      "type": "msa",
+      "code": "11260",
+      "name": "Anchorage, AK",
+      "fips": [
+        "02020",
+        "02170"
+      ]
+    },
+    {
+      "id": "msa-11460",
+      "type": "msa",
+      "code": "11460",
+      "name": "Ann Arbor, MI",
+      "fips": [
+        "26161"
+      ]
+    },
+    {
+      "id": "msa-11500",
+      "type": "msa",
+      "code": "11500",
+      "name": "Anniston-Oxford, AL",
+      "fips": [
+        "01015"
+      ]
+    },
+    {
+      "id": "csa-118",
+      "type": "csa",
+      "code": "118",
+      "name": "Appleton-Oshkosh-Neenah, WI",
+      "fips": [
+        "55015",
+        "55087",
+        "55139"
+      ]
+    },
+    {
+      "id": "msa-11540",
+      "type": "msa",
+      "code": "11540",
+      "name": "Appleton, WI",
+      "fips": [
+        "55015",
+        "55087"
+      ]
+    },
+    {
+      "id": "msa-11640",
+      "type": "msa",
+      "code": "11640",
+      "name": "Arecibo, PR",
+      "fips": [
+        "72013",
+        "72027",
+        "72065",
+        "72115"
+      ]
+    },
+    {
+      "id": "csa-120",
+      "type": "csa",
+      "code": "120",
+      "name": "Asheville-Waynesville-Brevard, NC",
+      "fips": [
+        "37021",
+        "37087",
+        "37089",
+        "37115",
+        "37175"
+      ]
+    },
+    {
+      "id": "msa-11700",
+      "type": "msa",
+      "code": "11700",
+      "name": "Asheville, NC",
+      "fips": [
+        "37021",
+        "37089",
+        "37115"
+      ]
+    },
+    {
+      "id": "msa-12020",
+      "type": "msa",
+      "code": "12020",
+      "name": "Athens-Clarke County, GA",
+      "fips": [
+        "13059",
+        "13195",
+        "13219",
+        "13221"
+      ]
+    },
+    {
+      "id": "csa-122",
+      "type": "csa",
+      "code": "122",
+      "name": "Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",
+      "fips": [
+        "01017",
+        "13013",
+        "13015",
+        "13035",
+        "13045",
+        "13057",
+        "13059",
+        "13063",
+        "13067",
+        "13077",
+        "13085",
+        "13089",
+        "13097",
+        "13113",
+        "13115",
+        "13117",
+        "13121",
+        "13129",
+        "13135",
+        "13137",
+        "13139",
+        "13143",
+        "13149",
+        "13151",
+        "13157",
+        "13159",
+        "13187",
+        "13195",
+        "13199",
+        "13211",
+        "13217",
+        "13219",
+        "13221",
+        "13223",
+        "13227",
+        "13231",
+        "13233",
+        "13247",
+        "13255",
+        "13285",
+        "13293",
+        "13297"
+      ]
+    },
+    {
+      "id": "msa-12060",
+      "type": "msa",
+      "code": "12060",
+      "name": "Atlanta-Sandy Springs-Roswell, GA",
+      "fips": [
+        "13013",
+        "13015",
+        "13035",
+        "13045",
+        "13057",
+        "13063",
+        "13067",
+        "13077",
+        "13085",
+        "13089",
+        "13097",
+        "13113",
+        "13117",
+        "13121",
+        "13135",
+        "13143",
+        "13149",
+        "13151",
+        "13159",
+        "13187",
+        "13199",
+        "13211",
+        "13217",
+        "13223",
+        "13227",
+        "13231",
+        "13247",
+        "13255",
+        "13297"
+      ]
+    },
+    {
+      "id": "msa-12100",
+      "type": "msa",
+      "code": "12100",
+      "name": "Atlantic City-Hammonton, NJ",
+      "fips": [
+        "34001",
+        "34009"
+      ]
+    },
+    {
+      "id": "msa-12220",
+      "type": "msa",
+      "code": "12220",
+      "name": "Auburn-Opelika, AL",
+      "fips": [
+        "01081",
+        "01087"
+      ]
+    },
+    {
+      "id": "msa-12260",
+      "type": "msa",
+      "code": "12260",
+      "name": "Augusta-Richmond County, GA-SC",
+      "fips": [
+        "13033",
+        "13073",
+        "13181",
+        "13189",
+        "13245",
+        "45003",
+        "45037"
+      ]
+    },
+    {
+      "id": "msa-12420",
+      "type": "msa",
+      "code": "12420",
+      "name": "Austin-Round Rock-San Marcos, TX",
+      "fips": [
+        "48021",
+        "48055",
+        "48209",
+        "48453",
+        "48491"
+      ]
+    },
+    {
+      "id": "msa-12540",
+      "type": "msa",
+      "code": "12540",
+      "name": "Bakersfield-Delano, CA",
+      "fips": [
+        "06029"
+      ]
+    },
+    {
+      "id": "msa-12580",
+      "type": "msa",
+      "code": "12580",
+      "name": "Baltimore-Columbia-Towson, MD",
+      "fips": [
+        "24003",
+        "24005",
+        "24013",
+        "24025",
+        "24027",
+        "24035",
+        "24510"
+      ]
+    },
+    {
+      "id": "msa-12620",
+      "type": "msa",
+      "code": "12620",
+      "name": "Bangor, ME",
+      "fips": [
+        "23019"
+      ]
+    },
+    {
+      "id": "msa-12700",
+      "type": "msa",
+      "code": "12700",
+      "name": "Barnstable Town, MA",
+      "fips": [
+        "25001"
+      ]
+    },
+    {
+      "id": "csa-132",
+      "type": "csa",
+      "code": "132",
+      "name": "Baton Rouge-Hammond, LA",
+      "fips": [
+        "22005",
+        "22007",
+        "22033",
+        "22037",
+        "22047",
+        "22063",
+        "22077",
+        "22091",
+        "22105",
+        "22121",
+        "22125"
+      ]
+    },
+    {
+      "id": "msa-12940",
+      "type": "msa",
+      "code": "12940",
+      "name": "Baton Rouge, LA",
+      "fips": [
+        "22005",
+        "22007",
+        "22033",
+        "22037",
+        "22047",
+        "22063",
+        "22077",
+        "22091",
+        "22121",
+        "22125"
+      ]
+    },
+    {
+      "id": "msa-12980",
+      "type": "msa",
+      "code": "12980",
+      "name": "Battle Creek, MI",
+      "fips": [
+        "26025"
+      ]
+    },
+    {
+      "id": "msa-13020",
+      "type": "msa",
+      "code": "13020",
+      "name": "Bay City, MI",
+      "fips": [
+        "26017"
+      ]
+    },
+    {
+      "id": "msa-13140",
+      "type": "msa",
+      "code": "13140",
+      "name": "Beaumont-Port Arthur, TX",
+      "fips": [
+        "48199",
+        "48245",
+        "48361"
+      ]
+    },
+    {
+      "id": "msa-13220",
+      "type": "msa",
+      "code": "13220",
+      "name": "Beckley, WV",
+      "fips": [
+        "54019",
+        "54081"
+      ]
+    },
+    {
+      "id": "msa-13380",
+      "type": "msa",
+      "code": "13380",
+      "name": "Bellingham, WA",
+      "fips": [
+        "53073"
+      ]
+    },
+    {
+      "id": "msa-13460",
+      "type": "msa",
+      "code": "13460",
+      "name": "Bend, OR",
+      "fips": [
+        "41013",
+        "41017",
+        "41031"
+      ]
+    },
+    {
+      "id": "msa-13740",
+      "type": "msa",
+      "code": "13740",
+      "name": "Billings, MT",
+      "fips": [
+        "30009",
+        "30095",
+        "30111"
+      ]
+    },
+    {
+      "id": "msa-13780",
+      "type": "msa",
+      "code": "13780",
+      "name": "Binghamton, NY",
+      "fips": [
+        "36007",
+        "36107"
+      ]
+    },
+    {
+      "id": "csa-142",
+      "type": "csa",
+      "code": "142",
+      "name": "Birmingham-Cullman-Talladega, AL",
+      "fips": [
+        "01007",
+        "01009",
+        "01021",
+        "01037",
+        "01043",
+        "01073",
+        "01115",
+        "01117",
+        "01121",
+        "01127"
+      ]
+    },
+    {
+      "id": "msa-13820",
+      "type": "msa",
+      "code": "13820",
+      "name": "Birmingham, AL",
+      "fips": [
+        "01007",
+        "01009",
+        "01021",
+        "01073",
+        "01115",
+        "01117",
+        "01127"
+      ]
+    },
+    {
+      "id": "msa-13900",
+      "type": "msa",
+      "code": "13900",
+      "name": "Bismarck, ND",
+      "fips": [
+        "38015",
+        "38059",
+        "38065"
+      ]
+    },
+    {
+      "id": "msa-13980",
+      "type": "msa",
+      "code": "13980",
+      "name": "Blacksburg-Christiansburg-Radford, VA",
+      "fips": [
+        "51063",
+        "51071",
+        "51121",
+        "51155",
+        "51750"
+      ]
+    },
+    {
+      "id": "csa-144",
+      "type": "csa",
+      "code": "144",
+      "name": "Bloomington-Bedford, IN",
+      "fips": [
+        "18093",
+        "18105",
+        "18119"
+      ]
+    },
+    {
+      "id": "csa-145",
+      "type": "csa",
+      "code": "145",
+      "name": "Bloomington-Pontiac, IL",
+      "fips": [
+        "17105",
+        "17113"
+      ]
+    },
+    {
+      "id": "msa-14010",
+      "type": "msa",
+      "code": "14010",
+      "name": "Bloomington, IL",
+      "fips": [
+        "17113"
+      ]
+    },
+    {
+      "id": "msa-14020",
+      "type": "msa",
+      "code": "14020",
+      "name": "Bloomington, IN",
+      "fips": [
+        "18105",
+        "18119"
+      ]
+    },
+    {
+      "id": "csa-146",
+      "type": "csa",
+      "code": "146",
+      "name": "Bloomsburg-Berwick-Sunbury, PA",
+      "fips": [
+        "42037",
+        "42093",
+        "42097",
+        "42109",
+        "42119"
+      ]
+    },
+    {
+      "id": "csa-147",
+      "type": "csa",
+      "code": "147",
+      "name": "Boise City-Mountain Home-Ontario, ID-OR",
+      "fips": [
+        "16001",
+        "16015",
+        "16027",
+        "16039",
+        "16045",
+        "16073",
+        "16075",
+        "41045"
+      ]
+    },
+    {
+      "id": "msa-14260",
+      "type": "msa",
+      "code": "14260",
+      "name": "Boise City, ID",
+      "fips": [
+        "16001",
+        "16015",
+        "16027",
+        "16045",
+        "16073"
+      ]
+    },
+    {
+      "id": "msa-14460",
+      "type": "msa",
+      "code": "14460",
+      "name": "Boston-Cambridge-Newton, MA-NH",
+      "fips": [
+        "25009",
+        "25017",
+        "25021",
+        "25023",
+        "25025",
+        "33015",
+        "33017"
+      ]
+    },
+    {
+      "id": "csa-148",
+      "type": "csa",
+      "code": "148",
+      "name": "Boston-Worcester-Providence, MA-RI-NH",
+      "fips": [
+        "25001",
+        "25005",
+        "25009",
+        "25017",
+        "25021",
+        "25023",
+        "25025",
+        "25027",
+        "33001",
+        "33011",
+        "33013",
+        "33015",
+        "33017",
+        "44001",
+        "44003",
+        "44005",
+        "44007",
+        "44009"
+      ]
+    },
+    {
+      "id": "msa-14500",
+      "type": "msa",
+      "code": "14500",
+      "name": "Boulder, CO",
+      "fips": [
+        "08013"
+      ]
+    },
+    {
+      "id": "csa-150",
+      "type": "csa",
+      "code": "150",
+      "name": "Bowling Green-Glasgow-Franklin, KY",
+      "fips": [
+        "21003",
+        "21009",
+        "21031",
+        "21061",
+        "21169",
+        "21213",
+        "21227"
+      ]
+    },
+    {
+      "id": "msa-14540",
+      "type": "msa",
+      "code": "14540",
+      "name": "Bowling Green, KY",
+      "fips": [
+        "21003",
+        "21031",
+        "21061",
+        "21227"
+      ]
+    },
+    {
+      "id": "msa-14580",
+      "type": "msa",
+      "code": "14580",
+      "name": "Bozeman, MT",
+      "fips": [
+        "30031"
+      ]
+    },
+    {
+      "id": "msa-14740",
+      "type": "msa",
+      "code": "14740",
+      "name": "Bremerton-Silverdale-Port Orchard, WA",
+      "fips": [
+        "53035"
+      ]
+    },
+    {
+      "id": "msa-14860",
+      "type": "msa",
+      "code": "14860",
+      "name": "Bridgeport-Stamford-Danbury, CT",
+      "fips": [
+        "09001",
+        "09120",
+        "09190"
+      ]
+    },
+    {
+      "id": "csa-152",
+      "type": "csa",
+      "code": "152",
+      "name": "Brookings-Crescent City, OR-CA",
+      "fips": [
+        "06015",
+        "41015"
+      ]
+    },
+    {
+      "id": "csa-154",
+      "type": "csa",
+      "code": "154",
+      "name": "Brownsville-Harlingen-Raymondville, TX",
+      "fips": [
+        "48061",
+        "48489"
+      ]
+    },
+    {
+      "id": "msa-15180",
+      "type": "msa",
+      "code": "15180",
+      "name": "Brownsville-Harlingen, TX",
+      "fips": [
+        "48061"
+      ]
+    },
+    {
+      "id": "msa-15260",
+      "type": "msa",
+      "code": "15260",
+      "name": "Brunswick-St. Simons, GA",
+      "fips": [
+        "13025",
+        "13127",
+        "13191"
+      ]
+    },
+    {
+      "id": "csa-160",
+      "type": "csa",
+      "code": "160",
+      "name": "Buffalo-Cheektowaga-Olean, NY",
+      "fips": [
+        "36009",
+        "36029",
+        "36063"
+      ]
+    },
+    {
+      "id": "msa-15380",
+      "type": "msa",
+      "code": "15380",
+      "name": "Buffalo-Cheektowaga, NY",
+      "fips": [
+        "36029",
+        "36063"
+      ]
+    },
+    {
+      "id": "csa-161",
+      "type": "csa",
+      "code": "161",
+      "name": "Burlington-Fort Madison, IA-IL",
+      "fips": [
+        "17071",
+        "19057",
+        "19111"
+      ]
+    },
+    {
+      "id": "csa-162",
+      "type": "csa",
+      "code": "162",
+      "name": "Burlington-South Burlington-Barre, VT",
+      "fips": [
+        "50007",
+        "50011",
+        "50013",
+        "50023"
+      ]
+    },
+    {
+      "id": "msa-15540",
+      "type": "msa",
+      "code": "15540",
+      "name": "Burlington-South Burlington, VT",
+      "fips": [
+        "50007",
+        "50011",
+        "50013"
+      ]
+    },
+    {
+      "id": "msa-15500",
+      "type": "msa",
+      "code": "15500",
+      "name": "Burlington, NC",
+      "fips": [
+        "37001"
+      ]
+    },
+    {
+      "id": "msa-15940",
+      "type": "msa",
+      "code": "15940",
+      "name": "Canton-Massillon, OH",
+      "fips": [
+        "39019",
+        "39151"
+      ]
+    },
+    {
+      "id": "csa-163",
+      "type": "csa",
+      "code": "163",
+      "name": "Cape Coral-Fort Myers-Naples, FL",
+      "fips": [
+        "12021",
+        "12043",
+        "12051",
+        "12071"
+      ]
+    },
+    {
+      "id": "msa-15980",
+      "type": "msa",
+      "code": "15980",
+      "name": "Cape Coral-Fort Myers, FL",
+      "fips": [
+        "12071"
+      ]
+    },
+    {
+      "id": "csa-164",
+      "type": "csa",
+      "code": "164",
+      "name": "Cape Girardeau-Sikeston, MO-IL",
+      "fips": [
+        "17003",
+        "29017",
+        "29031",
+        "29133",
+        "29201"
+      ]
+    },
+    {
+      "id": "msa-16020",
+      "type": "msa",
+      "code": "16020",
+      "name": "Cape Girardeau, MO-IL",
+      "fips": [
+        "17003",
+        "29017",
+        "29031"
+      ]
+    },
+    {
+      "id": "csa-166",
+      "type": "csa",
+      "code": "166",
+      "name": "Carbondale-Marion-Herrin, IL",
+      "fips": [
+        "17077",
+        "17199"
+      ]
+    },
+    {
+      "id": "msa-16180",
+      "type": "msa",
+      "code": "16180",
+      "name": "Carson City, NV",
+      "fips": [
+        "32510"
+      ]
+    },
+    {
+      "id": "msa-16220",
+      "type": "msa",
+      "code": "16220",
+      "name": "Casper, WY",
+      "fips": [
+        "56025"
+      ]
+    },
+    {
+      "id": "csa-168",
+      "type": "csa",
+      "code": "168",
+      "name": "Cedar Rapids-Iowa City, IA",
+      "fips": [
+        "19011",
+        "19103",
+        "19105",
+        "19113",
+        "19183"
+      ]
+    },
+    {
+      "id": "msa-16300",
+      "type": "msa",
+      "code": "16300",
+      "name": "Cedar Rapids, IA",
+      "fips": [
+        "19011",
+        "19105",
+        "19113"
+      ]
+    },
+    {
+      "id": "msa-16540",
+      "type": "msa",
+      "code": "16540",
+      "name": "Chambersburg, PA",
+      "fips": [
+        "42055"
+      ]
+    },
+    {
+      "id": "csa-169",
+      "type": "csa",
+      "code": "169",
+      "name": "Champaign-Urbana-Danville, IL",
+      "fips": [
+        "17019",
+        "17053",
+        "17147",
+        "17183"
+      ]
+    },
+    {
+      "id": "msa-16580",
+      "type": "msa",
+      "code": "16580",
+      "name": "Champaign-Urbana, IL",
+      "fips": [
+        "17019",
+        "17053",
+        "17147"
+      ]
+    },
+    {
+      "id": "csa-170",
+      "type": "csa",
+      "code": "170",
+      "name": "Charleston-Huntington-Ashland, WV-OH-KY",
+      "fips": [
+        "21019",
+        "21043",
+        "21089",
+        "21127",
+        "39087",
+        "39145",
+        "54005",
+        "54011",
+        "54015",
+        "54039",
+        "54079",
+        "54099"
+      ]
+    },
+    {
+      "id": "msa-16700",
+      "type": "msa",
+      "code": "16700",
+      "name": "Charleston-North Charleston, SC",
+      "fips": [
+        "45015",
+        "45019",
+        "45035"
+      ]
+    },
+    {
+      "id": "msa-16620",
+      "type": "msa",
+      "code": "16620",
+      "name": "Charleston, WV",
+      "fips": [
+        "54005",
+        "54015",
+        "54039"
+      ]
+    },
+    {
+      "id": "msa-16740",
+      "type": "msa",
+      "code": "16740",
+      "name": "Charlotte-Concord-Gastonia, NC-SC",
+      "fips": [
+        "37007",
+        "37025",
+        "37071",
+        "37097",
+        "37109",
+        "37119",
+        "37159",
+        "37179",
+        "45023",
+        "45057",
+        "45091"
+      ]
+    },
+    {
+      "id": "csa-172",
+      "type": "csa",
+      "code": "172",
+      "name": "Charlotte-Concord, NC-SC",
+      "fips": [
+        "37003",
+        "37007",
+        "37023",
+        "37025",
+        "37027",
+        "37035",
+        "37045",
+        "37071",
+        "37097",
+        "37109",
+        "37111",
+        "37119",
+        "37159",
+        "37167",
+        "37179",
+        "45023",
+        "45057",
+        "45091"
+      ]
+    },
+    {
+      "id": "msa-16820",
+      "type": "msa",
+      "code": "16820",
+      "name": "Charlottesville, VA",
+      "fips": [
+        "51003",
+        "51065",
+        "51079",
+        "51125",
+        "51540"
+      ]
+    },
+    {
+      "id": "csa-174",
+      "type": "csa",
+      "code": "174",
+      "name": "Chattanooga-Cleveland-Dalton, TN-GA-AL",
+      "fips": [
+        "01071",
+        "13047",
+        "13055",
+        "13083",
+        "13213",
+        "13295",
+        "13313",
+        "47011",
+        "47065",
+        "47107",
+        "47115",
+        "47121",
+        "47139",
+        "47153"
+      ]
+    },
+    {
+      "id": "msa-16860",
+      "type": "msa",
+      "code": "16860",
+      "name": "Chattanooga, TN-GA",
+      "fips": [
+        "13047",
+        "13083",
+        "13295",
+        "47065",
+        "47115",
+        "47153"
+      ]
+    },
+    {
+      "id": "msa-16940",
+      "type": "msa",
+      "code": "16940",
+      "name": "Cheyenne, WY",
+      "fips": [
+        "56021"
+      ]
+    },
+    {
+      "id": "msa-16980",
+      "type": "msa",
+      "code": "16980",
+      "name": "Chicago-Naperville-Elgin, IL-IN",
+      "fips": [
+        "17031",
+        "17037",
+        "17043",
+        "17063",
+        "17089",
+        "17093",
+        "17097",
+        "17111",
+        "17197",
+        "18073",
+        "18089",
+        "18111",
+        "18127"
+      ]
+    },
+    {
+      "id": "csa-176",
+      "type": "csa",
+      "code": "176",
+      "name": "Chicago-Naperville, IL-IN-WI",
+      "fips": [
+        "17011",
+        "17031",
+        "17037",
+        "17043",
+        "17063",
+        "17089",
+        "17091",
+        "17093",
+        "17097",
+        "17099",
+        "17111",
+        "17155",
+        "17197",
+        "18073",
+        "18089",
+        "18091",
+        "18111",
+        "18127",
+        "55059"
+      ]
+    },
+    {
+      "id": "msa-17020",
+      "type": "msa",
+      "code": "17020",
+      "name": "Chico, CA",
+      "fips": [
+        "06007"
+      ]
+    },
+    {
+      "id": "csa-178",
+      "type": "csa",
+      "code": "178",
+      "name": "Cincinnati-Wilmington, OH-KY-IN",
+      "fips": [
+        "18029",
+        "18047",
+        "18115",
+        "21015",
+        "21023",
+        "21037",
+        "21077",
+        "21081",
+        "21117",
+        "21191",
+        "39015",
+        "39017",
+        "39025",
+        "39027",
+        "39061",
+        "39165"
+      ]
+    },
+    {
+      "id": "msa-17140",
+      "type": "msa",
+      "code": "17140",
+      "name": "Cincinnati, OH-KY-IN",
+      "fips": [
+        "18029",
+        "18047",
+        "18115",
+        "21015",
+        "21023",
+        "21037",
+        "21077",
+        "21081",
+        "21117",
+        "21191",
+        "39015",
+        "39017",
+        "39025",
+        "39061",
+        "39165"
+      ]
+    },
+    {
+      "id": "msa-17300",
+      "type": "msa",
+      "code": "17300",
+      "name": "Clarksville, TN-KY",
+      "fips": [
+        "21047",
+        "21221",
+        "47125",
+        "47161"
+      ]
+    },
+    {
+      "id": "csa-184",
+      "type": "csa",
+      "code": "184",
+      "name": "Cleveland-Akron-Canton, OH",
+      "fips": [
+        "39007",
+        "39019",
+        "39031",
+        "39035",
+        "39043",
+        "39055",
+        "39077",
+        "39085",
+        "39093",
+        "39103",
+        "39123",
+        "39133",
+        "39143",
+        "39151",
+        "39153",
+        "39157",
+        "39169"
+      ]
+    },
+    {
+      "id": "msa-17410",
+      "type": "msa",
+      "code": "17410",
+      "name": "Cleveland, OH",
+      "fips": [
+        "39007",
+        "39035",
+        "39055",
+        "39085",
+        "39093",
+        "39103"
+      ]
+    },
+    {
+      "id": "msa-17420",
+      "type": "msa",
+      "code": "17420",
+      "name": "Cleveland, TN",
+      "fips": [
+        "47011",
+        "47139"
+      ]
+    },
+    {
+      "id": "msa-17660",
+      "type": "msa",
+      "code": "17660",
+      "name": "Coeur d'Alene, ID",
+      "fips": [
+        "16055"
+      ]
+    },
+    {
+      "id": "msa-17780",
+      "type": "msa",
+      "code": "17780",
+      "name": "College Station-Bryan, TX",
+      "fips": [
+        "48041",
+        "48051",
+        "48395"
+      ]
+    },
+    {
+      "id": "msa-17820",
+      "type": "msa",
+      "code": "17820",
+      "name": "Colorado Springs, CO",
+      "fips": [
+        "08041",
+        "08119"
+      ]
+    },
+    {
+      "id": "csa-190",
+      "type": "csa",
+      "code": "190",
+      "name": "Columbia-Jefferson City-Moberly, MO",
+      "fips": [
+        "29007",
+        "29019",
+        "29027",
+        "29051",
+        "29053",
+        "29089",
+        "29135",
+        "29151",
+        "29175"
+      ]
+    },
+    {
+      "id": "csa-192",
+      "type": "csa",
+      "code": "192",
+      "name": "Columbia-Sumter-Orangeburg, SC",
+      "fips": [
+        "45017",
+        "45039",
+        "45055",
+        "45063",
+        "45071",
+        "45075",
+        "45079",
+        "45081",
+        "45085"
+      ]
+    },
+    {
+      "id": "msa-17860",
+      "type": "msa",
+      "code": "17860",
+      "name": "Columbia, MO",
+      "fips": [
+        "29019",
+        "29053",
+        "29089"
+      ]
+    },
+    {
+      "id": "msa-17900",
+      "type": "msa",
+      "code": "17900",
+      "name": "Columbia, SC",
+      "fips": [
+        "45017",
+        "45039",
+        "45055",
+        "45063",
+        "45079",
+        "45081"
+      ]
+    },
+    {
+      "id": "csa-194",
+      "type": "csa",
+      "code": "194",
+      "name": "Columbus-Auburn-Opelika, GA-AL",
+      "fips": [
+        "01081",
+        "01087",
+        "01113",
+        "01123",
+        "13053",
+        "13145",
+        "13197",
+        "13215",
+        "13259",
+        "13263"
+      ]
+    },
+    {
+      "id": "csa-198",
+      "type": "csa",
+      "code": "198",
+      "name": "Columbus-Marion-Zanesville, OH",
+      "fips": [
+        "39009",
+        "39041",
+        "39045",
+        "39047",
+        "39049",
+        "39059",
+        "39073",
+        "39083",
+        "39089",
+        "39091",
+        "39097",
+        "39101",
+        "39117",
+        "39119",
+        "39127",
+        "39129",
+        "39141",
+        "39159"
+      ]
+    },
+    {
+      "id": "msa-17980",
+      "type": "msa",
+      "code": "17980",
+      "name": "Columbus, GA-AL",
+      "fips": [
+        "01113",
+        "13053",
+        "13145",
+        "13197",
+        "13215",
+        "13259",
+        "13263"
+      ]
+    },
+    {
+      "id": "msa-18020",
+      "type": "msa",
+      "code": "18020",
+      "name": "Columbus, IN",
+      "fips": [
+        "18005"
+      ]
+    },
+    {
+      "id": "msa-18140",
+      "type": "msa",
+      "code": "18140",
+      "name": "Columbus, OH",
+      "fips": [
+        "39041",
+        "39045",
+        "39049",
+        "39073",
+        "39089",
+        "39097",
+        "39117",
+        "39127",
+        "39129",
+        "39159"
+      ]
+    },
+    {
+      "id": "csa-204",
+      "type": "csa",
+      "code": "204",
+      "name": "Corpus Christi-Kingsville-Alice, TX",
+      "fips": [
+        "48007",
+        "48047",
+        "48249",
+        "48273",
+        "48355",
+        "48409"
+      ]
+    },
+    {
+      "id": "msa-18580",
+      "type": "msa",
+      "code": "18580",
+      "name": "Corpus Christi, TX",
+      "fips": [
+        "48007",
+        "48355",
+        "48409"
+      ]
+    },
+    {
+      "id": "msa-18700",
+      "type": "msa",
+      "code": "18700",
+      "name": "Corvallis, OR",
+      "fips": [
+        "41003"
+      ]
+    },
+    {
+      "id": "msa-18880",
+      "type": "msa",
+      "code": "18880",
+      "name": "Crestview-Fort Walton Beach-Destin, FL",
+      "fips": [
+        "12091",
+        "12131"
+      ]
+    },
+    {
+      "id": "msa-19100",
+      "type": "msa",
+      "code": "19100",
+      "name": "Dallas-Fort Worth-Arlington, TX",
+      "fips": [
+        "48085",
+        "48113",
+        "48121",
+        "48139",
+        "48231",
+        "48251",
+        "48257",
+        "48367",
+        "48397",
+        "48439",
+        "48497"
+      ]
+    },
+    {
+      "id": "csa-206",
+      "type": "csa",
+      "code": "206",
+      "name": "Dallas-Fort Worth, TX-OK",
+      "fips": [
+        "40013",
+        "48085",
+        "48097",
+        "48113",
+        "48121",
+        "48139",
+        "48147",
+        "48181",
+        "48213",
+        "48221",
+        "48223",
+        "48231",
+        "48251",
+        "48257",
+        "48349",
+        "48363",
+        "48367",
+        "48397",
+        "48439",
+        "48497"
+      ]
+    },
+    {
+      "id": "msa-19140",
+      "type": "msa",
+      "code": "19140",
+      "name": "Dalton, GA",
+      "fips": [
+        "13213",
+        "13313"
+      ]
+    },
+    {
+      "id": "msa-19300",
+      "type": "msa",
+      "code": "19300",
+      "name": "Daphne-Fairhope-Foley, AL",
+      "fips": [
+        "01003"
+      ]
+    },
+    {
+      "id": "msa-19340",
+      "type": "msa",
+      "code": "19340",
+      "name": "Davenport-Moline-Rock Island, IA-IL",
+      "fips": [
+        "17073",
+        "17131",
+        "17161",
+        "19163"
+      ]
+    },
+    {
+      "id": "csa-209",
+      "type": "csa",
+      "code": "209",
+      "name": "Davenport-Moline, IA-IL",
+      "fips": [
+        "17073",
+        "17131",
+        "17161",
+        "19045",
+        "19139",
+        "19163"
+      ]
+    },
+    {
+      "id": "msa-19430",
+      "type": "msa",
+      "code": "19430",
+      "name": "Dayton-Kettering-Beavercreek, OH",
+      "fips": [
+        "39057",
+        "39109",
+        "39113"
+      ]
+    },
+    {
+      "id": "csa-212",
+      "type": "csa",
+      "code": "212",
+      "name": "Dayton-Springfield-Kettering, OH",
+      "fips": [
+        "39021",
+        "39023",
+        "39037",
+        "39057",
+        "39109",
+        "39113",
+        "39149"
+      ]
+    },
+    {
+      "id": "msa-19460",
+      "type": "msa",
+      "code": "19460",
+      "name": "Decatur, AL",
+      "fips": [
+        "01079",
+        "01103"
+      ]
+    },
+    {
+      "id": "msa-19500",
+      "type": "msa",
+      "code": "19500",
+      "name": "Decatur, IL",
+      "fips": [
+        "17115"
+      ]
+    },
+    {
+      "id": "msa-19660",
+      "type": "msa",
+      "code": "19660",
+      "name": "Deltona-Daytona Beach-Ormond Beach, FL",
+      "fips": [
+        "12035",
+        "12127"
+      ]
+    },
+    {
+      "id": "msa-19740",
+      "type": "msa",
+      "code": "19740",
+      "name": "Denver-Aurora-Centennial, CO",
+      "fips": [
+        "08001",
+        "08005",
+        "08014",
+        "08019",
+        "08031",
+        "08035",
+        "08039",
+        "08047",
+        "08059",
+        "08093"
+      ]
+    },
+    {
+      "id": "csa-216",
+      "type": "csa",
+      "code": "216",
+      "name": "Denver-Aurora-Greeley, CO",
+      "fips": [
+        "08001",
+        "08005",
+        "08013",
+        "08014",
+        "08019",
+        "08031",
+        "08035",
+        "08039",
+        "08047",
+        "08059",
+        "08093",
+        "08123"
+      ]
+    },
+    {
+      "id": "csa-218",
+      "type": "csa",
+      "code": "218",
+      "name": "Des Moines-West Des Moines-Ames, IA",
+      "fips": [
+        "19015",
+        "19049",
+        "19077",
+        "19099",
+        "19121",
+        "19123",
+        "19125",
+        "19153",
+        "19169",
+        "19181"
+      ]
+    },
+    {
+      "id": "msa-19780",
+      "type": "msa",
+      "code": "19780",
+      "name": "Des Moines-West Des Moines, IA",
+      "fips": [
+        "19049",
+        "19077",
+        "19099",
+        "19121",
+        "19153",
+        "19181"
+      ]
+    },
+    {
+      "id": "csa-220",
+      "type": "csa",
+      "code": "220",
+      "name": "Detroit-Warren-Ann Arbor, MI",
+      "fips": [
+        "26049",
+        "26087",
+        "26091",
+        "26093",
+        "26099",
+        "26115",
+        "26125",
+        "26147",
+        "26161",
+        "26163"
+      ]
+    },
+    {
+      "id": "msa-19820",
+      "type": "msa",
+      "code": "19820",
+      "name": "Detroit-Warren-Dearborn, MI",
+      "fips": [
+        "26087",
+        "26093",
+        "26099",
+        "26125",
+        "26147",
+        "26163"
+      ]
+    },
+    {
+      "id": "csa-221",
+      "type": "csa",
+      "code": "221",
+      "name": "Dixon-Sterling, IL",
+      "fips": [
+        "17103",
+        "17195"
+      ]
+    },
+    {
+      "id": "csa-222",
+      "type": "csa",
+      "code": "222",
+      "name": "Dothan-Enterprise-Ozark, AL",
+      "fips": [
+        "01031",
+        "01045",
+        "01061",
+        "01067",
+        "01069"
+      ]
+    },
+    {
+      "id": "msa-20020",
+      "type": "msa",
+      "code": "20020",
+      "name": "Dothan, AL",
+      "fips": [
+        "01061",
+        "01067",
+        "01069"
+      ]
+    },
+    {
+      "id": "msa-20100",
+      "type": "msa",
+      "code": "20100",
+      "name": "Dover, DE",
+      "fips": [
+        "10001"
+      ]
+    },
+    {
+      "id": "msa-20220",
+      "type": "msa",
+      "code": "20220",
+      "name": "Dubuque, IA",
+      "fips": [
+        "19061"
+      ]
+    },
+    {
+      "id": "csa-228",
+      "type": "csa",
+      "code": "228",
+      "name": "Duluth-Grand Rapids, MN-WI",
+      "fips": [
+        "27017",
+        "27061",
+        "27137",
+        "55031"
+      ]
+    },
+    {
+      "id": "msa-20260",
+      "type": "msa",
+      "code": "20260",
+      "name": "Duluth, MN-WI",
+      "fips": [
+        "27017",
+        "27137",
+        "55031"
+      ]
+    },
+    {
+      "id": "msa-20500",
+      "type": "msa",
+      "code": "20500",
+      "name": "Durham-Chapel Hill, NC",
+      "fips": [
+        "37037",
+        "37063",
+        "37135",
+        "37145"
+      ]
+    },
+    {
+      "id": "msa-20580",
+      "type": "msa",
+      "code": "20580",
+      "name": "Eagle Pass, TX",
+      "fips": [
+        "48323"
+      ]
+    },
+    {
+      "id": "csa-232",
+      "type": "csa",
+      "code": "232",
+      "name": "Eau Claire-Menomonie, WI",
+      "fips": [
+        "55017",
+        "55033",
+        "55035"
+      ]
+    },
+    {
+      "id": "msa-20740",
+      "type": "msa",
+      "code": "20740",
+      "name": "Eau Claire, WI",
+      "fips": [
+        "55017",
+        "55035"
+      ]
+    },
+    {
+      "id": "csa-233",
+      "type": "csa",
+      "code": "233",
+      "name": "Edwards-Rifle, CO",
+      "fips": [
+        "08037",
+        "08045",
+        "08097"
+      ]
+    },
+    {
+      "id": "msa-20940",
+      "type": "msa",
+      "code": "20940",
+      "name": "El Centro, CA",
+      "fips": [
+        "06025"
+      ]
+    },
+    {
+      "id": "csa-238",
+      "type": "csa",
+      "code": "238",
+      "name": "El Paso-Las Cruces, TX-NM",
+      "fips": [
+        "35013",
+        "48141",
+        "48229"
+      ]
+    },
+    {
+      "id": "msa-21340",
+      "type": "msa",
+      "code": "21340",
+      "name": "El Paso, TX",
+      "fips": [
+        "48141",
+        "48229"
+      ]
+    },
+    {
+      "id": "msa-21060",
+      "type": "msa",
+      "code": "21060",
+      "name": "Elizabethtown, KY",
+      "fips": [
+        "21093",
+        "21123"
+      ]
+    },
+    {
+      "id": "msa-21140",
+      "type": "msa",
+      "code": "21140",
+      "name": "Elkhart-Goshen, IN",
+      "fips": [
+        "18039"
+      ]
+    },
+    {
+      "id": "csa-236",
+      "type": "csa",
+      "code": "236",
+      "name": "Elmira-Corning, NY",
+      "fips": [
+        "36015",
+        "36101"
+      ]
+    },
+    {
+      "id": "msa-21300",
+      "type": "msa",
+      "code": "21300",
+      "name": "Elmira, NY",
+      "fips": [
+        "36015"
+      ]
+    },
+    {
+      "id": "msa-21420",
+      "type": "msa",
+      "code": "21420",
+      "name": "Enid, OK",
+      "fips": [
+        "40047"
+      ]
+    },
+    {
+      "id": "csa-240",
+      "type": "csa",
+      "code": "240",
+      "name": "Erie-Meadville, PA",
+      "fips": [
+        "42039",
+        "42049"
+      ]
+    },
+    {
+      "id": "msa-21500",
+      "type": "msa",
+      "code": "21500",
+      "name": "Erie, PA",
+      "fips": [
+        "42049"
+      ]
+    },
+    {
+      "id": "msa-21660",
+      "type": "msa",
+      "code": "21660",
+      "name": "Eugene-Springfield, OR",
+      "fips": [
+        "41039"
+      ]
+    },
+    {
+      "id": "csa-241",
+      "type": "csa",
+      "code": "241",
+      "name": "Evansville-Henderson, IN-KY",
+      "fips": [
+        "18129",
+        "18163",
+        "18173",
+        "21101",
+        "21233"
+      ]
+    },
+    {
+      "id": "msa-21780",
+      "type": "msa",
+      "code": "21780",
+      "name": "Evansville, IN",
+      "fips": [
+        "18129",
+        "18163",
+        "18173"
+      ]
+    },
+    {
+      "id": "msa-21820",
+      "type": "msa",
+      "code": "21820",
+      "name": "Fairbanks-College, AK",
+      "fips": [
+        "02090"
+      ]
+    },
+    {
+      "id": "csa-242",
+      "type": "csa",
+      "code": "242",
+      "name": "Fairmont-Clarksburg, WV",
+      "fips": [
+        "54017",
+        "54033",
+        "54049",
+        "54091"
+      ]
+    },
+    {
+      "id": "csa-244",
+      "type": "csa",
+      "code": "244",
+      "name": "Fargo-Wahpeton, ND-MN",
+      "fips": [
+        "27027",
+        "27167",
+        "38017",
+        "38077"
+      ]
+    },
+    {
+      "id": "msa-22020",
+      "type": "msa",
+      "code": "22020",
+      "name": "Fargo, ND-MN",
+      "fips": [
+        "27027",
+        "38017"
+      ]
+    },
+    {
+      "id": "msa-22140",
+      "type": "msa",
+      "code": "22140",
+      "name": "Farmington, NM",
+      "fips": [
+        "35045"
+      ]
+    },
+    {
+      "id": "csa-246",
+      "type": "csa",
+      "code": "246",
+      "name": "Fayetteville-Lumberton-Pinehurst, NC",
+      "fips": [
+        "37051",
+        "37093",
+        "37125",
+        "37153",
+        "37155",
+        "37165"
+      ]
+    },
+    {
+      "id": "msa-22220",
+      "type": "msa",
+      "code": "22220",
+      "name": "Fayetteville-Springdale-Rogers, AR",
+      "fips": [
+        "05007",
+        "05087",
+        "05143"
+      ]
+    },
+    {
+      "id": "msa-22180",
+      "type": "msa",
+      "code": "22180",
+      "name": "Fayetteville, NC",
+      "fips": [
+        "37051",
+        "37093"
+      ]
+    },
+    {
+      "id": "csa-248",
+      "type": "csa",
+      "code": "248",
+      "name": "Findlay-Tiffin, OH",
+      "fips": [
+        "39063",
+        "39147"
+      ]
+    },
+    {
+      "id": "msa-22380",
+      "type": "msa",
+      "code": "22380",
+      "name": "Flagstaff, AZ",
+      "fips": [
+        "04005"
+      ]
+    },
+    {
+      "id": "msa-22420",
+      "type": "msa",
+      "code": "22420",
+      "name": "Flint, MI",
+      "fips": [
+        "26049"
+      ]
+    },
+    {
+      "id": "csa-250",
+      "type": "csa",
+      "code": "250",
+      "name": "Florence-Muscle Shoals-Russellville, AL",
+      "fips": [
+        "01033",
+        "01059",
+        "01077"
+      ]
+    },
+    {
+      "id": "msa-22520",
+      "type": "msa",
+      "code": "22520",
+      "name": "Florence-Muscle Shoals, AL",
+      "fips": [
+        "01033",
+        "01077"
+      ]
+    },
+    {
+      "id": "msa-22500",
+      "type": "msa",
+      "code": "22500",
+      "name": "Florence, SC",
+      "fips": [
+        "45031",
+        "45041"
+      ]
+    },
+    {
+      "id": "msa-22540",
+      "type": "msa",
+      "code": "22540",
+      "name": "Fond du Lac, WI",
+      "fips": [
+        "55039"
+      ]
+    },
+    {
+      "id": "msa-22660",
+      "type": "msa",
+      "code": "22660",
+      "name": "Fort Collins-Loveland, CO",
+      "fips": [
+        "08069"
+      ]
+    },
+    {
+      "id": "msa-22900",
+      "type": "msa",
+      "code": "22900",
+      "name": "Fort Smith, AR-OK",
+      "fips": [
+        "05033",
+        "05131",
+        "40135"
+      ]
+    },
+    {
+      "id": "csa-258",
+      "type": "csa",
+      "code": "258",
+      "name": "Fort Wayne-Huntington-Auburn, IN",
+      "fips": [
+        "18001",
+        "18003",
+        "18033",
+        "18069",
+        "18113",
+        "18151",
+        "18179",
+        "18183"
+      ]
+    },
+    {
+      "id": "msa-23060",
+      "type": "msa",
+      "code": "23060",
+      "name": "Fort Wayne, IN",
+      "fips": [
+        "18003",
+        "18179",
+        "18183"
+      ]
+    },
+    {
+      "id": "csa-260",
+      "type": "csa",
+      "code": "260",
+      "name": "Fresno-Hanford-Corcoran, CA",
+      "fips": [
+        "06019",
+        "06031",
+        "06039"
+      ]
+    },
+    {
+      "id": "msa-23420",
+      "type": "msa",
+      "code": "23420",
+      "name": "Fresno, CA",
+      "fips": [
+        "06019",
+        "06039"
+      ]
+    },
+    {
+      "id": "msa-23460",
+      "type": "msa",
+      "code": "23460",
+      "name": "Gadsden, AL",
+      "fips": [
+        "01055"
+      ]
+    },
+    {
+      "id": "csa-264",
+      "type": "csa",
+      "code": "264",
+      "name": "Gainesville-Lake City, FL",
+      "fips": [
+        "12001",
+        "12023",
+        "12041",
+        "12075"
+      ]
+    },
+    {
+      "id": "msa-23540",
+      "type": "msa",
+      "code": "23540",
+      "name": "Gainesville, FL",
+      "fips": [
+        "12001",
+        "12041",
+        "12075"
+      ]
+    },
+    {
+      "id": "msa-23580",
+      "type": "msa",
+      "code": "23580",
+      "name": "Gainesville, GA",
+      "fips": [
+        "13139"
+      ]
+    },
+    {
+      "id": "msa-23900",
+      "type": "msa",
+      "code": "23900",
+      "name": "Gettysburg, PA",
+      "fips": [
+        "42001"
+      ]
+    },
+    {
+      "id": "msa-24020",
+      "type": "msa",
+      "code": "24020",
+      "name": "Glens Falls, NY",
+      "fips": [
+        "36113",
+        "36115"
+      ]
+    },
+    {
+      "id": "msa-24140",
+      "type": "msa",
+      "code": "24140",
+      "name": "Goldsboro, NC",
+      "fips": [
+        "37191"
+      ]
+    },
+    {
+      "id": "msa-24220",
+      "type": "msa",
+      "code": "24220",
+      "name": "Grand Forks, ND-MN",
+      "fips": [
+        "27119",
+        "38035"
+      ]
+    },
+    {
+      "id": "msa-24260",
+      "type": "msa",
+      "code": "24260",
+      "name": "Grand Island, NE",
+      "fips": [
+        "31079",
+        "31093",
+        "31121"
+      ]
+    },
+    {
+      "id": "msa-24300",
+      "type": "msa",
+      "code": "24300",
+      "name": "Grand Junction, CO",
+      "fips": [
+        "08077"
+      ]
+    },
+    {
+      "id": "msa-24340",
+      "type": "msa",
+      "code": "24340",
+      "name": "Grand Rapids-Wyoming-Kentwood, MI",
+      "fips": [
+        "26015",
+        "26067",
+        "26081",
+        "26117",
+        "26139"
+      ]
+    },
+    {
+      "id": "csa-266",
+      "type": "csa",
+      "code": "266",
+      "name": "Grand Rapids-Wyoming, MI",
+      "fips": [
+        "26005",
+        "26015",
+        "26067",
+        "26081",
+        "26107",
+        "26117",
+        "26121",
+        "26139"
+      ]
+    },
+    {
+      "id": "msa-24420",
+      "type": "msa",
+      "code": "24420",
+      "name": "Grants Pass, OR",
+      "fips": [
+        "41033"
+      ]
+    },
+    {
+      "id": "msa-24500",
+      "type": "msa",
+      "code": "24500",
+      "name": "Great Falls, MT",
+      "fips": [
+        "30013"
+      ]
+    },
+    {
+      "id": "msa-24540",
+      "type": "msa",
+      "code": "24540",
+      "name": "Greeley, CO",
+      "fips": [
+        "08123"
+      ]
+    },
+    {
+      "id": "csa-267",
+      "type": "csa",
+      "code": "267",
+      "name": "Green Bay-Shawano, WI",
+      "fips": [
+        "55009",
+        "55061",
+        "55078",
+        "55083",
+        "55115"
+      ]
+    },
+    {
+      "id": "msa-24580",
+      "type": "msa",
+      "code": "24580",
+      "name": "Green Bay, WI",
+      "fips": [
+        "55009",
+        "55061",
+        "55083"
+      ]
+    },
+    {
+      "id": "csa-268",
+      "type": "csa",
+      "code": "268",
+      "name": "Greensboro--Winston-Salem--High Point, NC",
+      "fips": [
+        "37001",
+        "37057",
+        "37059",
+        "37067",
+        "37081",
+        "37151",
+        "37157",
+        "37169",
+        "37171",
+        "37197"
+      ]
+    },
+    {
+      "id": "msa-24660",
+      "type": "msa",
+      "code": "24660",
+      "name": "Greensboro-High Point, NC",
+      "fips": [
+        "37081",
+        "37151",
+        "37157"
+      ]
+    },
+    {
+      "id": "msa-24860",
+      "type": "msa",
+      "code": "24860",
+      "name": "Greenville-Anderson-Greer, SC",
+      "fips": [
+        "45007",
+        "45045",
+        "45059",
+        "45077"
+      ]
+    },
+    {
+      "id": "csa-273",
+      "type": "csa",
+      "code": "273",
+      "name": "Greenville-Spartanburg-Anderson, SC",
+      "fips": [
+        "45001",
+        "45007",
+        "45021",
+        "45045",
+        "45047",
+        "45059",
+        "45073",
+        "45077",
+        "45083",
+        "45087"
+      ]
+    },
+    {
+      "id": "csa-274",
+      "type": "csa",
+      "code": "274",
+      "name": "Greenville-Washington, NC",
+      "fips": [
+        "37013",
+        "37147"
+      ]
+    },
+    {
+      "id": "msa-24780",
+      "type": "msa",
+      "code": "24780",
+      "name": "Greenville, NC",
+      "fips": [
+        "37147"
+      ]
+    },
+    {
+      "id": "msa-25020",
+      "type": "msa",
+      "code": "25020",
+      "name": "Guayama, PR",
+      "fips": [
+        "72015",
+        "72057",
+        "72109"
+      ]
+    },
+    {
+      "id": "msa-25060",
+      "type": "msa",
+      "code": "25060",
+      "name": "Gulfport-Biloxi, MS",
+      "fips": [
+        "28045",
+        "28047",
+        "28059",
+        "28131"
+      ]
+    },
+    {
+      "id": "msa-25180",
+      "type": "msa",
+      "code": "25180",
+      "name": "Hagerstown-Martinsburg, MD-WV",
+      "fips": [
+        "24043",
+        "54003",
+        "54065"
+      ]
+    },
+    {
+      "id": "msa-25220",
+      "type": "msa",
+      "code": "25220",
+      "name": "Hammond, LA",
+      "fips": [
+        "22105"
+      ]
+    },
+    {
+      "id": "msa-25260",
+      "type": "msa",
+      "code": "25260",
+      "name": "Hanford-Corcoran, CA",
+      "fips": [
+        "06031"
+      ]
+    },
+    {
+      "id": "msa-25420",
+      "type": "msa",
+      "code": "25420",
+      "name": "Harrisburg-Carlisle, PA",
+      "fips": [
+        "42041",
+        "42043",
+        "42099"
+      ]
+    },
+    {
+      "id": "csa-276",
+      "type": "csa",
+      "code": "276",
+      "name": "Harrisburg-York-Lebanon, PA",
+      "fips": [
+        "42001",
+        "42041",
+        "42043",
+        "42075",
+        "42099",
+        "42133"
+      ]
+    },
+    {
+      "id": "csa-277",
+      "type": "csa",
+      "code": "277",
+      "name": "Harrisonburg-Staunton-Stuarts Draft, VA",
+      "fips": [
+        "51907",
+        "51947"
+      ]
+    },
+    {
+      "id": "msa-25500",
+      "type": "msa",
+      "code": "25500",
+      "name": "Harrisonburg, VA",
+      "fips": [
+        "51947"
+      ]
+    },
+    {
+      "id": "msa-25540",
+      "type": "msa",
+      "code": "25540",
+      "name": "Hartford-West Hartford-East Hartford, CT",
+      "fips": [
+        "09003",
+        "09007",
+        "09013",
+        "09110",
+        "09130"
+      ]
+    },
+    {
+      "id": "csa-279",
+      "type": "csa",
+      "code": "279",
+      "name": "Hattiesburg-Laurel, MS",
+      "fips": [
+        "28035",
+        "28061",
+        "28067",
+        "28073",
+        "28111"
+      ]
+    },
+    {
+      "id": "msa-25620",
+      "type": "msa",
+      "code": "25620",
+      "name": "Hattiesburg, MS",
+      "fips": [
+        "28035",
+        "28073",
+        "28111"
+      ]
+    },
+    {
+      "id": "msa-25740",
+      "type": "msa",
+      "code": "25740",
+      "name": "Helena, MT",
+      "fips": [
+        "30007",
+        "30043",
+        "30049"
+      ]
+    },
+    {
+      "id": "msa-25860",
+      "type": "msa",
+      "code": "25860",
+      "name": "Hickory-Lenoir-Morganton, NC",
+      "fips": [
+        "37003",
+        "37023",
+        "37027",
+        "37035"
+      ]
+    },
+    {
+      "id": "msa-25940",
+      "type": "msa",
+      "code": "25940",
+      "name": "Hilton Head Island-Bluffton-Port Royal, SC",
+      "fips": [
+        "45013",
+        "45053"
+      ]
+    },
+    {
+      "id": "msa-25980",
+      "type": "msa",
+      "code": "25980",
+      "name": "Hinesville, GA",
+      "fips": [
+        "13179",
+        "13183"
+      ]
+    },
+    {
+      "id": "msa-26140",
+      "type": "msa",
+      "code": "26140",
+      "name": "Homosassa Springs, FL",
+      "fips": [
+        "12017"
+      ]
+    },
+    {
+      "id": "csa-284",
+      "type": "csa",
+      "code": "284",
+      "name": "Hot Springs-Malvern, AR",
+      "fips": [
+        "05051",
+        "05059"
+      ]
+    },
+    {
+      "id": "msa-26300",
+      "type": "msa",
+      "code": "26300",
+      "name": "Hot Springs, AR",
+      "fips": [
+        "05051"
+      ]
+    },
+    {
+      "id": "msa-26380",
+      "type": "msa",
+      "code": "26380",
+      "name": "Houma-Bayou Cane-Thibodaux, LA",
+      "fips": [
+        "22057",
+        "22109"
+      ]
+    },
+    {
+      "id": "msa-26420",
+      "type": "msa",
+      "code": "26420",
+      "name": "Houston-Pasadena-The Woodlands, TX",
+      "fips": [
+        "48015",
+        "48039",
+        "48071",
+        "48157",
+        "48167",
+        "48201",
+        "48291",
+        "48339",
+        "48407",
+        "48473"
+      ]
+    },
+    {
+      "id": "csa-288",
+      "type": "csa",
+      "code": "288",
+      "name": "Houston-Pasadena, TX",
+      "fips": [
+        "48015",
+        "48039",
+        "48071",
+        "48157",
+        "48167",
+        "48201",
+        "48291",
+        "48321",
+        "48339",
+        "48407",
+        "48471",
+        "48473",
+        "48477",
+        "48481"
+      ]
+    },
+    {
+      "id": "msa-26580",
+      "type": "msa",
+      "code": "26580",
+      "name": "Huntington-Ashland, WV-KY-OH",
+      "fips": [
+        "21019",
+        "21043",
+        "21089",
+        "21127",
+        "39087",
+        "54011",
+        "54079",
+        "54099"
+      ]
+    },
+    {
+      "id": "csa-290",
+      "type": "csa",
+      "code": "290",
+      "name": "Huntsville-Decatur-Albertville, AL-TN",
+      "fips": [
+        "01049",
+        "01079",
+        "01083",
+        "01089",
+        "01095",
+        "01103",
+        "47103"
+      ]
+    },
+    {
+      "id": "msa-26620",
+      "type": "msa",
+      "code": "26620",
+      "name": "Huntsville, AL",
+      "fips": [
+        "01083",
+        "01089"
+      ]
+    },
+    {
+      "id": "csa-292",
+      "type": "csa",
+      "code": "292",
+      "name": "Idaho Falls-Rexburg-Blackfoot, ID",
+      "fips": [
+        "16011",
+        "16019",
+        "16023",
+        "16043",
+        "16051",
+        "16065"
+      ]
+    },
+    {
+      "id": "msa-26820",
+      "type": "msa",
+      "code": "26820",
+      "name": "Idaho Falls, ID",
+      "fips": [
+        "16019",
+        "16023",
+        "16051"
+      ]
+    },
+    {
+      "id": "msa-26900",
+      "type": "msa",
+      "code": "26900",
+      "name": "Indianapolis-Carmel-Greenwood, IN",
+      "fips": [
+        "18011",
+        "18013",
+        "18057",
+        "18059",
+        "18063",
+        "18081",
+        "18095",
+        "18097",
+        "18109",
+        "18145",
+        "18159"
+      ]
+    },
+    {
+      "id": "csa-294",
+      "type": "csa",
+      "code": "294",
+      "name": "Indianapolis-Carmel-Muncie, IN",
+      "fips": [
+        "18005",
+        "18011",
+        "18013",
+        "18031",
+        "18035",
+        "18057",
+        "18059",
+        "18063",
+        "18065",
+        "18067",
+        "18071",
+        "18081",
+        "18095",
+        "18097",
+        "18103",
+        "18107",
+        "18109",
+        "18133",
+        "18145",
+        "18159"
+      ]
+    },
+    {
+      "id": "msa-26980",
+      "type": "msa",
+      "code": "26980",
+      "name": "Iowa City, IA",
+      "fips": [
+        "19103",
+        "19183"
+      ]
+    },
+    {
+      "id": "csa-296",
+      "type": "csa",
+      "code": "296",
+      "name": "Ithaca-Cortland, NY",
+      "fips": [
+        "36023",
+        "36109"
+      ]
+    },
+    {
+      "id": "msa-27060",
+      "type": "msa",
+      "code": "27060",
+      "name": "Ithaca, NY",
+      "fips": [
+        "36109"
+      ]
+    },
+    {
+      "id": "csa-298",
+      "type": "csa",
+      "code": "298",
+      "name": "Jackson-Vicksburg-Brookhaven, MS",
+      "fips": [
+        "28029",
+        "28049",
+        "28051",
+        "28085",
+        "28089",
+        "28121",
+        "28123",
+        "28127",
+        "28149",
+        "28163"
+      ]
+    },
+    {
+      "id": "msa-27100",
+      "type": "msa",
+      "code": "27100",
+      "name": "Jackson, MI",
+      "fips": [
+        "26075"
+      ]
+    },
+    {
+      "id": "msa-27140",
+      "type": "msa",
+      "code": "27140",
+      "name": "Jackson, MS",
+      "fips": [
+        "28029",
+        "28049",
+        "28051",
+        "28089",
+        "28121",
+        "28123",
+        "28127",
+        "28163"
+      ]
+    },
+    {
+      "id": "msa-27180",
+      "type": "msa",
+      "code": "27180",
+      "name": "Jackson, TN",
+      "fips": [
+        "47023",
+        "47033",
+        "47053",
+        "47113"
+      ]
+    },
+    {
+      "id": "csa-300",
+      "type": "csa",
+      "code": "300",
+      "name": "Jacksonville-Kingsland-Palatka, FL-GA",
+      "fips": [
+        "12003",
+        "12019",
+        "12031",
+        "12089",
+        "12107",
+        "12109",
+        "13039"
+      ]
+    },
+    {
+      "id": "msa-27260",
+      "type": "msa",
+      "code": "27260",
+      "name": "Jacksonville, FL",
+      "fips": [
+        "12003",
+        "12019",
+        "12031",
+        "12089",
+        "12109"
+      ]
+    },
+    {
+      "id": "msa-27340",
+      "type": "msa",
+      "code": "27340",
+      "name": "Jacksonville, NC",
+      "fips": [
+        "37133"
+      ]
+    },
+    {
+      "id": "msa-27500",
+      "type": "msa",
+      "code": "27500",
+      "name": "Janesville-Beloit, WI",
+      "fips": [
+        "55105"
+      ]
+    },
+    {
+      "id": "msa-27620",
+      "type": "msa",
+      "code": "27620",
+      "name": "Jefferson City, MO",
+      "fips": [
+        "29027",
+        "29051",
+        "29135",
+        "29151"
+      ]
+    },
+    {
+      "id": "csa-304",
+      "type": "csa",
+      "code": "304",
+      "name": "Johnson City-Kingsport-Bristol, TN-VA",
+      "fips": [
+        "47019",
+        "47059",
+        "47073",
+        "47163",
+        "47171",
+        "47179",
+        "51169",
+        "51191",
+        "51520"
+      ]
+    },
+    {
+      "id": "msa-27740",
+      "type": "msa",
+      "code": "27740",
+      "name": "Johnson City, TN",
+      "fips": [
+        "47019",
+        "47171",
+        "47179"
+      ]
+    },
+    {
+      "id": "csa-306",
+      "type": "csa",
+      "code": "306",
+      "name": "Johnstown-Somerset, PA",
+      "fips": [
+        "42021",
+        "42111"
+      ]
+    },
+    {
+      "id": "msa-27780",
+      "type": "msa",
+      "code": "27780",
+      "name": "Johnstown, PA",
+      "fips": [
+        "42021"
+      ]
+    },
+    {
+      "id": "csa-308",
+      "type": "csa",
+      "code": "308",
+      "name": "Jonesboro-Paragould, AR",
+      "fips": [
+        "05031",
+        "05055",
+        "05111"
+      ]
+    },
+    {
+      "id": "msa-27860",
+      "type": "msa",
+      "code": "27860",
+      "name": "Jonesboro, AR",
+      "fips": [
+        "05031",
+        "05111"
+      ]
+    },
+    {
+      "id": "csa-309",
+      "type": "csa",
+      "code": "309",
+      "name": "Joplin-Miami, MO-OK-KS",
+      "fips": [
+        "20021",
+        "29097",
+        "29145",
+        "40115"
+      ]
+    },
+    {
+      "id": "msa-27900",
+      "type": "msa",
+      "code": "27900",
+      "name": "Joplin, MO-KS",
+      "fips": [
+        "20021",
+        "29097",
+        "29145"
+      ]
+    },
+    {
+      "id": "msa-27980",
+      "type": "msa",
+      "code": "27980",
+      "name": "Kahului-Wailuku, HI",
+      "fips": [
+        "15901"
+      ]
+    },
+    {
+      "id": "csa-310",
+      "type": "csa",
+      "code": "310",
+      "name": "Kalamazoo-Battle Creek-Portage, MI",
+      "fips": [
+        "26025",
+        "26077",
+        "26149"
+      ]
+    },
+    {
+      "id": "msa-28020",
+      "type": "msa",
+      "code": "28020",
+      "name": "Kalamazoo-Portage, MI",
+      "fips": [
+        "26077"
+      ]
+    },
+    {
+      "id": "msa-28100",
+      "type": "msa",
+      "code": "28100",
+      "name": "Kankakee, IL",
+      "fips": [
+        "17091"
+      ]
+    },
+    {
+      "id": "csa-312",
+      "type": "csa",
+      "code": "312",
+      "name": "Kansas City-Overland Park-Kansas City, MO-KS",
+      "fips": [
+        "20005",
+        "20043",
+        "20045",
+        "20059",
+        "20091",
+        "20103",
+        "20107",
+        "20121",
+        "20209",
+        "29003",
+        "29013",
+        "29021",
+        "29025",
+        "29037",
+        "29047",
+        "29049",
+        "29063",
+        "29095",
+        "29101",
+        "29107",
+        "29165",
+        "29177"
+      ]
+    },
+    {
+      "id": "msa-28140",
+      "type": "msa",
+      "code": "28140",
+      "name": "Kansas City, MO-KS",
+      "fips": [
+        "20091",
+        "20103",
+        "20107",
+        "20121",
+        "20209",
+        "29013",
+        "29025",
+        "29037",
+        "29047",
+        "29049",
+        "29095",
+        "29107",
+        "29165",
+        "29177"
+      ]
+    },
+    {
+      "id": "csa-313",
+      "type": "csa",
+      "code": "313",
+      "name": "Keene-Brattleboro, NH-VT",
+      "fips": [
+        "33005",
+        "50025"
+      ]
+    },
+    {
+      "id": "csa-314",
+      "type": "csa",
+      "code": "314",
+      "name": "Kennewick-Richland-Walla Walla, WA",
+      "fips": [
+        "53005",
+        "53021",
+        "53071"
+      ]
+    },
+    {
+      "id": "msa-28420",
+      "type": "msa",
+      "code": "28420",
+      "name": "Kennewick-Richland, WA",
+      "fips": [
+        "53005",
+        "53021"
+      ]
+    },
+    {
+      "id": "msa-28450",
+      "type": "msa",
+      "code": "28450",
+      "name": "Kenosha, WI",
+      "fips": [
+        "55059"
+      ]
+    },
+    {
+      "id": "msa-28660",
+      "type": "msa",
+      "code": "28660",
+      "name": "Killeen-Temple, TX",
+      "fips": [
+        "48027",
+        "48099",
+        "48281"
+      ]
+    },
+    {
+      "id": "msa-28700",
+      "type": "msa",
+      "code": "28700",
+      "name": "Kingsport-Bristol, TN-VA",
+      "fips": [
+        "47073",
+        "47163",
+        "51169",
+        "51191",
+        "51520"
+      ]
+    },
+    {
+      "id": "msa-28740",
+      "type": "msa",
+      "code": "28740",
+      "name": "Kingston, NY",
+      "fips": [
+        "36111"
+      ]
+    },
+    {
+      "id": "msa-28880",
+      "type": "msa",
+      "code": "28880",
+      "name": "Kiryas Joel-Poughkeepsie-Newburgh, NY",
+      "fips": [
+        "36027",
+        "36071"
+      ]
+    },
+    {
+      "id": "csa-315",
+      "type": "csa",
+      "code": "315",
+      "name": "Knoxville-Morristown-Sevierville, TN",
+      "fips": [
+        "47001",
+        "47009",
+        "47013",
+        "47029",
+        "47057",
+        "47063",
+        "47089",
+        "47093",
+        "47105",
+        "47129",
+        "47145",
+        "47155",
+        "47173"
+      ]
+    },
+    {
+      "id": "msa-28940",
+      "type": "msa",
+      "code": "28940",
+      "name": "Knoxville, TN",
+      "fips": [
+        "47001",
+        "47009",
+        "47013",
+        "47057",
+        "47093",
+        "47105",
+        "47129",
+        "47145",
+        "47173"
+      ]
+    },
+    {
+      "id": "msa-29020",
+      "type": "msa",
+      "code": "29020",
+      "name": "Kokomo, IN",
+      "fips": [
+        "18067"
+      ]
+    },
+    {
+      "id": "csa-317",
+      "type": "csa",
+      "code": "317",
+      "name": "La Crosse-Onalaska-Sparta, WI-MN",
+      "fips": [
+        "27055",
+        "55063",
+        "55081",
+        "55123"
+      ]
+    },
+    {
+      "id": "msa-29100",
+      "type": "msa",
+      "code": "29100",
+      "name": "La Crosse-Onalaska, WI-MN",
+      "fips": [
+        "27055",
+        "55063",
+        "55123"
+      ]
+    },
+    {
+      "id": "csa-318",
+      "type": "csa",
+      "code": "318",
+      "name": "Lafayette-New Iberia-Opelousas, LA",
+      "fips": [
+        "22001",
+        "22045",
+        "22055",
+        "22097",
+        "22099",
+        "22113"
+      ]
+    },
+    {
+      "id": "csa-320",
+      "type": "csa",
+      "code": "320",
+      "name": "Lafayette-West Lafayette-Frankfort, IN",
+      "fips": [
+        "18007",
+        "18015",
+        "18023",
+        "18157",
+        "18171",
+        "18181"
+      ]
+    },
+    {
+      "id": "msa-29200",
+      "type": "msa",
+      "code": "29200",
+      "name": "Lafayette-West Lafayette, IN",
+      "fips": [
+        "18007",
+        "18015",
+        "18157",
+        "18171"
+      ]
+    },
+    {
+      "id": "msa-29180",
+      "type": "msa",
+      "code": "29180",
+      "name": "Lafayette, LA",
+      "fips": [
+        "22001",
+        "22055",
+        "22099",
+        "22113"
+      ]
+    },
+    {
+      "id": "csa-324",
+      "type": "csa",
+      "code": "324",
+      "name": "Lake Charles-DeRidder, LA",
+      "fips": [
+        "22011",
+        "22019",
+        "22023",
+        "22053"
+      ]
+    },
+    {
+      "id": "msa-29340",
+      "type": "msa",
+      "code": "29340",
+      "name": "Lake Charles, LA",
+      "fips": [
+        "22019",
+        "22023",
+        "22053"
+      ]
+    },
+    {
+      "id": "msa-29420",
+      "type": "msa",
+      "code": "29420",
+      "name": "Lake Havasu City-Kingman, AZ",
+      "fips": [
+        "04015"
+      ]
+    },
+    {
+      "id": "msa-29460",
+      "type": "msa",
+      "code": "29460",
+      "name": "Lakeland-Winter Haven, FL",
+      "fips": [
+        "12105"
+      ]
+    },
+    {
+      "id": "msa-29540",
+      "type": "msa",
+      "code": "29540",
+      "name": "Lancaster, PA",
+      "fips": [
+        "42071"
+      ]
+    },
+    {
+      "id": "csa-330",
+      "type": "csa",
+      "code": "330",
+      "name": "Lansing-East Lansing-Owosso, MI",
+      "fips": [
+        "26037",
+        "26045",
+        "26065",
+        "26155"
+      ]
+    },
+    {
+      "id": "msa-29620",
+      "type": "msa",
+      "code": "29620",
+      "name": "Lansing-East Lansing, MI",
+      "fips": [
+        "26037",
+        "26045",
+        "26065"
+      ]
+    },
+    {
+      "id": "msa-29700",
+      "type": "msa",
+      "code": "29700",
+      "name": "Laredo, TX",
+      "fips": [
+        "48479"
+      ]
+    },
+    {
+      "id": "msa-29740",
+      "type": "msa",
+      "code": "29740",
+      "name": "Las Cruces, NM",
+      "fips": [
+        "35013"
+      ]
+    },
+    {
+      "id": "msa-29820",
+      "type": "msa",
+      "code": "29820",
+      "name": "Las Vegas-Henderson-North Las Vegas, NV",
+      "fips": [
+        "32003"
+      ]
+    },
+    {
+      "id": "csa-332",
+      "type": "csa",
+      "code": "332",
+      "name": "Las Vegas-Henderson, NV",
+      "fips": [
+        "32003",
+        "32023"
+      ]
+    },
+    {
+      "id": "msa-29940",
+      "type": "msa",
+      "code": "29940",
+      "name": "Lawrence, KS",
+      "fips": [
+        "20045"
+      ]
+    },
+    {
+      "id": "csa-334",
+      "type": "csa",
+      "code": "334",
+      "name": "Lawton-Duncan, OK",
+      "fips": [
+        "40031",
+        "40033",
+        "40137"
+      ]
+    },
+    {
+      "id": "msa-30020",
+      "type": "msa",
+      "code": "30020",
+      "name": "Lawton, OK",
+      "fips": [
+        "40031",
+        "40033"
+      ]
+    },
+    {
+      "id": "msa-30140",
+      "type": "msa",
+      "code": "30140",
+      "name": "Lebanon, PA",
+      "fips": [
+        "42075"
+      ]
+    },
+    {
+      "id": "msa-30340",
+      "type": "msa",
+      "code": "30340",
+      "name": "Lewiston-Auburn, ME",
+      "fips": [
+        "23001"
+      ]
+    },
+    {
+      "id": "msa-30300",
+      "type": "msa",
+      "code": "30300",
+      "name": "Lewiston, ID-WA",
+      "fips": [
+        "16069",
+        "53003"
+      ]
+    },
+    {
+      "id": "msa-30500",
+      "type": "msa",
+      "code": "30500",
+      "name": "Lexington Park, MD",
+      "fips": [
+        "24009",
+        "24037"
+      ]
+    },
+    {
+      "id": "csa-336",
+      "type": "csa",
+      "code": "336",
+      "name": "Lexington-Fayette--Richmond--Frankfort, KY",
+      "fips": [
+        "21005",
+        "21011",
+        "21017",
+        "21049",
+        "21065",
+        "21067",
+        "21073",
+        "21113",
+        "21151",
+        "21165",
+        "21173",
+        "21203",
+        "21209",
+        "21239"
+      ]
+    },
+    {
+      "id": "msa-30460",
+      "type": "msa",
+      "code": "30460",
+      "name": "Lexington-Fayette, KY",
+      "fips": [
+        "21017",
+        "21049",
+        "21067",
+        "21113",
+        "21209",
+        "21239"
+      ]
+    },
+    {
+      "id": "csa-338",
+      "type": "csa",
+      "code": "338",
+      "name": "Lima-Van Wert-Celina, OH",
+      "fips": [
+        "39003",
+        "39011",
+        "39107",
+        "39161"
+      ]
+    },
+    {
+      "id": "msa-30620",
+      "type": "msa",
+      "code": "30620",
+      "name": "Lima, OH",
+      "fips": [
+        "39003"
+      ]
+    },
+    {
+      "id": "csa-339",
+      "type": "csa",
+      "code": "339",
+      "name": "Lincoln-Beatrice, NE",
+      "fips": [
+        "31067",
+        "31109",
+        "31159"
+      ]
+    },
+    {
+      "id": "msa-30700",
+      "type": "msa",
+      "code": "30700",
+      "name": "Lincoln, NE",
+      "fips": [
+        "31109",
+        "31159"
+      ]
+    },
+    {
+      "id": "msa-30780",
+      "type": "msa",
+      "code": "30780",
+      "name": "Little Rock-North Little Rock-Conway, AR",
+      "fips": [
+        "05045",
+        "05053",
+        "05085",
+        "05105",
+        "05119",
+        "05125"
+      ]
+    },
+    {
+      "id": "csa-340",
+      "type": "csa",
+      "code": "340",
+      "name": "Little Rock-North Little Rock, AR",
+      "fips": [
+        "05025",
+        "05045",
+        "05053",
+        "05069",
+        "05085",
+        "05105",
+        "05119",
+        "05125",
+        "05145"
+      ]
+    },
+    {
+      "id": "msa-30860",
+      "type": "msa",
+      "code": "30860",
+      "name": "Logan, UT-ID",
+      "fips": [
+        "16041",
+        "49005"
+      ]
+    },
+    {
+      "id": "msa-31020",
+      "type": "msa",
+      "code": "31020",
+      "name": "Longview-Kelso, WA",
+      "fips": [
+        "53015"
+      ]
+    },
+    {
+      "id": "msa-30980",
+      "type": "msa",
+      "code": "30980",
+      "name": "Longview, TX",
+      "fips": [
+        "48183",
+        "48203",
+        "48401",
+        "48459"
+      ]
+    },
+    {
+      "id": "msa-31080",
+      "type": "msa",
+      "code": "31080",
+      "name": "Los Angeles-Long Beach-Anaheim, CA",
+      "fips": [
+        "06037",
+        "06059"
+      ]
+    },
+    {
+      "id": "csa-348",
+      "type": "csa",
+      "code": "348",
+      "name": "Los Angeles-Long Beach, CA",
+      "fips": [
+        "06037",
+        "06059",
+        "06065",
+        "06071",
+        "06111"
+      ]
+    },
+    {
+      "id": "csa-350",
+      "type": "csa",
+      "code": "350",
+      "name": "Louisville/Jefferson County--Elizabethtown, KY-IN",
+      "fips": [
+        "18019",
+        "18043",
+        "18061",
+        "18175",
+        "21029",
+        "21093",
+        "21103",
+        "21111",
+        "21123",
+        "21163",
+        "21179",
+        "21185",
+        "21211",
+        "21215"
+      ]
+    },
+    {
+      "id": "msa-31140",
+      "type": "msa",
+      "code": "31140",
+      "name": "Louisville/Jefferson County, KY-IN",
+      "fips": [
+        "18019",
+        "18043",
+        "18061",
+        "18175",
+        "21029",
+        "21103",
+        "21111",
+        "21163",
+        "21179",
+        "21185",
+        "21211",
+        "21215"
+      ]
+    },
+    {
+      "id": "csa-352",
+      "type": "csa",
+      "code": "352",
+      "name": "Lubbock-Plainview, TX",
+      "fips": [
+        "48079",
+        "48107",
+        "48153",
+        "48169",
+        "48189",
+        "48219",
+        "48303",
+        "48305"
+      ]
+    },
+    {
+      "id": "msa-31180",
+      "type": "msa",
+      "code": "31180",
+      "name": "Lubbock, TX",
+      "fips": [
+        "48079",
+        "48107",
+        "48169",
+        "48219",
+        "48303",
+        "48305"
+      ]
+    },
+    {
+      "id": "msa-31340",
+      "type": "msa",
+      "code": "31340",
+      "name": "Lynchburg, VA",
+      "fips": [
+        "51009",
+        "51011",
+        "51019",
+        "51031",
+        "51680"
+      ]
+    },
+    {
+      "id": "csa-356",
+      "type": "csa",
+      "code": "356",
+      "name": "Macon-Bibb County--Warner Robins, GA",
+      "fips": [
+        "13021",
+        "13079",
+        "13153",
+        "13169",
+        "13207",
+        "13225",
+        "13289"
+      ]
+    },
+    {
+      "id": "msa-31420",
+      "type": "msa",
+      "code": "31420",
+      "name": "Macon-Bibb County, GA",
+      "fips": [
+        "13021",
+        "13079",
+        "13169",
+        "13207",
+        "13289"
+      ]
+    },
+    {
+      "id": "csa-357",
+      "type": "csa",
+      "code": "357",
+      "name": "Madison-Janesville-Beloit, WI",
+      "fips": [
+        "55021",
+        "55025",
+        "55045",
+        "55049",
+        "55105",
+        "55111"
+      ]
+    },
+    {
+      "id": "msa-31540",
+      "type": "msa",
+      "code": "31540",
+      "name": "Madison, WI",
+      "fips": [
+        "55021",
+        "55025",
+        "55045",
+        "55049"
+      ]
+    },
+    {
+      "id": "msa-31700",
+      "type": "msa",
+      "code": "31700",
+      "name": "Manchester-Nashua, NH",
+      "fips": [
+        "33011"
+      ]
+    },
+    {
+      "id": "msa-31740",
+      "type": "msa",
+      "code": "31740",
+      "name": "Manhattan, KS",
+      "fips": [
+        "20061",
+        "20149",
+        "20161"
+      ]
+    },
+    {
+      "id": "csa-359",
+      "type": "csa",
+      "code": "359",
+      "name": "Mankato-New Ulm, MN",
+      "fips": [
+        "27013",
+        "27015",
+        "27103"
+      ]
+    },
+    {
+      "id": "msa-31860",
+      "type": "msa",
+      "code": "31860",
+      "name": "Mankato, MN",
+      "fips": [
+        "27013",
+        "27103"
+      ]
+    },
+    {
+      "id": "csa-360",
+      "type": "csa",
+      "code": "360",
+      "name": "Mansfield-Ashland-Bucyrus, OH",
+      "fips": [
+        "39005",
+        "39033",
+        "39139"
+      ]
+    },
+    {
+      "id": "msa-31900",
+      "type": "msa",
+      "code": "31900",
+      "name": "Mansfield, OH",
+      "fips": [
+        "39139"
+      ]
+    },
+    {
+      "id": "csa-361",
+      "type": "csa",
+      "code": "361",
+      "name": "Marinette-Iron Mountain, WI-MI",
+      "fips": [
+        "26043",
+        "26109",
+        "55037",
+        "55075"
+      ]
+    },
+    {
+      "id": "csa-364",
+      "type": "csa",
+      "code": "364",
+      "name": "Mayagüez-Aguadilla, PR",
+      "fips": [
+        "72003",
+        "72005",
+        "72011",
+        "72023",
+        "72067",
+        "72071",
+        "72079",
+        "72097",
+        "72099",
+        "72117",
+        "72121",
+        "72125",
+        "72131"
+      ]
+    },
+    {
+      "id": "msa-32420",
+      "type": "msa",
+      "code": "32420",
+      "name": "Mayagüez, PR",
+      "fips": [
+        "72023",
+        "72067",
+        "72079",
+        "72097",
+        "72121",
+        "72125"
+      ]
+    },
+    {
+      "id": "msa-32580",
+      "type": "msa",
+      "code": "32580",
+      "name": "McAllen-Edinburg-Mission, TX",
+      "fips": [
+        "48215"
+      ]
+    },
+    {
+      "id": "csa-365",
+      "type": "csa",
+      "code": "365",
+      "name": "McAllen-Edinburg, TX",
+      "fips": [
+        "48215",
+        "48427"
+      ]
+    },
+    {
+      "id": "csa-366",
+      "type": "csa",
+      "code": "366",
+      "name": "Medford-Grants Pass, OR",
+      "fips": [
+        "41029",
+        "41033"
+      ]
+    },
+    {
+      "id": "msa-32780",
+      "type": "msa",
+      "code": "32780",
+      "name": "Medford, OR",
+      "fips": [
+        "41029"
+      ]
+    },
+    {
+      "id": "csa-368",
+      "type": "csa",
+      "code": "368",
+      "name": "Memphis-Clarksdale-Forrest City, TN-MS-AR",
+      "fips": [
+        "05035",
+        "05123",
+        "28009",
+        "28027",
+        "28033",
+        "28093",
+        "28137",
+        "28143",
+        "47047",
+        "47157",
+        "47167"
+      ]
+    },
+    {
+      "id": "msa-32820",
+      "type": "msa",
+      "code": "32820",
+      "name": "Memphis, TN-MS-AR",
+      "fips": [
+        "05035",
+        "28009",
+        "28033",
+        "28093",
+        "28137",
+        "28143",
+        "47047",
+        "47157",
+        "47167"
+      ]
+    },
+    {
+      "id": "msa-32900",
+      "type": "msa",
+      "code": "32900",
+      "name": "Merced, CA",
+      "fips": [
+        "06047"
+      ]
+    },
+    {
+      "id": "msa-33100",
+      "type": "msa",
+      "code": "33100",
+      "name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+      "fips": [
+        "12011",
+        "12086",
+        "12099"
+      ]
+    },
+    {
+      "id": "csa-370",
+      "type": "csa",
+      "code": "370",
+      "name": "Miami-Port St. Lucie-Fort Lauderdale, FL",
+      "fips": [
+        "12011",
+        "12061",
+        "12085",
+        "12086",
+        "12087",
+        "12093",
+        "12099",
+        "12111"
+      ]
+    },
+    {
+      "id": "msa-33140",
+      "type": "msa",
+      "code": "33140",
+      "name": "Michigan City-La Porte, IN",
+      "fips": [
+        "18091"
+      ]
+    },
+    {
+      "id": "csa-371",
+      "type": "csa",
+      "code": "371",
+      "name": "Middlesborough-Corbin, KY",
+      "fips": [
+        "21013",
+        "21051",
+        "21121",
+        "21125",
+        "21235"
+      ]
+    },
+    {
+      "id": "csa-372",
+      "type": "csa",
+      "code": "372",
+      "name": "Midland-Odessa-Andrews, TX",
+      "fips": [
+        "48003",
+        "48135",
+        "48317",
+        "48329"
+      ]
+    },
+    {
+      "id": "msa-33220",
+      "type": "msa",
+      "code": "33220",
+      "name": "Midland, MI",
+      "fips": [
+        "26111"
+      ]
+    },
+    {
+      "id": "msa-33260",
+      "type": "msa",
+      "code": "33260",
+      "name": "Midland, TX",
+      "fips": [
+        "48317",
+        "48329"
+      ]
+    },
+    {
+      "id": "csa-376",
+      "type": "csa",
+      "code": "376",
+      "name": "Milwaukee-Racine-Waukesha, WI",
+      "fips": [
+        "55027",
+        "55055",
+        "55079",
+        "55089",
+        "55101",
+        "55127",
+        "55131",
+        "55133"
+      ]
+    },
+    {
+      "id": "msa-33340",
+      "type": "msa",
+      "code": "33340",
+      "name": "Milwaukee-Waukesha, WI",
+      "fips": [
+        "55079",
+        "55089",
+        "55131",
+        "55133"
+      ]
+    },
+    {
+      "id": "msa-33460",
+      "type": "msa",
+      "code": "33460",
+      "name": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "fips": [
+        "27003",
+        "27019",
+        "27025",
+        "27037",
+        "27053",
+        "27059",
+        "27079",
+        "27095",
+        "27123",
+        "27139",
+        "27141",
+        "27163",
+        "27171",
+        "55093",
+        "55109"
+      ]
+    },
+    {
+      "id": "csa-378",
+      "type": "csa",
+      "code": "378",
+      "name": "Minneapolis-St. Paul, MN-WI",
+      "fips": [
+        "27003",
+        "27009",
+        "27019",
+        "27025",
+        "27037",
+        "27049",
+        "27053",
+        "27059",
+        "27079",
+        "27085",
+        "27095",
+        "27123",
+        "27131",
+        "27139",
+        "27141",
+        "27145",
+        "27147",
+        "27163",
+        "27171",
+        "55093",
+        "55109"
+      ]
+    },
+    {
+      "id": "msa-33500",
+      "type": "msa",
+      "code": "33500",
+      "name": "Minot, ND",
+      "fips": [
+        "38049",
+        "38075",
+        "38101"
+      ]
+    },
+    {
+      "id": "msa-33540",
+      "type": "msa",
+      "code": "33540",
+      "name": "Missoula, MT",
+      "fips": [
+        "30061",
+        "30063"
+      ]
+    },
+    {
+      "id": "csa-380",
+      "type": "csa",
+      "code": "380",
+      "name": "Mobile-Daphne-Fairhope, AL",
+      "fips": [
+        "01003",
+        "01097"
+      ]
+    },
+    {
+      "id": "msa-33660",
+      "type": "msa",
+      "code": "33660",
+      "name": "Mobile, AL",
+      "fips": [
+        "01097"
+      ]
+    },
+    {
+      "id": "msa-33700",
+      "type": "msa",
+      "code": "33700",
+      "name": "Modesto, CA",
+      "fips": [
+        "06099"
+      ]
+    },
+    {
+      "id": "csa-384",
+      "type": "csa",
+      "code": "384",
+      "name": "Monroe-Ruston, LA",
+      "fips": [
+        "22061",
+        "22067",
+        "22073",
+        "22083",
+        "22111"
+      ]
+    },
+    {
+      "id": "msa-33740",
+      "type": "msa",
+      "code": "33740",
+      "name": "Monroe, LA",
+      "fips": [
+        "22067",
+        "22073",
+        "22083",
+        "22111"
+      ]
+    },
+    {
+      "id": "msa-33780",
+      "type": "msa",
+      "code": "33780",
+      "name": "Monroe, MI",
+      "fips": [
+        "26115"
+      ]
+    },
+    {
+      "id": "csa-388",
+      "type": "csa",
+      "code": "388",
+      "name": "Montgomery-Selma, AL",
+      "fips": [
+        "01001",
+        "01047",
+        "01051",
+        "01085",
+        "01101"
+      ]
+    },
+    {
+      "id": "msa-33860",
+      "type": "msa",
+      "code": "33860",
+      "name": "Montgomery, AL",
+      "fips": [
+        "01001",
+        "01051",
+        "01085",
+        "01101"
+      ]
+    },
+    {
+      "id": "msa-34060",
+      "type": "msa",
+      "code": "34060",
+      "name": "Morgantown, WV",
+      "fips": [
+        "54061",
+        "54077"
+      ]
+    },
+    {
+      "id": "msa-34100",
+      "type": "msa",
+      "code": "34100",
+      "name": "Morristown, TN",
+      "fips": [
+        "47063",
+        "47089"
+      ]
+    },
+    {
+      "id": "csa-393",
+      "type": "csa",
+      "code": "393",
+      "name": "Moses Lake-Othello, WA",
+      "fips": [
+        "53001",
+        "53025"
+      ]
+    },
+    {
+      "id": "csa-394",
+      "type": "csa",
+      "code": "394",
+      "name": "Mount Pleasant-Alma, MI",
+      "fips": [
+        "26057",
+        "26073"
+      ]
+    },
+    {
+      "id": "msa-34580",
+      "type": "msa",
+      "code": "34580",
+      "name": "Mount Vernon-Anacortes, WA",
+      "fips": [
+        "53057"
+      ]
+    },
+    {
+      "id": "msa-34620",
+      "type": "msa",
+      "code": "34620",
+      "name": "Muncie, IN",
+      "fips": [
+        "18035"
+      ]
+    },
+    {
+      "id": "msa-34740",
+      "type": "msa",
+      "code": "34740",
+      "name": "Muskegon-Norton Shores, MI",
+      "fips": [
+        "26121"
+      ]
+    },
+    {
+      "id": "msa-34820",
+      "type": "msa",
+      "code": "34820",
+      "name": "Myrtle Beach-Conway-North Myrtle Beach, SC",
+      "fips": [
+        "45051"
+      ]
+    },
+    {
+      "id": "csa-396",
+      "type": "csa",
+      "code": "396",
+      "name": "Myrtle Beach-Conway, SC",
+      "fips": [
+        "45043",
+        "45051"
+      ]
+    },
+    {
+      "id": "msa-34900",
+      "type": "msa",
+      "code": "34900",
+      "name": "Napa, CA",
+      "fips": [
+        "06055"
+      ]
+    },
+    {
+      "id": "msa-34940",
+      "type": "msa",
+      "code": "34940",
+      "name": "Naples-Marco Island, FL",
+      "fips": [
+        "12021"
+      ]
+    },
+    {
+      "id": "msa-34980",
+      "type": "msa",
+      "code": "34980",
+      "name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+      "fips": [
+        "47015",
+        "47021",
+        "47037",
+        "47043",
+        "47081",
+        "47111",
+        "47119",
+        "47147",
+        "47149",
+        "47159",
+        "47165",
+        "47169",
+        "47187",
+        "47189"
+      ]
+    },
+    {
+      "id": "csa-400",
+      "type": "csa",
+      "code": "400",
+      "name": "Nashville-Davidson--Murfreesboro, TN",
+      "fips": [
+        "47003",
+        "47015",
+        "47021",
+        "47031",
+        "47037",
+        "47043",
+        "47051",
+        "47081",
+        "47099",
+        "47111",
+        "47117",
+        "47119",
+        "47127",
+        "47147",
+        "47149",
+        "47159",
+        "47165",
+        "47169",
+        "47187",
+        "47189"
+      ]
+    },
+    {
+      "id": "csa-404",
+      "type": "csa",
+      "code": "404",
+      "name": "New Bern-Morehead City, NC",
+      "fips": [
+        "37031",
+        "37049",
+        "37103",
+        "37137"
+      ]
+    },
+    {
+      "id": "csa-405",
+      "type": "csa",
+      "code": "405",
+      "name": "New Haven-Hartford-Waterbury, CT",
+      "fips": [
+        "09003",
+        "09005",
+        "09007",
+        "09009",
+        "09011",
+        "09013",
+        "09015",
+        "09110",
+        "09130",
+        "09140",
+        "09150",
+        "09160",
+        "09170",
+        "09180"
+      ]
+    },
+    {
+      "id": "msa-35300",
+      "type": "msa",
+      "code": "35300",
+      "name": "New Haven, CT",
+      "fips": [
+        "09009",
+        "09170"
+      ]
+    },
+    {
+      "id": "csa-406",
+      "type": "csa",
+      "code": "406",
+      "name": "New Orleans-Metairie-Slidell, LA-MS",
+      "fips": [
+        "22051",
+        "22071",
+        "22075",
+        "22087",
+        "22089",
+        "22093",
+        "22095",
+        "22103",
+        "22117",
+        "28109"
+      ]
+    },
+    {
+      "id": "msa-35380",
+      "type": "msa",
+      "code": "35380",
+      "name": "New Orleans-Metairie, LA",
+      "fips": [
+        "22051",
+        "22071",
+        "22075",
+        "22087",
+        "22089",
+        "22093",
+        "22095"
+      ]
+    },
+    {
+      "id": "msa-35620",
+      "type": "msa",
+      "code": "35620",
+      "name": "New York-Newark-Jersey City, NY-NJ",
+      "fips": [
+        "34003",
+        "34013",
+        "34017",
+        "34019",
+        "34023",
+        "34025",
+        "34027",
+        "34029",
+        "34031",
+        "34035",
+        "34037",
+        "34039",
+        "36005",
+        "36047",
+        "36059",
+        "36061",
+        "36079",
+        "36081",
+        "36085",
+        "36087",
+        "36103",
+        "36119"
+      ]
+    },
+    {
+      "id": "csa-408",
+      "type": "csa",
+      "code": "408",
+      "name": "New York-Newark, NY-NJ-CT-PA",
+      "fips": [
+        "09001",
+        "09120",
+        "09190",
+        "34003",
+        "34013",
+        "34017",
+        "34019",
+        "34021",
+        "34023",
+        "34025",
+        "34027",
+        "34029",
+        "34031",
+        "34035",
+        "34037",
+        "34039",
+        "36005",
+        "36027",
+        "36047",
+        "36059",
+        "36061",
+        "36071",
+        "36079",
+        "36081",
+        "36085",
+        "36087",
+        "36103",
+        "36105",
+        "36111",
+        "36119",
+        "42103"
+      ]
+    },
+    {
+      "id": "msa-35660",
+      "type": "msa",
+      "code": "35660",
+      "name": "Niles, MI",
+      "fips": [
+        "26021"
+      ]
+    },
+    {
+      "id": "msa-35840",
+      "type": "msa",
+      "code": "35840",
+      "name": "North Port-Bradenton-Sarasota, FL",
+      "fips": [
+        "12081",
+        "12115"
+      ]
+    },
+    {
+      "id": "csa-412",
+      "type": "csa",
+      "code": "412",
+      "name": "North Port-Bradenton, FL",
+      "fips": [
+        "12015",
+        "12027",
+        "12081",
+        "12115"
+      ]
+    },
+    {
+      "id": "msa-35980",
+      "type": "msa",
+      "code": "35980",
+      "name": "Norwich-New London-Willimantic, CT",
+      "fips": [
+        "09011",
+        "09180"
+      ]
+    },
+    {
+      "id": "msa-36100",
+      "type": "msa",
+      "code": "36100",
+      "name": "Ocala, FL",
+      "fips": [
+        "12083"
+      ]
+    },
+    {
+      "id": "msa-36220",
+      "type": "msa",
+      "code": "36220",
+      "name": "Odessa, TX",
+      "fips": [
+        "48135"
+      ]
+    },
+    {
+      "id": "msa-36260",
+      "type": "msa",
+      "code": "36260",
+      "name": "Ogden, UT",
+      "fips": [
+        "49011",
+        "49029",
+        "49057"
+      ]
+    },
+    {
+      "id": "csa-416",
+      "type": "csa",
+      "code": "416",
+      "name": "Oklahoma City-Shawnee, OK",
+      "fips": [
+        "40017",
+        "40027",
+        "40051",
+        "40081",
+        "40083",
+        "40087",
+        "40109",
+        "40125"
+      ]
+    },
+    {
+      "id": "msa-36420",
+      "type": "msa",
+      "code": "36420",
+      "name": "Oklahoma City, OK",
+      "fips": [
+        "40017",
+        "40027",
+        "40051",
+        "40081",
+        "40083",
+        "40087",
+        "40109"
+      ]
+    },
+    {
+      "id": "msa-36500",
+      "type": "msa",
+      "code": "36500",
+      "name": "Olympia-Lacey-Tumwater, WA",
+      "fips": [
+        "53067"
+      ]
+    },
+    {
+      "id": "csa-420",
+      "type": "csa",
+      "code": "420",
+      "name": "Omaha-Fremont, NE-IA",
+      "fips": [
+        "19085",
+        "19129",
+        "19155",
+        "31025",
+        "31053",
+        "31055",
+        "31153",
+        "31155",
+        "31177"
+      ]
+    },
+    {
+      "id": "msa-36540",
+      "type": "msa",
+      "code": "36540",
+      "name": "Omaha, NE-IA",
+      "fips": [
+        "19085",
+        "19129",
+        "19155",
+        "31025",
+        "31055",
+        "31153",
+        "31155",
+        "31177"
+      ]
+    },
+    {
+      "id": "msa-36740",
+      "type": "msa",
+      "code": "36740",
+      "name": "Orlando-Kissimmee-Sanford, FL",
+      "fips": [
+        "12069",
+        "12095",
+        "12097",
+        "12117"
+      ]
+    },
+    {
+      "id": "csa-422",
+      "type": "csa",
+      "code": "422",
+      "name": "Orlando-Lakeland-Deltona, FL",
+      "fips": [
+        "12035",
+        "12069",
+        "12095",
+        "12097",
+        "12105",
+        "12117",
+        "12119",
+        "12127"
+      ]
+    },
+    {
+      "id": "msa-36780",
+      "type": "msa",
+      "code": "36780",
+      "name": "Oshkosh-Neenah, WI",
+      "fips": [
+        "55139"
+      ]
+    },
+    {
+      "id": "msa-36980",
+      "type": "msa",
+      "code": "36980",
+      "name": "Owensboro, KY",
+      "fips": [
+        "21059",
+        "21149"
+      ]
+    },
+    {
+      "id": "msa-37100",
+      "type": "msa",
+      "code": "37100",
+      "name": "Oxnard-Thousand Oaks-Ventura, CA",
+      "fips": [
+        "06111"
+      ]
+    },
+    {
+      "id": "csa-424",
+      "type": "csa",
+      "code": "424",
+      "name": "Paducah-Mayfield, KY-IL",
+      "fips": [
+        "17127",
+        "21007",
+        "21039",
+        "21083",
+        "21139",
+        "21145"
+      ]
+    },
+    {
+      "id": "msa-37140",
+      "type": "msa",
+      "code": "37140",
+      "name": "Paducah, KY-IL",
+      "fips": [
+        "17127",
+        "21007",
+        "21039",
+        "21139",
+        "21145"
+      ]
+    },
+    {
+      "id": "msa-37340",
+      "type": "msa",
+      "code": "37340",
+      "name": "Palm Bay-Melbourne-Titusville, FL",
+      "fips": [
+        "12009"
+      ]
+    },
+    {
+      "id": "msa-37460",
+      "type": "msa",
+      "code": "37460",
+      "name": "Panama City-Panama City Beach, FL",
+      "fips": [
+        "12005",
+        "12133"
+      ]
+    },
+    {
+      "id": "csa-425",
+      "type": "csa",
+      "code": "425",
+      "name": "Parkersburg-Marietta-Vienna, WV-OH",
+      "fips": [
+        "39167",
+        "54105",
+        "54107"
+      ]
+    },
+    {
+      "id": "msa-37620",
+      "type": "msa",
+      "code": "37620",
+      "name": "Parkersburg-Vienna, WV",
+      "fips": [
+        "54105",
+        "54107"
+      ]
+    },
+    {
+      "id": "msa-37860",
+      "type": "msa",
+      "code": "37860",
+      "name": "Pensacola-Ferry Pass-Brent, FL",
+      "fips": [
+        "12033",
+        "12113"
+      ]
+    },
+    {
+      "id": "csa-427",
+      "type": "csa",
+      "code": "427",
+      "name": "Peoria-Canton, IL",
+      "fips": [
+        "17057",
+        "17123",
+        "17143",
+        "17175",
+        "17179",
+        "17203"
+      ]
+    },
+    {
+      "id": "msa-37900",
+      "type": "msa",
+      "code": "37900",
+      "name": "Peoria, IL",
+      "fips": [
+        "17123",
+        "17143",
+        "17175",
+        "17179",
+        "17203"
+      ]
+    },
+    {
+      "id": "msa-37980",
+      "type": "msa",
+      "code": "37980",
+      "name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+      "fips": [
+        "10003",
+        "24015",
+        "34005",
+        "34007",
+        "34015",
+        "34033",
+        "42017",
+        "42029",
+        "42045",
+        "42091",
+        "42101"
+      ]
+    },
+    {
+      "id": "csa-428",
+      "type": "csa",
+      "code": "428",
+      "name": "Philadelphia-Reading-Camden, PA-NJ-DE-MD",
+      "fips": [
+        "10001",
+        "10003",
+        "24015",
+        "34001",
+        "34005",
+        "34007",
+        "34009",
+        "34011",
+        "34015",
+        "34033",
+        "42011",
+        "42017",
+        "42029",
+        "42045",
+        "42091",
+        "42101"
+      ]
+    },
+    {
+      "id": "msa-38060",
+      "type": "msa",
+      "code": "38060",
+      "name": "Phoenix-Mesa-Chandler, AZ",
+      "fips": [
+        "04013",
+        "04021"
+      ]
+    },
+    {
+      "id": "csa-429",
+      "type": "csa",
+      "code": "429",
+      "name": "Phoenix-Mesa, AZ",
+      "fips": [
+        "04007",
+        "04013",
+        "04021"
+      ]
+    },
+    {
+      "id": "msa-38240",
+      "type": "msa",
+      "code": "38240",
+      "name": "Pinehurst-Southern Pines, NC",
+      "fips": [
+        "37125"
+      ]
+    },
+    {
+      "id": "csa-430",
+      "type": "csa",
+      "code": "430",
+      "name": "Pittsburgh-Weirton-Steubenville, PA-OH-WV",
+      "fips": [
+        "39081",
+        "42003",
+        "42005",
+        "42007",
+        "42019",
+        "42051",
+        "42063",
+        "42073",
+        "42085",
+        "42125",
+        "42129",
+        "54009",
+        "54029"
+      ]
+    },
+    {
+      "id": "msa-38300",
+      "type": "msa",
+      "code": "38300",
+      "name": "Pittsburgh, PA",
+      "fips": [
+        "42003",
+        "42005",
+        "42007",
+        "42019",
+        "42051",
+        "42073",
+        "42125",
+        "42129"
+      ]
+    },
+    {
+      "id": "msa-38340",
+      "type": "msa",
+      "code": "38340",
+      "name": "Pittsfield, MA",
+      "fips": [
+        "25003"
+      ]
+    },
+    {
+      "id": "msa-38540",
+      "type": "msa",
+      "code": "38540",
+      "name": "Pocatello, ID",
+      "fips": [
+        "16005"
+      ]
+    },
+    {
+      "id": "csa-434",
+      "type": "csa",
+      "code": "434",
+      "name": "Ponce-Coamo, PR",
+      "fips": [
+        "72043",
+        "72059",
+        "72075",
+        "72111",
+        "72113",
+        "72133",
+        "72149",
+        "72153"
+      ]
+    },
+    {
+      "id": "msa-38660",
+      "type": "msa",
+      "code": "38660",
+      "name": "Ponce, PR",
+      "fips": [
+        "72059",
+        "72075",
+        "72111",
+        "72113",
+        "72149",
+        "72153"
+      ]
+    },
+    {
+      "id": "msa-38940",
+      "type": "msa",
+      "code": "38940",
+      "name": "Port St. Lucie, FL",
+      "fips": [
+        "12085",
+        "12111"
+      ]
+    },
+    {
+      "id": "csa-438",
+      "type": "csa",
+      "code": "438",
+      "name": "Portland-Lewiston-South Portland, ME",
+      "fips": [
+        "23001",
+        "23005",
+        "23023",
+        "23031"
+      ]
+    },
+    {
+      "id": "msa-38860",
+      "type": "msa",
+      "code": "38860",
+      "name": "Portland-South Portland, ME",
+      "fips": [
+        "23005",
+        "23023",
+        "23031"
+      ]
+    },
+    {
+      "id": "msa-38900",
+      "type": "msa",
+      "code": "38900",
+      "name": "Portland-Vancouver-Hillsboro, OR-WA",
+      "fips": [
+        "41005",
+        "41009",
+        "41051",
+        "41067",
+        "41071",
+        "53011",
+        "53059"
+      ]
+    },
+    {
+      "id": "csa-440",
+      "type": "csa",
+      "code": "440",
+      "name": "Portland-Vancouver-Salem, OR-WA",
+      "fips": [
+        "41003",
+        "41005",
+        "41009",
+        "41043",
+        "41047",
+        "41051",
+        "41053",
+        "41067",
+        "41071",
+        "53011",
+        "53015",
+        "53059"
+      ]
+    },
+    {
+      "id": "msa-39150",
+      "type": "msa",
+      "code": "39150",
+      "name": "Prescott Valley-Prescott, AZ",
+      "fips": [
+        "04025"
+      ]
+    },
+    {
+      "id": "msa-39300",
+      "type": "msa",
+      "code": "39300",
+      "name": "Providence-Warwick, RI-MA",
+      "fips": [
+        "25005",
+        "44001",
+        "44003",
+        "44005",
+        "44007",
+        "44009"
+      ]
+    },
+    {
+      "id": "msa-39340",
+      "type": "msa",
+      "code": "39340",
+      "name": "Provo-Orem-Lehi, UT",
+      "fips": [
+        "49023",
+        "49049"
+      ]
+    },
+    {
+      "id": "csa-444",
+      "type": "csa",
+      "code": "444",
+      "name": "Pueblo-Cañon City, CO",
+      "fips": [
+        "08043",
+        "08101"
+      ]
+    },
+    {
+      "id": "msa-39380",
+      "type": "msa",
+      "code": "39380",
+      "name": "Pueblo, CO",
+      "fips": [
+        "08101"
+      ]
+    },
+    {
+      "id": "csa-446",
+      "type": "csa",
+      "code": "446",
+      "name": "Pullman-Moscow, WA-ID",
+      "fips": [
+        "16057",
+        "53075"
+      ]
+    },
+    {
+      "id": "msa-39460",
+      "type": "msa",
+      "code": "39460",
+      "name": "Punta Gorda, FL",
+      "fips": [
+        "12015"
+      ]
+    },
+    {
+      "id": "csa-448",
+      "type": "csa",
+      "code": "448",
+      "name": "Quincy-Hannibal, IL-MO",
+      "fips": [
+        "17001",
+        "29111",
+        "29127",
+        "29173"
+      ]
+    },
+    {
+      "id": "msa-39540",
+      "type": "msa",
+      "code": "39540",
+      "name": "Racine-Mount Pleasant, WI",
+      "fips": [
+        "55101"
+      ]
+    },
+    {
+      "id": "msa-39580",
+      "type": "msa",
+      "code": "39580",
+      "name": "Raleigh-Cary, NC",
+      "fips": [
+        "37069",
+        "37101",
+        "37183"
+      ]
+    },
+    {
+      "id": "csa-450",
+      "type": "csa",
+      "code": "450",
+      "name": "Raleigh-Durham-Cary, NC",
+      "fips": [
+        "37037",
+        "37063",
+        "37069",
+        "37085",
+        "37101",
+        "37105",
+        "37135",
+        "37145",
+        "37181",
+        "37183"
+      ]
+    },
+    {
+      "id": "csa-452",
+      "type": "csa",
+      "code": "452",
+      "name": "Rapid City-Spearfish, SD",
+      "fips": [
+        "46033",
+        "46081",
+        "46093",
+        "46103"
+      ]
+    },
+    {
+      "id": "msa-39660",
+      "type": "msa",
+      "code": "39660",
+      "name": "Rapid City, SD",
+      "fips": [
+        "46033",
+        "46093",
+        "46103"
+      ]
+    },
+    {
+      "id": "msa-39740",
+      "type": "msa",
+      "code": "39740",
+      "name": "Reading, PA",
+      "fips": [
+        "42011"
+      ]
+    },
+    {
+      "id": "csa-454",
+      "type": "csa",
+      "code": "454",
+      "name": "Redding-Red Bluff, CA",
+      "fips": [
+        "06089",
+        "06103"
+      ]
+    },
+    {
+      "id": "msa-39820",
+      "type": "msa",
+      "code": "39820",
+      "name": "Redding, CA",
+      "fips": [
+        "06089"
+      ]
+    },
+    {
+      "id": "csa-456",
+      "type": "csa",
+      "code": "456",
+      "name": "Reno-Carson City-Gardnerville Ranchos, NV-CA",
+      "fips": [
+        "06003",
+        "32001",
+        "32005",
+        "32019",
+        "32029",
+        "32031",
+        "32510"
+      ]
+    },
+    {
+      "id": "msa-39900",
+      "type": "msa",
+      "code": "39900",
+      "name": "Reno, NV",
+      "fips": [
+        "32019",
+        "32029",
+        "32031"
+      ]
+    },
+    {
+      "id": "csa-458",
+      "type": "csa",
+      "code": "458",
+      "name": "Richmond-Connersville, IN",
+      "fips": [
+        "18041",
+        "18177"
+      ]
+    },
+    {
+      "id": "msa-40060",
+      "type": "msa",
+      "code": "40060",
+      "name": "Richmond, VA",
+      "fips": [
+        "51007",
+        "51036",
+        "51041",
+        "51053",
+        "51075",
+        "51085",
+        "51087",
+        "51097",
+        "51101",
+        "51127",
+        "51145",
+        "51149",
+        "51183",
+        "51570",
+        "51670",
+        "51730",
+        "51760"
+      ]
+    },
+    {
+      "id": "msa-40140",
+      "type": "msa",
+      "code": "40140",
+      "name": "Riverside-San Bernardino-Ontario, CA",
+      "fips": [
+        "06065",
+        "06071"
+      ]
+    },
+    {
+      "id": "msa-40220",
+      "type": "msa",
+      "code": "40220",
+      "name": "Roanoke, VA",
+      "fips": [
+        "51023",
+        "51045",
+        "51067",
+        "51161",
+        "51770",
+        "51775"
+      ]
+    },
+    {
+      "id": "csa-462",
+      "type": "csa",
+      "code": "462",
+      "name": "Rochester-Austin-Winona, MN",
+      "fips": [
+        "27039",
+        "27045",
+        "27099",
+        "27109",
+        "27157",
+        "27169"
+      ]
+    },
+    {
+      "id": "csa-464",
+      "type": "csa",
+      "code": "464",
+      "name": "Rochester-Batavia-Seneca Falls, NY",
+      "fips": [
+        "36037",
+        "36051",
+        "36055",
+        "36069",
+        "36073",
+        "36099",
+        "36117"
+      ]
+    },
+    {
+      "id": "msa-40340",
+      "type": "msa",
+      "code": "40340",
+      "name": "Rochester, MN",
+      "fips": [
+        "27039",
+        "27045",
+        "27109",
+        "27157"
+      ]
+    },
+    {
+      "id": "msa-40380",
+      "type": "msa",
+      "code": "40380",
+      "name": "Rochester, NY",
+      "fips": [
+        "36051",
+        "36055",
+        "36069",
+        "36073",
+        "36117"
+      ]
+    },
+    {
+      "id": "csa-466",
+      "type": "csa",
+      "code": "466",
+      "name": "Rockford-Freeport-Rochelle, IL",
+      "fips": [
+        "17007",
+        "17141",
+        "17177",
+        "17201"
+      ]
+    },
+    {
+      "id": "msa-40420",
+      "type": "msa",
+      "code": "40420",
+      "name": "Rockford, IL",
+      "fips": [
+        "17007",
+        "17201"
+      ]
+    },
+    {
+      "id": "csa-468",
+      "type": "csa",
+      "code": "468",
+      "name": "Rocky Mount-Wilson-Roanoke Rapids, NC",
+      "fips": [
+        "37065",
+        "37083",
+        "37127",
+        "37131",
+        "37195"
+      ]
+    },
+    {
+      "id": "msa-40580",
+      "type": "msa",
+      "code": "40580",
+      "name": "Rocky Mount, NC",
+      "fips": [
+        "37065",
+        "37127"
+      ]
+    },
+    {
+      "id": "msa-40660",
+      "type": "msa",
+      "code": "40660",
+      "name": "Rome, GA",
+      "fips": [
+        "13115"
+      ]
+    },
+    {
+      "id": "msa-40900",
+      "type": "msa",
+      "code": "40900",
+      "name": "Sacramento-Roseville-Folsom, CA",
+      "fips": [
+        "06017",
+        "06061",
+        "06067",
+        "06113"
+      ]
+    },
+    {
+      "id": "csa-472",
+      "type": "csa",
+      "code": "472",
+      "name": "Sacramento-Roseville, CA",
+      "fips": [
+        "06017",
+        "06057",
+        "06061",
+        "06067",
+        "06101",
+        "06113",
+        "06115"
+      ]
+    },
+    {
+      "id": "csa-474",
+      "type": "csa",
+      "code": "474",
+      "name": "Saginaw-Midland-Bay City, MI",
+      "fips": [
+        "26017",
+        "26111",
+        "26145"
+      ]
+    },
+    {
+      "id": "msa-40980",
+      "type": "msa",
+      "code": "40980",
+      "name": "Saginaw, MI",
+      "fips": [
+        "26145"
+      ]
+    },
+    {
+      "id": "msa-41420",
+      "type": "msa",
+      "code": "41420",
+      "name": "Salem, OR",
+      "fips": [
+        "41047",
+        "41053"
+      ]
+    },
+    {
+      "id": "msa-41500",
+      "type": "msa",
+      "code": "41500",
+      "name": "Salinas, CA",
+      "fips": [
+        "06053"
+      ]
+    },
+    {
+      "id": "csa-480",
+      "type": "csa",
+      "code": "480",
+      "name": "Salisbury-Ocean Pines, MD",
+      "fips": [
+        "24039",
+        "24045",
+        "24047"
+      ]
+    },
+    {
+      "id": "msa-41540",
+      "type": "msa",
+      "code": "41540",
+      "name": "Salisbury, MD",
+      "fips": [
+        "24039",
+        "24045"
+      ]
+    },
+    {
+      "id": "msa-41620",
+      "type": "msa",
+      "code": "41620",
+      "name": "Salt Lake City-Murray, UT",
+      "fips": [
+        "49035",
+        "49045"
+      ]
+    },
+    {
+      "id": "csa-482",
+      "type": "csa",
+      "code": "482",
+      "name": "Salt Lake City-Provo-Orem, UT-ID",
+      "fips": [
+        "16071",
+        "49003",
+        "49011",
+        "49023",
+        "49029",
+        "49035",
+        "49043",
+        "49045",
+        "49049",
+        "49051",
+        "49057"
+      ]
+    },
+    {
+      "id": "msa-41660",
+      "type": "msa",
+      "code": "41660",
+      "name": "San Angelo, TX",
+      "fips": [
+        "48235",
+        "48451"
+      ]
+    },
+    {
+      "id": "csa-484",
+      "type": "csa",
+      "code": "484",
+      "name": "San Antonio-New Braunfels-Kerrville, TX",
+      "fips": [
+        "48013",
+        "48019",
+        "48029",
+        "48091",
+        "48171",
+        "48187",
+        "48259",
+        "48265",
+        "48325",
+        "48493"
+      ]
+    },
+    {
+      "id": "msa-41700",
+      "type": "msa",
+      "code": "41700",
+      "name": "San Antonio-New Braunfels, TX",
+      "fips": [
+        "48013",
+        "48019",
+        "48029",
+        "48091",
+        "48187",
+        "48259",
+        "48325",
+        "48493"
+      ]
+    },
+    {
+      "id": "msa-41740",
+      "type": "msa",
+      "code": "41740",
+      "name": "San Diego-Chula Vista-Carlsbad, CA",
+      "fips": [
+        "06073"
+      ]
+    },
+    {
+      "id": "msa-41860",
+      "type": "msa",
+      "code": "41860",
+      "name": "San Francisco-Oakland-Fremont, CA",
+      "fips": [
+        "06001",
+        "06013",
+        "06041",
+        "06075",
+        "06081"
+      ]
+    },
+    {
+      "id": "csa-488",
+      "type": "csa",
+      "code": "488",
+      "name": "San Jose-San Francisco-Oakland, CA",
+      "fips": [
+        "06001",
+        "06013",
+        "06041",
+        "06047",
+        "06055",
+        "06069",
+        "06075",
+        "06077",
+        "06081",
+        "06085",
+        "06087",
+        "06095",
+        "06099"
+      ]
+    },
+    {
+      "id": "msa-41940",
+      "type": "msa",
+      "code": "41940",
+      "name": "San Jose-Sunnyvale-Santa Clara, CA",
+      "fips": [
+        "06069",
+        "06085"
+      ]
+    },
+    {
+      "id": "msa-41980",
+      "type": "msa",
+      "code": "41980",
+      "name": "San Juan-Bayamón-Caguas, PR",
+      "fips": [
+        "72007",
+        "72009",
+        "72017",
+        "72019",
+        "72021",
+        "72025",
+        "72029",
+        "72031",
+        "72033",
+        "72035",
+        "72037",
+        "72039",
+        "72041",
+        "72045",
+        "72047",
+        "72051",
+        "72053",
+        "72054",
+        "72061",
+        "72063",
+        "72069",
+        "72077",
+        "72085",
+        "72087",
+        "72089",
+        "72091",
+        "72095",
+        "72101",
+        "72103",
+        "72105",
+        "72107",
+        "72119",
+        "72127",
+        "72129",
+        "72135",
+        "72137",
+        "72139",
+        "72143",
+        "72145",
+        "72151"
+      ]
+    },
+    {
+      "id": "csa-490",
+      "type": "csa",
+      "code": "490",
+      "name": "San Juan-Bayamón, PR",
+      "fips": [
+        "72007",
+        "72009",
+        "72013",
+        "72015",
+        "72017",
+        "72019",
+        "72021",
+        "72025",
+        "72027",
+        "72029",
+        "72031",
+        "72033",
+        "72035",
+        "72037",
+        "72039",
+        "72041",
+        "72045",
+        "72047",
+        "72051",
+        "72053",
+        "72054",
+        "72057",
+        "72061",
+        "72063",
+        "72065",
+        "72069",
+        "72077",
+        "72081",
+        "72085",
+        "72087",
+        "72089",
+        "72091",
+        "72095",
+        "72101",
+        "72103",
+        "72105",
+        "72107",
+        "72109",
+        "72115",
+        "72119",
+        "72123",
+        "72127",
+        "72129",
+        "72135",
+        "72137",
+        "72139",
+        "72141",
+        "72143",
+        "72145",
+        "72151"
+      ]
+    },
+    {
+      "id": "msa-42020",
+      "type": "msa",
+      "code": "42020",
+      "name": "San Luis Obispo-Paso Robles, CA",
+      "fips": [
+        "06079"
+      ]
+    },
+    {
+      "id": "msa-41780",
+      "type": "msa",
+      "code": "41780",
+      "name": "Sandusky, OH",
+      "fips": [
+        "39043",
+        "39123"
+      ]
+    },
+    {
+      "id": "msa-42100",
+      "type": "msa",
+      "code": "42100",
+      "name": "Santa Cruz-Watsonville, CA",
+      "fips": [
+        "06087"
+      ]
+    },
+    {
+      "id": "msa-42140",
+      "type": "msa",
+      "code": "42140",
+      "name": "Santa Fe, NM",
+      "fips": [
+        "35049"
+      ]
+    },
+    {
+      "id": "msa-42200",
+      "type": "msa",
+      "code": "42200",
+      "name": "Santa Maria-Santa Barbara, CA",
+      "fips": [
+        "06083"
+      ]
+    },
+    {
+      "id": "msa-42220",
+      "type": "msa",
+      "code": "42220",
+      "name": "Santa Rosa-Petaluma, CA",
+      "fips": [
+        "06097"
+      ]
+    },
+    {
+      "id": "csa-496",
+      "type": "csa",
+      "code": "496",
+      "name": "Savannah-Hinesville-Statesboro, GA",
+      "fips": [
+        "13029",
+        "13031",
+        "13051",
+        "13103",
+        "13109",
+        "13179",
+        "13183",
+        "13305"
+      ]
+    },
+    {
+      "id": "msa-42340",
+      "type": "msa",
+      "code": "42340",
+      "name": "Savannah, GA",
+      "fips": [
+        "13029",
+        "13051",
+        "13103"
+      ]
+    },
+    {
+      "id": "msa-42540",
+      "type": "msa",
+      "code": "42540",
+      "name": "Scranton--Wilkes-Barre, PA",
+      "fips": [
+        "42069",
+        "42079",
+        "42131"
+      ]
+    },
+    {
+      "id": "msa-42660",
+      "type": "msa",
+      "code": "42660",
+      "name": "Seattle-Tacoma-Bellevue, WA",
+      "fips": [
+        "53033",
+        "53053",
+        "53061"
+      ]
+    },
+    {
+      "id": "csa-500",
+      "type": "csa",
+      "code": "500",
+      "name": "Seattle-Tacoma, WA",
+      "fips": [
+        "53029",
+        "53033",
+        "53035",
+        "53041",
+        "53045",
+        "53053",
+        "53057",
+        "53061",
+        "53067"
+      ]
+    },
+    {
+      "id": "msa-42680",
+      "type": "msa",
+      "code": "42680",
+      "name": "Sebastian-Vero Beach-West Vero Corridor, FL",
+      "fips": [
+        "12061"
+      ]
+    },
+    {
+      "id": "msa-42700",
+      "type": "msa",
+      "code": "42700",
+      "name": "Sebring, FL",
+      "fips": [
+        "12055"
+      ]
+    },
+    {
+      "id": "msa-43100",
+      "type": "msa",
+      "code": "43100",
+      "name": "Sheboygan, WI",
+      "fips": [
+        "55117"
+      ]
+    },
+    {
+      "id": "msa-43300",
+      "type": "msa",
+      "code": "43300",
+      "name": "Sherman-Denison, TX",
+      "fips": [
+        "48181"
+      ]
+    },
+    {
+      "id": "csa-508",
+      "type": "csa",
+      "code": "508",
+      "name": "Shreveport-Bossier City-Minden, LA",
+      "fips": [
+        "22015",
+        "22017",
+        "22031",
+        "22119"
+      ]
+    },
+    {
+      "id": "msa-43340",
+      "type": "msa",
+      "code": "43340",
+      "name": "Shreveport-Bossier City, LA",
+      "fips": [
+        "22015",
+        "22017",
+        "22031"
+      ]
+    },
+    {
+      "id": "msa-43420",
+      "type": "msa",
+      "code": "43420",
+      "name": "Sierra Vista-Douglas, AZ",
+      "fips": [
+        "04003"
+      ]
+    },
+    {
+      "id": "csa-512",
+      "type": "csa",
+      "code": "512",
+      "name": "Sioux City-Le Mars, IA-NE-SD",
+      "fips": [
+        "19149",
+        "19193",
+        "31043",
+        "46127"
+      ]
+    },
+    {
+      "id": "msa-43580",
+      "type": "msa",
+      "code": "43580",
+      "name": "Sioux City, IA-NE-SD",
+      "fips": [
+        "19193",
+        "31043",
+        "46127"
+      ]
+    },
+    {
+      "id": "msa-43620",
+      "type": "msa",
+      "code": "43620",
+      "name": "Sioux Falls, SD-MN",
+      "fips": [
+        "27133",
+        "46083",
+        "46087",
+        "46099",
+        "46125"
+      ]
+    },
+    {
+      "id": "msa-43640",
+      "type": "msa",
+      "code": "43640",
+      "name": "Slidell-Mandeville-Covington, LA",
+      "fips": [
+        "22103"
+      ]
+    },
+    {
+      "id": "csa-515",
+      "type": "csa",
+      "code": "515",
+      "name": "South Bend-Elkhart-Mishawaka, IN-MI",
+      "fips": [
+        "18039",
+        "18085",
+        "18099",
+        "18141",
+        "26021",
+        "26027"
+      ]
+    },
+    {
+      "id": "msa-43780",
+      "type": "msa",
+      "code": "43780",
+      "name": "South Bend-Mishawaka, IN-MI",
+      "fips": [
+        "18141",
+        "26027"
+      ]
+    },
+    {
+      "id": "msa-43900",
+      "type": "msa",
+      "code": "43900",
+      "name": "Spartanburg, SC",
+      "fips": [
+        "45083",
+        "45087"
+      ]
+    },
+    {
+      "id": "csa-517",
+      "type": "csa",
+      "code": "517",
+      "name": "Spencer-Spirit Lake, IA",
+      "fips": [
+        "19041",
+        "19059"
+      ]
+    },
+    {
+      "id": "csa-518",
+      "type": "csa",
+      "code": "518",
+      "name": "Spokane-Spokane Valley-Coeur d'Alene, WA-ID",
+      "fips": [
+        "16055",
+        "53063",
+        "53065"
+      ]
+    },
+    {
+      "id": "msa-44060",
+      "type": "msa",
+      "code": "44060",
+      "name": "Spokane-Spokane Valley, WA",
+      "fips": [
+        "53063",
+        "53065"
+      ]
+    },
+    {
+      "id": "csa-521",
+      "type": "csa",
+      "code": "521",
+      "name": "Springfield-Amherst Town-Northampton, MA",
+      "fips": [
+        "25011",
+        "25013",
+        "25015"
+      ]
+    },
+    {
+      "id": "csa-522",
+      "type": "csa",
+      "code": "522",
+      "name": "Springfield-Jacksonville-Lincoln, IL",
+      "fips": [
+        "17021",
+        "17107",
+        "17129",
+        "17137",
+        "17167",
+        "17171"
+      ]
+    },
+    {
+      "id": "msa-44100",
+      "type": "msa",
+      "code": "44100",
+      "name": "Springfield, IL",
+      "fips": [
+        "17129",
+        "17167"
+      ]
+    },
+    {
+      "id": "msa-44140",
+      "type": "msa",
+      "code": "44140",
+      "name": "Springfield, MA",
+      "fips": [
+        "25013"
+      ]
+    },
+    {
+      "id": "msa-44180",
+      "type": "msa",
+      "code": "44180",
+      "name": "Springfield, MO",
+      "fips": [
+        "29043",
+        "29059",
+        "29077",
+        "29167",
+        "29225"
+      ]
+    },
+    {
+      "id": "msa-44220",
+      "type": "msa",
+      "code": "44220",
+      "name": "Springfield, OH",
+      "fips": [
+        "39023"
+      ]
+    },
+    {
+      "id": "msa-41060",
+      "type": "msa",
+      "code": "41060",
+      "name": "St. Cloud, MN",
+      "fips": [
+        "27009",
+        "27145"
+      ]
+    },
+    {
+      "id": "msa-41100",
+      "type": "msa",
+      "code": "41100",
+      "name": "St. George, UT",
+      "fips": [
+        "49053"
+      ]
+    },
+    {
+      "id": "msa-41140",
+      "type": "msa",
+      "code": "41140",
+      "name": "St. Joseph, MO-KS",
+      "fips": [
+        "20043",
+        "29003",
+        "29021",
+        "29063"
+      ]
+    },
+    {
+      "id": "csa-476",
+      "type": "csa",
+      "code": "476",
+      "name": "St. Louis-St. Charles-Farmington, MO-IL",
+      "fips": [
+        "17005",
+        "17013",
+        "17027",
+        "17083",
+        "17117",
+        "17119",
+        "17121",
+        "17133",
+        "17163",
+        "29071",
+        "29099",
+        "29113",
+        "29183",
+        "29187",
+        "29189",
+        "29219",
+        "29510"
+      ]
+    },
+    {
+      "id": "msa-41180",
+      "type": "msa",
+      "code": "41180",
+      "name": "St. Louis, MO-IL",
+      "fips": [
+        "17005",
+        "17013",
+        "17027",
+        "17083",
+        "17117",
+        "17119",
+        "17133",
+        "17163",
+        "29071",
+        "29099",
+        "29113",
+        "29183",
+        "29189",
+        "29219",
+        "29510"
+      ]
+    },
+    {
+      "id": "csa-523",
+      "type": "csa",
+      "code": "523",
+      "name": "Starkville-Columbus, MS",
+      "fips": [
+        "28087",
+        "28103",
+        "28105",
+        "28155"
+      ]
+    },
+    {
+      "id": "csa-524",
+      "type": "csa",
+      "code": "524",
+      "name": "State College-DuBois, PA",
+      "fips": [
+        "42027",
+        "42033"
+      ]
+    },
+    {
+      "id": "msa-44300",
+      "type": "msa",
+      "code": "44300",
+      "name": "State College, PA",
+      "fips": [
+        "42027"
+      ]
+    },
+    {
+      "id": "msa-44420",
+      "type": "msa",
+      "code": "44420",
+      "name": "Staunton-Stuarts Draft, VA",
+      "fips": [
+        "51907"
+      ]
+    },
+    {
+      "id": "msa-44700",
+      "type": "msa",
+      "code": "44700",
+      "name": "Stockton-Lodi, CA",
+      "fips": [
+        "06077"
+      ]
+    },
+    {
+      "id": "msa-44940",
+      "type": "msa",
+      "code": "44940",
+      "name": "Sumter, SC",
+      "fips": [
+        "45085"
+      ]
+    },
+    {
+      "id": "csa-532",
+      "type": "csa",
+      "code": "532",
+      "name": "Syracuse-Auburn, NY",
+      "fips": [
+        "36011",
+        "36053",
+        "36067",
+        "36075"
+      ]
+    },
+    {
+      "id": "msa-45060",
+      "type": "msa",
+      "code": "45060",
+      "name": "Syracuse, NY",
+      "fips": [
+        "36053",
+        "36067",
+        "36075"
+      ]
+    },
+    {
+      "id": "csa-533",
+      "type": "csa",
+      "code": "533",
+      "name": "Tallahassee-Bainbridge, FL-GA",
+      "fips": [
+        "12039",
+        "12065",
+        "12073",
+        "12129",
+        "13087"
+      ]
+    },
+    {
+      "id": "msa-45220",
+      "type": "msa",
+      "code": "45220",
+      "name": "Tallahassee, FL",
+      "fips": [
+        "12039",
+        "12065",
+        "12073",
+        "12129"
+      ]
+    },
+    {
+      "id": "msa-45300",
+      "type": "msa",
+      "code": "45300",
+      "name": "Tampa-St. Petersburg-Clearwater, FL",
+      "fips": [
+        "12053",
+        "12057",
+        "12101",
+        "12103"
+      ]
+    },
+    {
+      "id": "msa-45460",
+      "type": "msa",
+      "code": "45460",
+      "name": "Terre Haute, IN",
+      "fips": [
+        "18021",
+        "18153",
+        "18165",
+        "18167"
+      ]
+    },
+    {
+      "id": "msa-45500",
+      "type": "msa",
+      "code": "45500",
+      "name": "Texarkana, TX-AR",
+      "fips": [
+        "05081",
+        "05091",
+        "48037"
+      ]
+    },
+    {
+      "id": "msa-45780",
+      "type": "msa",
+      "code": "45780",
+      "name": "Toledo, OH",
+      "fips": [
+        "39051",
+        "39095",
+        "39173"
+      ]
+    },
+    {
+      "id": "msa-45820",
+      "type": "msa",
+      "code": "45820",
+      "name": "Topeka, KS",
+      "fips": [
+        "20085",
+        "20087",
+        "20139",
+        "20177",
+        "20197"
+      ]
+    },
+    {
+      "id": "msa-45900",
+      "type": "msa",
+      "code": "45900",
+      "name": "Traverse City, MI",
+      "fips": [
+        "26019",
+        "26055",
+        "26079",
+        "26089"
+      ]
+    },
+    {
+      "id": "msa-45940",
+      "type": "msa",
+      "code": "45940",
+      "name": "Trenton-Princeton, NJ",
+      "fips": [
+        "34021"
+      ]
+    },
+    {
+      "id": "csa-536",
+      "type": "csa",
+      "code": "536",
+      "name": "Tucson-Nogales, AZ",
+      "fips": [
+        "04019",
+        "04023"
+      ]
+    },
+    {
+      "id": "msa-46060",
+      "type": "msa",
+      "code": "46060",
+      "name": "Tucson, AZ",
+      "fips": [
+        "04019"
+      ]
+    },
+    {
+      "id": "csa-538",
+      "type": "csa",
+      "code": "538",
+      "name": "Tulsa-Bartlesville-Muskogee, OK",
+      "fips": [
+        "40037",
+        "40101",
+        "40111",
+        "40113",
+        "40117",
+        "40131",
+        "40143",
+        "40145",
+        "40147"
+      ]
+    },
+    {
+      "id": "msa-46140",
+      "type": "msa",
+      "code": "46140",
+      "name": "Tulsa, OK",
+      "fips": [
+        "40037",
+        "40111",
+        "40113",
+        "40117",
+        "40131",
+        "40143",
+        "40145"
+      ]
+    },
+    {
+      "id": "csa-539",
+      "type": "csa",
+      "code": "539",
+      "name": "Tupelo-Corinth, MS",
+      "fips": [
+        "28003",
+        "28057",
+        "28081",
+        "28117"
+      ]
+    },
+    {
+      "id": "msa-46220",
+      "type": "msa",
+      "code": "46220",
+      "name": "Tuscaloosa, AL",
+      "fips": [
+        "01063",
+        "01065",
+        "01107",
+        "01125"
+      ]
+    },
+    {
+      "id": "msa-46300",
+      "type": "msa",
+      "code": "46300",
+      "name": "Twin Falls, ID",
+      "fips": [
+        "16053",
+        "16083"
+      ]
+    },
+    {
+      "id": "csa-540",
+      "type": "csa",
+      "code": "540",
+      "name": "Tyler-Jacksonville, TX",
+      "fips": [
+        "48073",
+        "48423"
+      ]
+    },
+    {
+      "id": "msa-46340",
+      "type": "msa",
+      "code": "46340",
+      "name": "Tyler, TX",
+      "fips": [
+        "48423"
+      ]
+    },
+    {
+      "id": "csa-542",
+      "type": "csa",
+      "code": "542",
+      "name": "Union City-Martin, TN",
+      "fips": [
+        "47131",
+        "47183"
+      ]
+    },
+    {
+      "id": "msa-46520",
+      "type": "msa",
+      "code": "46520",
+      "name": "Urban Honolulu, HI",
+      "fips": [
+        "15003"
+      ]
+    },
+    {
+      "id": "msa-46540",
+      "type": "msa",
+      "code": "46540",
+      "name": "Utica-Rome, NY",
+      "fips": [
+        "36043",
+        "36065"
+      ]
+    },
+    {
+      "id": "msa-46660",
+      "type": "msa",
+      "code": "46660",
+      "name": "Valdosta, GA",
+      "fips": [
+        "13027",
+        "13101",
+        "13173",
+        "13185"
+      ]
+    },
+    {
+      "id": "msa-46700",
+      "type": "msa",
+      "code": "46700",
+      "name": "Vallejo, CA",
+      "fips": [
+        "06095"
+      ]
+    },
+    {
+      "id": "csa-544",
+      "type": "csa",
+      "code": "544",
+      "name": "Victoria-Port Lavaca, TX",
+      "fips": [
+        "48057",
+        "48175",
+        "48469"
+      ]
+    },
+    {
+      "id": "msa-47020",
+      "type": "msa",
+      "code": "47020",
+      "name": "Victoria, TX",
+      "fips": [
+        "48175",
+        "48469"
+      ]
+    },
+    {
+      "id": "msa-47220",
+      "type": "msa",
+      "code": "47220",
+      "name": "Vineland, NJ",
+      "fips": [
+        "34011"
+      ]
+    },
+    {
+      "id": "msa-47260",
+      "type": "msa",
+      "code": "47260",
+      "name": "Virginia Beach-Chesapeake-Norfolk, VA-NC",
+      "fips": [
+        "37029",
+        "37053",
+        "37073",
+        "51073",
+        "51093",
+        "51095",
+        "51115",
+        "51181",
+        "51199",
+        "51550",
+        "51650",
+        "51700",
+        "51710",
+        "51735",
+        "51740",
+        "51800",
+        "51810",
+        "51830"
+      ]
+    },
+    {
+      "id": "csa-545",
+      "type": "csa",
+      "code": "545",
+      "name": "Virginia Beach-Chesapeake, VA-NC",
+      "fips": [
+        "37029",
+        "37053",
+        "37055",
+        "37073",
+        "37139",
+        "51073",
+        "51093",
+        "51095",
+        "51115",
+        "51181",
+        "51199",
+        "51550",
+        "51650",
+        "51700",
+        "51710",
+        "51735",
+        "51740",
+        "51800",
+        "51810",
+        "51830"
+      ]
+    },
+    {
+      "id": "msa-47300",
+      "type": "msa",
+      "code": "47300",
+      "name": "Visalia, CA",
+      "fips": [
+        "06107"
+      ]
+    },
+    {
+      "id": "msa-47380",
+      "type": "msa",
+      "code": "47380",
+      "name": "Waco, TX",
+      "fips": [
+        "48035",
+        "48145",
+        "48309"
+      ]
+    },
+    {
+      "id": "msa-47460",
+      "type": "msa",
+      "code": "47460",
+      "name": "Walla Walla, WA",
+      "fips": [
+        "53071"
+      ]
+    },
+    {
+      "id": "msa-47580",
+      "type": "msa",
+      "code": "47580",
+      "name": "Warner Robins, GA",
+      "fips": [
+        "13153",
+        "13225"
+      ]
+    },
+    {
+      "id": "msa-47900",
+      "type": "msa",
+      "code": "47900",
+      "name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "fips": [
+        "11001",
+        "24017",
+        "24021",
+        "24031",
+        "24033",
+        "51013",
+        "51043",
+        "51047",
+        "51059",
+        "51061",
+        "51107",
+        "51153",
+        "51157",
+        "51177",
+        "51179",
+        "51187",
+        "51510",
+        "51600",
+        "51610",
+        "51630",
+        "51683",
+        "51685",
+        "54037"
+      ]
+    },
+    {
+      "id": "csa-548",
+      "type": "csa",
+      "code": "548",
+      "name": "Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",
+      "fips": [
+        "11001",
+        "24003",
+        "24005",
+        "24009",
+        "24013",
+        "24017",
+        "24019",
+        "24021",
+        "24025",
+        "24027",
+        "24031",
+        "24033",
+        "24035",
+        "24037",
+        "24041",
+        "24043",
+        "24510",
+        "42055",
+        "51013",
+        "51043",
+        "51047",
+        "51059",
+        "51061",
+        "51069",
+        "51107",
+        "51137",
+        "51153",
+        "51157",
+        "51177",
+        "51179",
+        "51187",
+        "51510",
+        "51600",
+        "51610",
+        "51630",
+        "51683",
+        "51685",
+        "51840",
+        "54003",
+        "54027",
+        "54037",
+        "54065"
+      ]
+    },
+    {
+      "id": "msa-47930",
+      "type": "msa",
+      "code": "47930",
+      "name": "Waterbury-Shelton, CT",
+      "fips": [
+        "09140"
+      ]
+    },
+    {
+      "id": "msa-47940",
+      "type": "msa",
+      "code": "47940",
+      "name": "Waterloo-Cedar Falls, IA",
+      "fips": [
+        "19013",
+        "19017",
+        "19075"
+      ]
+    },
+    {
+      "id": "msa-48060",
+      "type": "msa",
+      "code": "48060",
+      "name": "Watertown-Fort Drum, NY",
+      "fips": [
+        "36045"
+      ]
+    },
+    {
+      "id": "csa-554",
+      "type": "csa",
+      "code": "554",
+      "name": "Wausau-Stevens Point-Wisconsin Rapids, WI",
+      "fips": [
+        "55073",
+        "55097",
+        "55141"
+      ]
+    },
+    {
+      "id": "msa-48140",
+      "type": "msa",
+      "code": "48140",
+      "name": "Wausau, WI",
+      "fips": [
+        "55073"
+      ]
+    },
+    {
+      "id": "csa-555",
+      "type": "csa",
+      "code": "555",
+      "name": "Weatherford-Elk City, OK",
+      "fips": [
+        "40009",
+        "40039",
+        "40149"
+      ]
+    },
+    {
+      "id": "msa-48260",
+      "type": "msa",
+      "code": "48260",
+      "name": "Weirton-Steubenville, WV-OH",
+      "fips": [
+        "39081",
+        "54009",
+        "54029"
+      ]
+    },
+    {
+      "id": "msa-48300",
+      "type": "msa",
+      "code": "48300",
+      "name": "Wenatchee-East Wenatchee, WA",
+      "fips": [
+        "53007",
+        "53017"
+      ]
+    },
+    {
+      "id": "msa-48540",
+      "type": "msa",
+      "code": "48540",
+      "name": "Wheeling, WV-OH",
+      "fips": [
+        "39013",
+        "54051",
+        "54069"
+      ]
+    },
+    {
+      "id": "msa-48660",
+      "type": "msa",
+      "code": "48660",
+      "name": "Wichita Falls, TX",
+      "fips": [
+        "48009",
+        "48077",
+        "48485"
+      ]
+    },
+    {
+      "id": "csa-556",
+      "type": "csa",
+      "code": "556",
+      "name": "Wichita-Arkansas City-Winfield, KS",
+      "fips": [
+        "20015",
+        "20035",
+        "20079",
+        "20173",
+        "20191"
+      ]
+    },
+    {
+      "id": "msa-48620",
+      "type": "msa",
+      "code": "48620",
+      "name": "Wichita, KS",
+      "fips": [
+        "20015",
+        "20079",
+        "20173",
+        "20191"
+      ]
+    },
+    {
+      "id": "msa-48680",
+      "type": "msa",
+      "code": "48680",
+      "name": "Wildwood-The Villages, FL",
+      "fips": [
+        "12119"
+      ]
+    },
+    {
+      "id": "csa-558",
+      "type": "csa",
+      "code": "558",
+      "name": "Williamsport-Lock Haven, PA",
+      "fips": [
+        "42035",
+        "42081"
+      ]
+    },
+    {
+      "id": "msa-48700",
+      "type": "msa",
+      "code": "48700",
+      "name": "Williamsport, PA",
+      "fips": [
+        "42081"
+      ]
+    },
+    {
+      "id": "msa-48900",
+      "type": "msa",
+      "code": "48900",
+      "name": "Wilmington, NC",
+      "fips": [
+        "37019",
+        "37129",
+        "37141"
+      ]
+    },
+    {
+      "id": "msa-49020",
+      "type": "msa",
+      "code": "49020",
+      "name": "Winchester, VA-WV",
+      "fips": [
+        "51069",
+        "51840",
+        "54027"
+      ]
+    },
+    {
+      "id": "msa-49180",
+      "type": "msa",
+      "code": "49180",
+      "name": "Winston-Salem, NC",
+      "fips": [
+        "37057",
+        "37059",
+        "37067",
+        "37169",
+        "37197"
+      ]
+    },
+    {
+      "id": "msa-49340",
+      "type": "msa",
+      "code": "49340",
+      "name": "Worcester, MA",
+      "fips": [
+        "25027"
+      ]
+    },
+    {
+      "id": "msa-49420",
+      "type": "msa",
+      "code": "49420",
+      "name": "Yakima, WA",
+      "fips": [
+        "53077"
+      ]
+    },
+    {
+      "id": "msa-49620",
+      "type": "msa",
+      "code": "49620",
+      "name": "York-Hanover, PA",
+      "fips": [
+        "42133"
+      ]
+    },
+    {
+      "id": "csa-566",
+      "type": "csa",
+      "code": "566",
+      "name": "Youngstown-Warren-Salem, OH",
+      "fips": [
+        "39029",
+        "39099",
+        "39155"
+      ]
+    },
+    {
+      "id": "msa-49660",
+      "type": "msa",
+      "code": "49660",
+      "name": "Youngstown-Warren, OH",
+      "fips": [
+        "39099",
+        "39155"
+      ]
+    },
+    {
+      "id": "msa-49700",
+      "type": "msa",
+      "code": "49700",
+      "name": "Yuba City, CA",
+      "fips": [
+        "06101",
+        "06115"
+      ]
+    },
+    {
+      "id": "msa-49740",
+      "type": "msa",
+      "code": "49740",
+      "name": "Yuma, AZ",
+      "fips": [
+        "04027"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "name": "metro-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Explore and aggregate county-level BEA statistics by MSA and CSA.",
+  "license": "Apache-2.0",
+  "author": "Metro Studio contributors",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-metro-data.mjs",
+    "dev": "vite",
+    "build": "node node_modules/vite/bin/vite.js build",
+    "dev:web": "vite --config web.vite.config.js",
+    "build:web": "vite build --config web.vite.config.js",
+    "preview:web": "vite preview --config web.vite.config.js",
+    "test:web-layout": "node scripts/web-layout-check.mjs",
+    "preview": "vite preview",
+    "test": "node --test",
+    "test:visual": "npm run build && electron scripts/visual-check.cjs",
+    "desktop": "npm run build && electron .",
+    "desktop:dir": "npm run build && electron-builder --dir --win --x64",
+    "desktop:pack": "npm run build && electron-builder --win --x64",
+    "desktop:portable": "npm run build && electron-builder --win portable --x64 --config.win.artifactName=Metro-Studio-Portable-${version}-${arch}.${ext}",
+    "android:sync": "npm run build && cap sync android",
+    "android:build:x64": "npm run android:sync && node scripts/build-android-x64.mjs"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/filesystem": "^8.1.2",
+    "@capacitor/share": "^8.0.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.4.2",
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3",
+    "vite": "^7.0.0"
+  },
+  "build": {
+    "appId": "org.metrogdp.studio",
+    "productName": "Metro Studio",
+    "asar": true,
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json",
+      "LICENSE",
+      "NOTICE",
+      "PRIVACY.md"
+    ],
+    "win": {
+      "icon": "icon.svg",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Metro-Studio-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Metro Studio"
+    }
+  }
+}

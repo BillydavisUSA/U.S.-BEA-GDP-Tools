@@ -1,0 +1,5 @@
+{
+  "appId": "org.metrostudio.app",
+  "appName": "Metro Studio",
+  "webDir": "dist"
+}

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore official U.S. GDP and population data by metro area, state, or country."
+    />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Metro Studio — U.S. Economic Data Explorer</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#query">Skip to query builder</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Metro Studio home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M5 18V10m5 8V6m5 12v-5m4 5H3" />
+          </svg>
+        </span>
+        <span>Metro Studio</span>
+      </a>
+      <a class="header-link" href="#sources">Data sources</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <span class="eyebrow">Official U.S. economic data</span>
+          <h1 id="page-title">Metro, state, and national data in one query.</h1>
+          <p>
+            Search geographic areas, choose a BEA measure, and export a
+            ready-to-use Excel workbook.
+          </p>
+        </div>
+        <dl class="hero-facts" aria-label="Available geography coverage">
+          <div>
+            <dt>393</dt>
+            <dd>MSAs</dd>
+          </div>
+          <div>
+            <dt>184</dt>
+            <dd>CSAs</dd>
+          </div>
+          <div>
+            <dt>51</dt>
+            <dd>States and D.C.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <form id="query" class="query-layout" novalidate>
+        <section class="panel scope-panel" aria-labelledby="scope-title">
+          <header class="panel-heading">
+            <div>
+              <span class="section-kicker">01 · Scope</span>
+              <h2 id="scope-title">Choose geography</h2>
+            </div>
+            <span id="coverage-badge" class="badge">577 areas</span>
+          </header>
+
+          <div class="field">
+            <label for="geography-level">Geographic level</label>
+            <select id="geography-level">
+              <option value="county">County Level</option>
+              <option value="state">State Level</option>
+              <option value="country">Country Level</option>
+            </select>
+          </div>
+
+          <fieldset id="metro-type-field" class="field">
+            <legend>Metro area type</legend>
+            <div id="metro-type" class="segmented" role="group" aria-label="Metro area type">
+              <button type="button" data-type="all" aria-pressed="true">All</button>
+              <button type="button" data-type="msa" aria-pressed="false">MSA</button>
+              <button type="button" data-type="csa" aria-pressed="false">CSA</button>
+            </div>
+          </fieldset>
+
+          <div id="search-group" class="field search-group">
+            <label id="search-label" for="area-search">Search metro areas</label>
+            <div class="search-control">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-4-4" />
+              </svg>
+              <input
+                id="area-search"
+                type="search"
+                autocomplete="off"
+                placeholder="e.g. New York or 35620"
+                role="combobox"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="search-results"
+              />
+              <button id="clear-search" class="clear-button" type="button" aria-label="Clear search" hidden>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+              </button>
+            </div>
+            <div id="search-results" class="search-results" role="listbox" hidden></div>
+          </div>
+
+          <div id="selection-row" class="selection-row">
+            <div id="selection-summary" class="selection-summary" hidden>
+              <span class="selection-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" />
+                  <circle cx="12" cy="10" r="2" />
+                </svg>
+              </span>
+              <span>
+                <strong id="selection-name"></strong>
+                <small id="selection-detail"></small>
+              </span>
+              <button id="clear-selection" class="clear-button" type="button" aria-label="Clear selection">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+              </button>
+            </div>
+            <button id="select-all" class="secondary-button" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 6h12M9 12h12M9 18h12" />
+                <path d="m3 6 1 1 2-2m-3 7 1 1 2-2m-3 7 1 1 2-2" />
+              </svg>
+              <span>
+                <strong id="select-all-label">Select all metro areas</strong>
+                <small id="select-all-count">577 areas</small>
+              </span>
+            </button>
+          </div>
+
+          <div id="country-summary" class="country-summary" hidden>
+            <span class="selection-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+              </svg>
+            </span>
+            <span>
+              <strong>United States</strong>
+              <small>Country-level NIPA records</small>
+            </span>
+          </div>
+          <p id="scope-error" class="field-error" role="alert"></p>
+        </section>
+
+        <section class="panel measure-panel" aria-labelledby="measure-title">
+          <header class="panel-heading">
+            <div>
+              <span class="section-kicker">02 · Measure</span>
+              <h2 id="measure-title">Choose data</h2>
+            </div>
+          </header>
+          <div class="measure-grid">
+            <div class="field">
+              <label for="table-name">Data type</label>
+              <select id="table-name"></select>
+            </div>
+            <div class="field">
+              <label for="line-code">Measure</label>
+              <select id="line-code"></select>
+            </div>
+            <div id="frequency-field" class="field" hidden>
+              <label for="frequency">Frequency</label>
+              <select id="frequency">
+                <option value="A">Annual</option>
+                <option value="Q">Quarterly</option>
+              </select>
+            </div>
+            <div id="quarterly-mode-field" class="field" hidden>
+              <label for="quarterly-mode">Quarterly calculation</label>
+              <select id="quarterly-mode">
+                <option value="quarterly">Quarterly</option>
+                <option value="cumulative">Quarterly cumulative</option>
+              </select>
+            </div>
+            <div class="field year-field">
+              <label for="year">Years</label>
+              <select id="year"></select>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel output-panel" aria-labelledby="output-title">
+          <header class="panel-heading">
+            <div>
+              <span class="section-kicker">03 · Output</span>
+              <h2 id="output-title">Run and export</h2>
+            </div>
+            <span class="badge">Excel</span>
+          </header>
+          <div class="output-controls">
+            <div class="field filename-field">
+              <label for="filename">Export filename</label>
+              <div>
+                <input id="filename" value="BEA_Gross_Domestic_Product" maxlength="120" />
+                <span>.xlsx</span>
+              </div>
+            </div>
+            <button id="run-query" class="primary-button" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
+              <span>Run query</span>
+            </button>
+          </div>
+          <p class="privacy-line">
+            Requests are sent only to the U.S. Bureau of Economic Analysis.
+          </p>
+        </section>
+      </form>
+
+      <section id="results" class="results-section" aria-labelledby="results-title">
+        <header class="results-heading">
+          <div>
+            <span class="section-kicker">Results</span>
+            <h2 id="results-title">Query results</h2>
+            <p id="results-subtitle">Choose a geography and measure, then run the query.</p>
+          </div>
+          <button id="export-button" class="export-button" type="button" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 20h14" /></svg>
+            Export Excel
+          </button>
+        </header>
+
+        <div id="empty-state" class="result-state">
+          <span class="empty-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
+          </span>
+          <strong>Ready when you are.</strong>
+          <p>Your results and a five-row preview will appear here.</p>
+        </div>
+
+        <div id="loading-state" class="result-state" hidden aria-live="polite">
+          <span class="spinner" aria-hidden="true"></span>
+          <strong>Loading official BEA data</strong>
+          <p id="loading-message">Preparing the request…</p>
+        </div>
+
+        <div id="error-state" class="result-state error-state" hidden role="alert">
+          <strong>We couldn’t complete this query.</strong>
+          <p id="error-message"></p>
+        </div>
+
+        <div id="success-state" hidden>
+          <div class="result-summary">
+            <div>
+              <span>Scope</span>
+              <strong id="result-scope">—</strong>
+            </div>
+            <div>
+              <span>Records</span>
+              <strong id="result-records">0</strong>
+            </div>
+            <div>
+              <span>Periods</span>
+              <strong id="result-periods">0</strong>
+            </div>
+            <div>
+              <span>Missing</span>
+              <strong id="result-missing">0</strong>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Geography</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Period</th>
+                  <th id="metric-heading" scope="col">Value</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="result-body"></tbody>
+            </table>
+          </div>
+          <p id="preview-note" class="preview-note"></p>
+        </div>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="about-heading">
+          <span class="eyebrow">About the project</span>
+          <h2 id="about-title">Built to make official economic data easier to use.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            U.S. BEA GDP Tools is a free, open-source project for retrieving
+            GDP and population data from the U.S. Bureau of Economic Analysis.
+            Metro Studio is the project’s web, Windows, and Android application.
+            It supports national, state, and metropolitan analysis, with
+            county-level detail retained for MSA and CSA exports.
+          </p>
+          <p>
+            The tool focuses on current-dollar GDP, real GDP in chained
+            dollars, and population. Data is requested directly through the
+            BEA API, so the latest available periods follow BEA’s official
+            release schedule.
+          </p>
+          <p>
+            BEA announced in 2025 that it would stop publishing GDP and
+            personal income estimates for county-aggregate geographies,
+            including MSAs and CSAs. This project automates the otherwise
+            repetitive work of retrieving county records and combining them
+            into metropolitan estimates. MSA and CSA membership follows OMB
+            Bulletin 23-01, issued in July 2023.
+          </p>
+          <p class="about-note">
+            Metropolitan results are estimates generated by this tool from
+            BEA county data; they are not official metropolitan estimates
+            published by BEA. Windows and Android applications are also
+            available for users who prefer an installed version.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="sources" class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="/" aria-label="Metro Studio home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
+          </span>
+          <span>Metro Studio</span>
+        </a>
+        <p>Free, open-source tools for exploring official U.S. economic data.</p>
+      </div>
+      <nav aria-label="Data sources and project links">
+        <span>Data sources</span>
+        <a href="https://www.bea.gov/" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis</a>
+        <a href="https://www.bea.gov/help/faq/1481" target="_blank" rel="noreferrer">BEA metropolitan-data notice</a>
+        <a href="https://www.whitehouse.gov/wp-content/uploads/2023/07/OMB-Bulletin-23-01.pdf" target="_blank" rel="noreferrer">OMB Bulletin 23-01</a>
+        <a id="github-link" href="https://github.com/BillydavisUSA/U.S.-BEA-GDP-Tools" target="_blank" rel="noreferrer">U.S. BEA GDP Tools on GitHub</a>
+      </nav>
+    </footer>
+
+    <div id="toast" class="toast" hidden aria-live="polite"></div>
+  </body>
+</html>

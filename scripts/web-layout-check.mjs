@@ -128,6 +128,12 @@ const interactionExpression = `(() => {
   search.dispatchEvent(new Event("input", { bubbles: true }));
   const searchResults = document.querySelector("#search-results");
   const searchRect = searchResults.getBoundingClientRect();
+  const measureRect = document.querySelector(".measure-panel").getBoundingClientRect();
+  const searchAvoidsMeasureOverlap =
+    searchRect.bottom <= measureRect.top
+    || searchRect.top >= measureRect.bottom
+    || searchRect.right <= measureRect.left
+    || searchRect.left >= measureRect.right;
   const stateSearchWorks =
     !searchResults.hidden
     && searchResults.querySelectorAll(".search-result").length > 0
@@ -142,6 +148,7 @@ const interactionExpression = `(() => {
   frequency.dispatchEvent(new Event("change", { bubbles: true }));
   return {
     stateSearchWorks,
+    searchAvoidsMeasureOverlap,
     countryControlsWork:
       !document.querySelector("#country-summary").hidden
       && !document.querySelector("#frequency-field").hidden

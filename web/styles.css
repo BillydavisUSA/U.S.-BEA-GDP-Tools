@@ -456,6 +456,13 @@ select:focus {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   box-shadow: 0 22px 60px rgba(20, 34, 55, 0.2);
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .search-result {
@@ -970,6 +977,15 @@ tbody tr:last-child td {
 
   .scope-panel {
     grid-row: auto;
+  }
+
+  .search-results {
+    position: relative;
+    z-index: auto;
+    top: auto;
+    right: auto;
+    left: auto;
+    margin-top: 8px;
   }
 
   .measure-grid {

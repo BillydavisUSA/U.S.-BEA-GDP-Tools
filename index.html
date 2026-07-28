@@ -1,0 +1,901 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Explore county- and state-level BEA GDP and population data, aggregate metropolitan areas, and export results to Excel."
+    />
+    <meta name="theme-color" content="#ececef" />
+    <script>
+      if (/\bAndroid\b/i.test(navigator.userAgent)) {
+        document.documentElement.classList.add("is-android");
+      }
+    </script>
+    <title>Metro Studio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="app-shell">
+      <header class="unified-toolbar" aria-label="Application toolbar">
+        <div class="toolbar-brand">
+          <strong>Metro Studio</strong>
+        </div>
+
+        <div class="toolbar-actions">
+          <button
+            id="mobile-settings-button"
+            class="mobile-settings-button icon-button"
+            type="button"
+            aria-label="Open settings"
+            title="Settings"
+          >
+            <svg class="settings-glyph" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3v-.2h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z" />
+            </svg>
+            <svg class="back-glyph" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+          </button>
+          <div class="theme-control segmented-control compact" role="group" aria-label="Appearance">
+            <button
+              class="segment-button is-selected"
+              type="button"
+              data-theme-option="light"
+              aria-label="Use light appearance"
+              aria-pressed="true"
+              title="Light"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+              </svg>
+            </button>
+            <button
+              class="segment-button"
+              type="button"
+              data-theme-option="dark"
+              aria-label="Use dark appearance"
+              aria-pressed="false"
+              title="Dark"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.4 15.2A8.5 8.5 0 0 1 8.8 3.6 8.5 8.5 0 1 0 20.4 15.2Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="app-body">
+        <aside class="sidebar" aria-label="Application sidebar">
+          <nav class="sidebar-nav" aria-label="Main navigation">
+            <p class="sidebar-section-label">Workspace</p>
+            <button
+              class="sidebar-item nav-item is-active"
+              type="button"
+              data-view-target="home"
+              aria-current="page"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16v14H4zM8 9h8M8 13h5" />
+              </svg>
+              <span>New Query</span>
+              <kbd>⌃1</kbd>
+            </button>
+            <button class="sidebar-item nav-item" type="button" data-view-target="data-sources">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" />
+              </svg>
+              <span>Data Sources</span>
+              <kbd>⌃2</kbd>
+            </button>
+
+            <p class="sidebar-section-label secondary">Project</p>
+            <button class="sidebar-item nav-item" type="button" data-placeholder="github">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.2.5S18.1.1 15 1.8a13.4 13.4 0 0 0-7 0C4.9.1 3.8.5 3.8.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4" />
+              </svg>
+              <span>GitHub</span>
+              <span class="sidebar-accessory coming-soon">Soon</span>
+            </button>
+            <button class="sidebar-item nav-item" type="button" data-view-target="license">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                <path d="M14 2v6h6M8 13h8M8 17h6" />
+              </svg>
+              <span>License</span>
+            </button>
+            <button class="sidebar-item nav-item" type="button" data-view-target="version">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 11v5m0-8h.01" />
+              </svg>
+              <span>Version</span>
+            </button>
+            <button class="sidebar-item nav-item" type="button" data-view-target="privacy">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              <span>Privacy</span>
+            </button>
+          </nav>
+
+          <div class="sidebar-footer">
+            <div class="sidebar-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Local session</strong>
+                <small>Not saved · No telemetry</small>
+              </div>
+            </div>
+            <span id="platform-version">V1.0.0 · Windows x64</span>
+          </div>
+        </aside>
+
+        <main id="main-content" class="app-main" tabindex="-1">
+          <section class="app-view is-active" data-view="home" aria-labelledby="query-title">
+            <div class="studio-workspace">
+              <section class="query-workspace" aria-labelledby="query-title">
+                <header class="query-header">
+                  <div>
+                    <h1 id="query-title">New Query</h1>
+                  </div>
+                  <button
+                    id="query-summary-button"
+                    class="icon-button"
+                    type="button"
+                    aria-label="View query summary"
+                    title="Query summary"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 5h16v14H4zM8 9h8M8 13h8M8 17h5" />
+                    </svg>
+                  </button>
+                </header>
+
+                <form id="request-form" class="query-form" novalidate>
+                  <section id="scope-step" class="query-step-section scope-step" data-query-step="1">
+                    <header class="section-heading">
+                      <div>
+                        <h2>Geographic scope</h2>
+                      </div>
+                      <span id="scope-count-badge" class="status-badge neutral">577 areas</span>
+                    </header>
+
+                    <label class="field scope-level-field">
+                      <span class="field-label">Dataset</span>
+                      <span class="pop-up-button">
+                        <select id="geography-level" name="geographyLevel">
+                          <option value="county">County Level</option>
+                          <option value="state">State Level</option>
+                          <option value="country">Country Level</option>
+                        </select>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                      </span>
+                    </label>
+
+                    <div id="scope-motion-slot" class="motion-slot scope-motion-slot" data-open="true">
+                      <div class="motion-slot-content scope-motion-slot-content">
+                    <fieldset class="control-group county-scope-control">
+                      <legend>Metro area type</legend>
+                      <div
+                        class="segmented-control area-filter"
+                        role="group"
+                        aria-label="Filter by metro area type"
+                        data-selected-index="0"
+                      >
+                        <button
+                          class="segment-button area-filter-button is-selected"
+                          type="button"
+                          data-area-type="all"
+                          aria-pressed="true"
+                        >All</button>
+                        <button
+                          class="segment-button area-filter-button"
+                          type="button"
+                          data-area-type="msa"
+                          aria-pressed="false"
+                        >MSA</button>
+                        <button
+                          class="segment-button area-filter-button"
+                          type="button"
+                          data-area-type="csa"
+                          aria-pressed="false"
+                        >CSA</button>
+                      </div>
+                    </fieldset>
+
+                    <div class="metro-search-block selectable-scope-control">
+                      <label id="geography-search-label" class="field-label" for="metro-search">Search metro areas</label>
+                      <div class="search-selection-stack">
+                        <div class="search-field">
+                          <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7" />
+                            <path d="m20 20-4-4" />
+                          </svg>
+                          <input
+                            id="metro-search"
+                            type="search"
+                            placeholder="e.g. New York or 35620"
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-controls="metro-results"
+                          />
+                          <kbd>⌘F</kbd>
+                          <button
+                            id="clear-search"
+                            class="field-clear-button"
+                            type="button"
+                            aria-label="Clear search"
+                            hidden
+                          >
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="m7 7 10 10M17 7 7 17" />
+                            </svg>
+                          </button>
+                        </div>
+                        <div id="metro-results" class="metro-results popover" role="listbox" hidden></div>
+                        <div id="selected-area" class="selected-area selected-surface" hidden>
+                          <span class="selection-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z" />
+                              <circle cx="12" cy="10" r="2" />
+                            </svg>
+                          </span>
+                          <div>
+                            <span id="selected-area-type" class="status-badge accent">Metropolitan Statistical Area</span>
+                            <strong id="selected-area-name">—</strong>
+                            <small id="selected-area-detail">—</small>
+                          </div>
+                          <button id="clear-selection" class="icon-button" type="button" aria-label="Clear selection">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="scope-actions selectable-scope-control">
+                      <button id="select-all-areas" class="selection-button" type="button">
+                        <span class="selection-icon" aria-hidden="true">
+                          <svg viewBox="0 0 24 24">
+                            <path d="M9 6h12M9 12h12M9 18h12" />
+                            <path d="m3 6 1 1 2-2m-3 7 1 1 2-2m-3 7 1 1 2-2" />
+                          </svg>
+                        </span>
+                        <span>
+                          <strong id="select-all-label">Select all metro areas</strong>
+                          <small id="select-all-count">577 areas</small>
+                        </span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                      </button>
+                    </div>
+
+                    <div id="country-scope-summary" class="country-scope-summary selected-surface" hidden>
+                      <span class="selection-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+                        </svg>
+                      </span>
+                      <span>
+                        <strong>United States</strong>
+                        <small>Country-level NIPA records</small>
+                      </span>
+                    </div>
+
+                    <p id="area-error" class="field-error selectable-scope-control" role="alert"></p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section id="measure-step" class="query-step-section measure-step" data-query-step="2">
+                    <header class="section-heading">
+                      <div>
+                        <h2>Measure</h2>
+                      </div>
+                    </header>
+
+                    <div class="field-grid">
+                      <label class="field">
+                        <span class="field-label">Data type</span>
+                        <span class="pop-up-button">
+                          <select id="table-name" name="tableName">
+                            <option value="CAGDP1">GDP</option>
+                            <option value="CAINC1">Population</option>
+                          </select>
+                          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                        </span>
+                      </label>
+                      <label class="field">
+                        <span class="field-label">Measure</span>
+                        <span class="pop-up-button">
+                          <select id="line-code" name="lineCode">
+                            <option value="1">Real GDP</option>
+                            <option value="3" selected>Current-dollar GDP</option>
+                          </select>
+                          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                        </span>
+                      </label>
+                      <div id="country-measure-slot" class="motion-slot measure-motion-slot" data-open="false">
+                        <div class="motion-slot-content measure-motion-slot-content">
+                          <label class="field country-measure-control" hidden>
+                            <span class="field-label">Frequency</span>
+                            <span class="pop-up-button">
+                              <select id="frequency" name="frequency">
+                                <option value="A">Annual</option>
+                                <option value="Q">Quarterly</option>
+                              </select>
+                              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                            </span>
+                          </label>
+                          <div id="quarterly-motion-slot" class="motion-slot quarterly-motion-slot" data-open="false">
+                            <div class="motion-slot-content quarterly-motion-slot-content">
+                              <label id="quarterly-mode-field" class="field country-measure-control" hidden>
+                                <span class="field-label">Quarterly calculation</span>
+                                <span class="pop-up-button">
+                                  <select id="quarterly-mode" name="quarterlyMode">
+                                    <option value="quarterly">Quarterly</option>
+                                    <option value="cumulative">Quarterly cumulative</option>
+                                  </select>
+                                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <label class="field year-field">
+                        <span class="field-label">Years</span>
+                        <span class="pop-up-button">
+                          <select id="year" name="year">
+                            <option value="ALL">All years (2001–2024)</option>
+                            <option value="LAST5">Latest 5 years</option>
+                            <option value="LAST10">Latest 10 years</option>
+                          </select>
+                          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4" /></svg>
+                        </span>
+                      </label>
+                    </div>
+                  </section>
+
+                  <section id="output-step" class="query-step-section output-step" data-query-step="3">
+                    <header class="section-heading">
+                      <div>
+                        <h2>Output</h2>
+                      </div>
+                      <span class="status-badge neutral">Excel</span>
+                    </header>
+
+                    <label class="field">
+                      <span class="field-label">Export filename</span>
+                      <span class="filename-field">
+                        <input
+                          id="filename"
+                          name="filename"
+                          type="text"
+                          value="BEA_Gross_Domestic_Product"
+                          autocomplete="off"
+                          required
+                        />
+                        <span>.xlsx</span>
+                      </span>
+                      <span id="filename-error" class="field-error" role="alert"></span>
+                    </label>
+
+                    <p class="privacy-note">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                        <path d="m9 12 2 2 4-4" />
+                      </svg>
+                      Queries send only the required BEA parameters. The app does not collect personal information or use analytics.
+                    </p>
+                  </section>
+
+                </form>
+
+                <div class="floating-query-action">
+                  <button
+                    class="button primary-button"
+                    id="fetch-button"
+                    type="submit"
+                    form="request-form"
+                  >
+                    <span class="button-spinner" aria-hidden="true"></span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 19V9m5 10V5m6 14v-8m5 8H2" />
+                    </svg>
+                    <span>Run Query</span>
+                  </button>
+                </div>
+              </section>
+
+              <section class="preview-inspector" aria-labelledby="result-title">
+                <div class="preview-header-card">
+                  <header class="preview-toolbar">
+                    <div class="preview-title-row">
+                      <h2 id="result-title">Result Preview</h2>
+                      <span id="preview-status-badge" class="status-badge neutral">Ready</span>
+                    </div>
+                  </header>
+
+                  <div class="preview-progress progress-indicator" aria-label="Task progress">
+                    <div class="toolbar-progress-copy">
+                      <span id="progress-status">Ready</span>
+                      <strong id="progress-value">0%</strong>
+                    </div>
+                    <div
+                      id="progress-track"
+                      class="progress-track"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="0"
+                    >
+                      <span id="progress-fill" class="progress-fill"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="preview-body">
+                  <div class="preview-content-toolbar">
+                    <h2 class="android-results-title">Results</h2>
+                    <nav class="preview-tabs" role="tablist" aria-label="Preview type">
+                      <button
+                        class="preview-tab is-selected"
+                        type="button"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="table-panel"
+                        data-preview-tab="table"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M3 5h18v14H3zM3 10h18M9 5v14" />
+                        </svg>
+                        Table
+                      </button>
+                      <button
+                        class="preview-tab"
+                        type="button"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="metadata-panel"
+                        data-preview-tab="metadata"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M5 4h14v16H5zM9 8h6M9 12h6M9 16h4" />
+                        </svg>
+                        Metadata
+                      </button>
+                    </nav>
+                    <div class="preview-content-actions">
+                      <button
+                        id="preview-options-button"
+                        class="icon-button"
+                        type="button"
+                        aria-label="Preview options"
+                        title="Preview options"
+                      >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M4 6h16M7 12h10M10 18h4" />
+                        </svg>
+                      </button>
+                      <button class="button export-button" id="export-button" type="button" disabled>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 20h14" />
+                        </svg>
+                        Export
+                      </button>
+                    </div>
+                  </div>
+
+                  <div id="empty-state" class="preview-state empty-state">
+                    <h3>Results are ready when you are.</h3>
+                    <p>Choose a geographic level and measure, run the query, then export the complete Excel workbook.</p>
+                  </div>
+
+                  <div id="loading-state" class="preview-state loading-state" hidden>
+                    <div class="loading-copy">
+                      <span class="progress-ring" aria-hidden="true"></span>
+                      <div>
+                        <span class="status-badge accent">Processing</span>
+                        <h3 id="loading-title">Loading BEA data</h3>
+                        <p id="loading-message">Large requests are automatically processed in batches.</p>
+                      </div>
+                    </div>
+                    <div class="skeleton-table" aria-hidden="true">
+                      <div class="skeleton-row header"><i></i><i></i><i></i><i></i></div>
+                      <div class="skeleton-row"><i></i><i></i><i></i><i></i></div>
+                      <div class="skeleton-row"><i></i><i></i><i></i><i></i></div>
+                      <div class="skeleton-row"><i></i><i></i><i></i><i></i></div>
+                      <div class="skeleton-row"><i></i><i></i><i></i><i></i></div>
+                      <div class="skeleton-row"><i></i><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+
+                  <div id="error-state" class="preview-state error-state" hidden>
+                    <div class="state-symbol danger" aria-hidden="true">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M12 9v4m0 4h.01" />
+                        <path d="M10.3 3.6 2.4 17.3A2 2 0 0 0 4.1 20h15.8a2 2 0 0 0 1.7-2.7L13.7 3.6a2 2 0 0 0-3.4 0Z" />
+                      </svg>
+                    </div>
+                    <span class="status-badge danger">Needs attention</span>
+                    <h3>Unable to complete the query</h3>
+                    <p id="error-message" role="alert">Check the parameters and try again.</p>
+                    <button id="retry-button" class="button secondary-button" type="button">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6v5h-5M4 18v-5h5" />
+                        <path d="M6.1 9a7 7 0 0 1 11.2-2.2L20 11M4 13l2.7 4.2A7 7 0 0 0 17.9 15" />
+                      </svg>
+                      Retry
+                    </button>
+                  </div>
+
+                  <div id="success-state" class="success-state" hidden>
+                    <div class="android-result-overview">
+                      <h3 id="android-result-scope">—</h3>
+                      <p>Export the Excel workbook to view the complete results.</p>
+                    </div>
+
+                    <div class="result-summary-strip" aria-label="Result summary">
+                      <div><span>Source</span><strong id="source-label">BEA API</strong></div>
+                      <div><span>Areas</span><strong id="area-count">—</strong></div>
+                      <div><span>Records</span><strong id="record-count">—</strong></div>
+                      <div><span>Years</span><strong id="year-count">—</strong></div>
+                      <div><span>Missing</span><strong id="missing-count">—</strong></div>
+                    </div>
+
+                    <div class="result-note">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 11v5m0-8h.01" />
+                      </svg>
+                      <p id="result-note-text">DataValue records have been aggregated by TimePeriod.</p>
+                    </div>
+
+                    <section
+                      id="table-panel"
+                      class="preview-tab-panel is-active"
+                      role="tabpanel"
+                      data-preview-panel="table"
+                    >
+                      <header class="data-view-header">
+                        <div>
+                          <h3 id="table-title">Gross domestic product</h3>
+                          <p id="table-caption">Unit: thousands of dollars</p>
+                        </div>
+                        <span id="table-range" class="status-badge neutral">—</span>
+                      </header>
+                      <div class="data-table-wrap" tabindex="0" aria-label="Aggregated results table; scroll horizontally for more columns">
+                        <table class="data-table">
+                          <thead>
+                            <tr>
+                              <th id="area-column-heading" scope="col">Metro area name</th>
+                              <th id="type-column-heading" scope="col">Type</th>
+                              <th scope="col">Year</th>
+                              <th id="metric-column-heading" scope="col">Current-dollar GDP</th>
+                              <th scope="col">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody id="result-body"></tbody>
+                        </table>
+                      </div>
+                    </section>
+
+                    <section
+                      id="metadata-panel"
+                      class="preview-tab-panel"
+                      role="tabpanel"
+                      data-preview-panel="metadata"
+                      hidden
+                    >
+                      <header class="data-view-header">
+                        <div>
+                          <h3>Request metadata</h3>
+                          <p>Review the current request and processing scope.</p>
+                        </div>
+                        <span class="status-badge success">Verified</span>
+                      </header>
+                      <dl id="metadata-view" class="metadata-view"></dl>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+
+          <section class="app-view mobile-settings-page" data-view="settings" aria-labelledby="settings-title" hidden>
+            <header class="mobile-settings-header">
+              <p class="overline">Metro Studio</p>
+              <h1 id="settings-title">Settings</h1>
+              <p>Preferences, storage, and application information.</p>
+            </header>
+
+            <div class="mobile-settings-content">
+              <section class="settings-group" aria-labelledby="preferences-heading">
+                <h2 id="preferences-heading">Preferences</h2>
+
+                <div class="settings-row settings-appearance-row">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+                    </svg>
+                  </span>
+                  <div class="settings-row-copy">
+                    <strong>Appearance</strong>
+                    <small>Light or dark mode</small>
+                  </div>
+                  <div id="settings-theme-slot" class="settings-theme-slot"></div>
+                </div>
+
+                <button id="save-location-button" class="settings-row settings-action-row" type="button">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M3 6h6l2 2h10v11H3Z" />
+                      <path d="M12 11v5m-2-2 2 2 2-2" />
+                    </svg>
+                  </span>
+                  <span class="settings-row-copy">
+                    <strong>File save location</strong>
+                    <small id="save-location-label">Ask every time</small>
+                  </span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m9 18 6-6-6-6" />
+                  </svg>
+                </button>
+
+                <button id="reset-save-location" class="settings-secondary-action" type="button" hidden>
+                  Use the save or share sheet instead
+                </button>
+              </section>
+
+              <section class="settings-group" aria-labelledby="about-heading">
+                <h2 id="about-heading">About</h2>
+
+                <button class="settings-row settings-action-row" type="button" data-view-target="data-sources">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <ellipse cx="12" cy="5" rx="8" ry="3" />
+                      <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" />
+                    </svg>
+                  </span>
+                  <span class="settings-row-copy"><strong>Data Sources</strong><small>BEA and OMB source lineage</small></span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+
+                <button class="settings-row settings-action-row" type="button" data-placeholder="github">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7A5.4 5.4 0 0 0 19.4 4 5 5 0 0 0 19.2.5S18.1.1 15 1.8a13.4 13.4 0 0 0-7 0C4.9.1 3.8.5 3.8.5A5 5 0 0 0 3.6 4a5.4 5.4 0 0 0-1.4 3.7c0 5.4 3.5 6.6 6.8 7A4.8 4.8 0 0 0 8 18v4" />
+                    </svg>
+                  </span>
+                  <span class="settings-row-copy"><strong>GitHub</strong><small>Project repository</small></span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+
+                <button class="settings-row settings-action-row" type="button" data-view-target="license">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" /><path d="M14 2v6h6M8 13h8M8 17h6" /></svg>
+                  </span>
+                  <span class="settings-row-copy"><strong>License</strong><small>Apache License 2.0</small></span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+
+                <button class="settings-row settings-action-row" type="button" data-view-target="version">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 11v5m0-8h.01" /></svg>
+                  </span>
+                  <span class="settings-row-copy"><strong>Version</strong><small>Metro Studio 1.0.0</small></span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+
+                <button class="settings-row settings-action-row" type="button" data-view-target="privacy">
+                  <span class="settings-row-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" /><path d="m9 12 2 2 4-4" /></svg>
+                  </span>
+                  <span class="settings-row-copy"><strong>Privacy</strong><small>No account or telemetry</small></span>
+                  <svg class="settings-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+                </button>
+              </section>
+            </div>
+          </section>
+
+          <section class="app-view info-page" data-view="data-sources" aria-labelledby="sources-title" hidden>
+            <header class="info-page-header">
+              <div>
+                <p class="overline">Data Sources</p>
+                <h1 id="sources-title">Source lineage</h1>
+                <p>How national, state, county, and OMB metro-area statistics are connected.</p>
+              </div>
+              <span class="status-badge success">Official sources</span>
+            </header>
+            <div class="info-page-content">
+              <section class="source-lineage" aria-label="Data processing flow">
+                <article>
+                  <span>01</span>
+                  <div><h2>BEA Regional and NIPA APIs</h2><p>Loads official national, state, and county GDP and population statistics without altering source values.</p></div>
+                </article>
+                <article>
+                  <span>02</span>
+                  <div><h2>Level-aware records</h2><p>Preserves GeoFips where applicable and reads DataValue by annual or quarterly TimePeriod.</p></div>
+                </article>
+                <article>
+                  <span>03</span>
+                  <div><h2>Level-aware processing</h2><p>Aggregates eligible county values for MSA/CSA results, reads state values directly, and calculates optional national quarterly cumulative GDP.</p></div>
+                </article>
+              </section>
+              <section class="source-statement">
+                <h2>Data statement</h2>
+                <p>Data provided by the U.S. Bureau of Economic Analysis (BEA).</p>
+                <p>Metropolitan boundaries reconstructed from the latest OMB Bulletin.</p>
+                <p>This application preserves reported BEA values; only MSA/CSA aggregation and the optional national quarterly cumulative view are calculated in the application.</p>
+              </section>
+              <div class="reference-list">
+                <article>
+                  <div><span>Primary statistics</span><h2>U.S. Bureau of Economic Analysis</h2><p>The Regional and NIPA APIs provide official county, state, and national economic statistics.</p></div>
+                  <a href="https://www.bea.gov/open-data" target="_blank" rel="noreferrer">
+                    Open source
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                  </a>
+                </article>
+                <article>
+                  <div><span>Geographic definitions</span><h2>OMB July 2023 Delineations</h2><p>Current MSA and CSA compositions follow the published OMB 2020 standards delineations.</p></div>
+                  <a href="https://www.census.gov/programs-surveys/metro-micro/about/delineation-files.html" target="_blank" rel="noreferrer">
+                    Open source
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+                  </a>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="app-view info-page" data-view="license" aria-labelledby="license-title" hidden>
+            <header class="info-page-header">
+              <div>
+                <p class="overline">License</p>
+                <h1 id="license-title">Apache License 2.0</h1>
+                <p>Use, modify, and distribute the software while preserving the required license and attribution notices.</p>
+              </div>
+              <span class="status-badge accent">Apache-2.0</span>
+            </header>
+            <div class="info-page-content narrow">
+              <section class="document-summary">
+                <span class="document-symbol" aria-hidden="true">
+                  <svg viewBox="0 0 64 64">
+                    <path d="M17 6h20l11 11v41H17Z" />
+                    <path d="M37 6v11h11M24 29h17M24 38h17M24 47h11" />
+                  </svg>
+                </span>
+                <div><span>Open source license</span><h2>Build, study, modify, and share.</h2><p>The complete legal text is included with the application and source code.</p></div>
+              </section>
+              <dl class="permission-list">
+                <div><dt>Use</dt><dd>Use it for personal, research, or commercial projects.</dd></div>
+                <div><dt>Modify</dt><dd>Modify it and create derivative works.</dd></div>
+                <div><dt>Distribute</dt><dd>Distribute original or modified copies.</dd></div>
+                <div><dt>Notice</dt><dd>Preserve the license, copyright, and change notices.</dd></div>
+              </dl>
+              <section class="text-section">
+                <h2>Important</h2>
+                <p>The software is provided “as is,” without express or implied warranties. The license does not imply endorsement by BEA, OMB, or the U.S. Government.</p>
+                <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">Read the official Apache 2.0 text</a>
+              </section>
+            </div>
+          </section>
+
+          <section class="app-view info-page" data-view="version" aria-labelledby="version-title" hidden>
+            <header class="info-page-header">
+              <div>
+                <p class="overline">Version</p>
+                <h1 id="version-title">Metro Studio 1.0.0</h1>
+                <p id="version-description">The first stable Windows x64 release of Metro Studio, covering national, state, MSA, and CSA data workflows.</p>
+              </div>
+              <span class="status-badge success">Stable</span>
+            </header>
+            <div class="info-page-content narrow">
+              <section class="release-summary">
+                <div><span>Current release</span><strong>1.0.0</strong></div>
+                <dl>
+                  <div><dt>Platform</dt><dd id="version-platform">Windows</dd></div>
+                  <div><dt>Architecture</dt><dd id="version-architecture">x64</dd></div>
+                  <div><dt>Channel</dt><dd>Stable</dd></div>
+                  <div><dt>Released</dt><dd>28 Jul 2026</dd></div>
+                </dl>
+              </section>
+              <section class="text-section">
+                <h2 id="version-release-title">Initial Windows x64 release</h2>
+                <ul id="version-change-list" class="change-list">
+                  <li>Explore national data, 51 state geographies, 393 MSAs, and 184 CSAs.</li>
+                  <li>Query current-dollar GDP, real GDP in chained dollars, and population across official BEA periods.</li>
+                  <li>Aggregate eligible county records using OMB Bulletin 23-01 metro delineations while preserving county DataValue and NoteRef details.</li>
+                  <li>Load annual or quarterly national GDP, calculate optional quarterly cumulative values, and export multi-sheet Excel workbooks.</li>
+                  <li>Send BEA requests through an isolated Electron process and save Excel files locally, with light, dark, and reduced-motion support.</li>
+                </ul>
+              </section>
+            </div>
+          </section>
+
+          <section class="app-view info-page" data-view="privacy" aria-labelledby="privacy-title" hidden>
+            <header class="info-page-header">
+              <div>
+                <p class="overline">Privacy</p>
+                <h1 id="privacy-title">No personal information required.</h1>
+                <p>No account or tracking, and no name, email, or other identifying information required.</p>
+              </div>
+              <span class="status-badge success">Private by design</span>
+            </header>
+            <div class="info-page-content narrow">
+              <section class="document-summary">
+                <span class="document-symbol" aria-hidden="true">
+                  <svg viewBox="0 0 64 64">
+                    <rect x="13" y="27" width="38" height="29" rx="8" />
+                    <path d="M21 27v-8a11 11 0 0 1 22 0v8M32 39v7" />
+                  </svg>
+                </span>
+                <div><span>Privacy at a glance</span><h2>Your data work stays on your device.</h2><p>The app processes only the data required to aggregate and export your results.</p></div>
+              </section>
+              <dl class="permission-list">
+                <div><dt>No account</dt><dd>No registration, sign-in, or identifying information is required.</dd></div>
+                <div><dt>No telemetry</dt><dd>No advertising, analytics SDKs, or behavior tracking.</dd></div>
+                <div><dt>Local files</dt><dd>Generated Excel workbooks are saved or shared locally on your device.</dd></div>
+                <div><dt>Minimal network use</dt><dd>The app connects only to apps.bea.gov when you run a query.</dd></div>
+              </dl>
+              <section class="text-section">
+                <h2>What the app processes</h2>
+                <p>Metro-area selections, years, measures, GeoFips codes, BEA responses, and generated workbooks. They are used only for the current task and are never sent to the app developer.</p>
+                <h2>Retention</h2>
+                <p>The app does not operate a server database or retain query history. In-memory results are discarded when the application closes.</p>
+                <small>Effective: July 24, 2026</small>
+              </section>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <dialog id="query-summary-sheet" class="sheet">
+      <form method="dialog" class="sheet-surface">
+        <header class="sheet-header">
+          <div><p class="overline">Query Summary</p><h2>Review before running</h2></div>
+          <button class="icon-button sheet-close" type="submit" value="cancel" aria-label="Close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+          </button>
+        </header>
+        <div class="sheet-body">
+          <dl class="query-summary-list">
+            <div><dt>Scope</dt><dd id="summary-scope">No area selected</dd></div>
+            <div><dt>Measure</dt><dd id="summary-measure">Current-dollar GDP</dd></div>
+            <div><dt>Years</dt><dd id="summary-years">All years</dd></div>
+            <div><dt>Output</dt><dd id="summary-output">BEA_Gross_Domestic_Product.xlsx</dd></div>
+          </dl>
+          <div class="sheet-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <p>Online queries send only the parameters required for the current BEA request. No personal information is transmitted.</p>
+          </div>
+        </div>
+        <footer class="sheet-footer">
+          <button class="button primary-button" type="submit" value="default">Done</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+      <span></span>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+[build]
+  command = "npm run build:web"
+  publish = "dist-web"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/api/bea"
+  to = "/.netlify/functions/bea"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

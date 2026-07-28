@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import {
+  VIRGINIA_BEA_REPLACED_FIPS,
+} from "../scripts/virginia-bea-geofips.mjs";
 
 const metroData = JSON.parse(fs.readFileSync("src/data/metro-areas.json", "utf8"));
 
@@ -36,4 +39,31 @@ test("preserves the corrected Connecticut county and planning-region ranges", ()
     "09003", "09005", "09007", "09009", "09011", "09013", "09015",
     "09110", "09130", "09140", "09150", "09160", "09170", "09180",
   ]);
+});
+
+test("uses BEA Virginia combination GeoFIPS without double-counting member jurisdictions", () => {
+  const allAreaFips = new Set(metroData.areas.flatMap((area) => area.fips));
+  VIRGINIA_BEA_REPLACED_FIPS.forEach((fips) => {
+    assert.equal(allAreaFips.has(fips), false, `${fips} should use its BEA combination GeoFIPS`);
+  });
+
+  const washington = metroData.areas.find(
+    (area) => area.type === "msa" && area.code === "47900",
+  );
+  const virginiaBeach = metroData.areas.find(
+    (area) => area.type === "msa" && area.code === "47260",
+  );
+  const roanoke = metroData.areas.find(
+    (area) => area.type === "msa" && area.code === "40220",
+  );
+
+  assert.ok(washington.fips.includes("51919"));
+  assert.ok(washington.fips.includes("51942"));
+  assert.ok(washington.fips.includes("51951"));
+  assert.ok(washington.fips.includes("51510"));
+  assert.ok(virginiaBeach.fips.includes("51931"));
+  assert.ok(virginiaBeach.fips.includes("51958"));
+  assert.ok(virginiaBeach.fips.includes("51550"));
+  assert.ok(roanoke.fips.includes("51944"));
+  assert.ok(roanoke.fips.includes("51770"));
 });

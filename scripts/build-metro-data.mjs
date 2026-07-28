@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as XLSX from "xlsx";
+import { normalizeVirginiaBeaFips } from "./virginia-bea-geofips.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
@@ -51,7 +52,9 @@ function toFips(row) {
   const stateCode = text(row, "FIPS State Code");
   const countyCode = text(row, "FIPS County Code");
   if (!/^\d{1,2}$/u.test(stateCode) || !/^\d{1,3}$/u.test(countyCode)) return "";
-  return `${stateCode.padStart(2, "0")}${countyCode.padStart(3, "0")}`;
+  return normalizeVirginiaBeaFips(
+    `${stateCode.padStart(2, "0")}${countyCode.padStart(3, "0")}`,
+  );
 }
 
 function addToGroup(groups, key, initial, fips) {

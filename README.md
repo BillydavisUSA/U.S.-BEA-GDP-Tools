@@ -175,6 +175,9 @@ change `VITE_GITHUB_URL`, and rebuild.
 - Records with the same `CSA Title` are combined into a CSA.
 - `FIPS State Code` and `FIPS County Code` are zero-padded and concatenated
   into complete five-digit `GeoFips` codes.
+- Virginia counties and smaller independent cities use BEA's `519xx`
+  combination-area GeoFIPS. Large independent cities that BEA still publishes
+  separately retain their original codes.
 - Search supports MSA, CSA, and combined filters.
 - Selecting all metro areas deduplicates GeoFips codes, loads them in batches,
   and aggregates each MSA/CSA independently.
@@ -206,3 +209,11 @@ npm run build:data
 ```
 
 This regenerates `src/data/metro-areas.json`.
+
+When a replacement OMB workbook contains Virginia counties and independent
+cities as separate rows, normalize it against a BEA Virginia county CSV first:
+
+```bash
+npm run update:data:virginia -- "C:\path\to\Table.csv"
+npm run build:data
+```

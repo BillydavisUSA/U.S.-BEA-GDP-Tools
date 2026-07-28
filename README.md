@@ -47,7 +47,7 @@ Download packaged applications from the
 
 Release binaries are intentionally excluded from the source repository. Upload
 the three files above as assets attached to a GitHub Release, not as files in
-the repository. SHA-256 checksums are provided in `release/SHA256SUMS.txt`.
+the repository. Attach `SHA256SUMS.txt` to the same GitHub Release.
 
 ## Run from source
 

@@ -12,10 +12,10 @@
     <script type="module" src="./main.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#query">Skip to query builder</a>
+    <a class="skip-link" href="#query" data-i18n="a11y.skip">Skip to query builder</a>
 
     <header class="site-header">
-      <a class="brand" href="/" aria-label="Metro Studio home">
+      <a class="brand" href="/" aria-label="Metro Studio home" data-i18n-aria-label="a11y.home">
         <span class="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <path d="M5 18V10m5 8V6m5 12v-5m4 5H3" />
@@ -23,31 +23,35 @@
         </span>
         <span>Metro Studio</span>
       </a>
-      <a class="header-link" href="#sources">Data sources</a>
+      <div class="header-actions">
+        <a class="header-link" href="#sources" data-i18n="header.sources">Data sources</a>
+        <button id="language-toggle" class="language-toggle" type="button">
+          <span id="language-toggle-label">中文</span>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
-          <span class="eyebrow">Official U.S. economic data</span>
-          <h1 id="page-title">Metro, state, and national data in one query.</h1>
-          <p>
-            Search geographic areas, choose a BEA measure, and export a
-            ready-to-use Excel workbook.
+          <span class="eyebrow" data-i18n="hero.eyebrow">Official U.S. economic data</span>
+          <h1 id="page-title" data-i18n="hero.title">Metro, state, and national data in one query.</h1>
+          <p data-i18n="hero.description">
+            Search geographic areas, choose a BEA measure, and export a ready-to-use Excel workbook.
           </p>
         </div>
-        <dl class="hero-facts" aria-label="Available geography coverage">
+        <dl class="hero-facts" aria-label="Available geography coverage" data-i18n-aria-label="a11y.coverage">
           <div>
             <dt>393</dt>
-            <dd>MSAs</dd>
+            <dd data-i18n="hero.msas">MSAs</dd>
           </div>
           <div>
             <dt>184</dt>
-            <dd>CSAs</dd>
+            <dd data-i18n="hero.csas">CSAs</dd>
           </div>
           <div>
             <dt>51</dt>
-            <dd>States and D.C.</dd>
+            <dd data-i18n="hero.states">States and D.C.</dd>
           </div>
         </dl>
       </section>
@@ -56,25 +60,25 @@
         <section class="panel scope-panel" aria-labelledby="scope-title">
           <header class="panel-heading">
             <div>
-              <span class="section-kicker">01 · Scope</span>
-              <h2 id="scope-title">Choose geography</h2>
+              <span class="section-kicker" data-i18n="scope.kicker">01 · Scope</span>
+              <h2 id="scope-title" data-i18n="scope.title">Choose geography</h2>
             </div>
             <span id="coverage-badge" class="badge">577 areas</span>
           </header>
 
           <div class="field">
-            <label for="geography-level">Geographic level</label>
+            <label for="geography-level" data-i18n="scope.level">Geographic level</label>
             <select id="geography-level">
-              <option value="county">County Level</option>
-              <option value="state">State Level</option>
-              <option value="country">Country Level</option>
+              <option value="county" data-i18n="scope.county">County Level</option>
+              <option value="state" data-i18n="scope.state">State Level</option>
+              <option value="country" data-i18n="scope.country">Country Level</option>
             </select>
           </div>
 
           <fieldset id="metro-type-field" class="field">
-            <legend>Metro area type</legend>
-            <div id="metro-type" class="segmented" role="group" aria-label="Metro area type">
-              <button type="button" data-type="all" aria-pressed="true">All</button>
+            <legend data-i18n="scope.metroType">Metro area type</legend>
+            <div id="metro-type" class="segmented" role="group" aria-label="Metro area type" data-i18n-aria-label="a11y.metroType">
+              <button type="button" data-type="all" aria-pressed="true" data-i18n="scope.all">All</button>
               <button type="button" data-type="msa" aria-pressed="false">MSA</button>
               <button type="button" data-type="csa" aria-pressed="false">CSA</button>
             </div>
@@ -97,7 +101,7 @@
                 aria-expanded="false"
                 aria-controls="search-results"
               />
-              <button id="clear-search" class="clear-button" type="button" aria-label="Clear search" hidden>
+              <button id="clear-search" class="clear-button" type="button" aria-label="Clear search" data-i18n-aria-label="a11y.clearSearch" hidden>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
               </button>
             </div>
@@ -116,7 +120,7 @@
                 <strong id="selection-name"></strong>
                 <small id="selection-detail"></small>
               </span>
-              <button id="clear-selection" class="clear-button" type="button" aria-label="Clear selection">
+              <button id="clear-selection" class="clear-button" type="button" aria-label="Clear selection" data-i18n-aria-label="a11y.clearSelection">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
               </button>
             </div>
@@ -140,8 +144,8 @@
               </svg>
             </span>
             <span>
-              <strong>United States</strong>
-              <small>Country-level NIPA records</small>
+              <strong data-i18n="scope.countryName">United States</strong>
+              <small data-i18n="scope.countryDetail">Country-level NIPA records</small>
             </span>
           </div>
           <p id="scope-error" class="field-error" role="alert"></p>
@@ -150,35 +154,35 @@
         <section class="panel measure-panel" aria-labelledby="measure-title">
           <header class="panel-heading">
             <div>
-              <span class="section-kicker">02 · Measure</span>
-              <h2 id="measure-title">Choose data</h2>
+              <span class="section-kicker" data-i18n="measure.kicker">02 · Measure</span>
+              <h2 id="measure-title" data-i18n="measure.title">Choose data</h2>
             </div>
           </header>
           <div class="measure-grid">
             <div class="field">
-              <label for="table-name">Data type</label>
+              <label for="table-name" data-i18n="measure.dataType">Data type</label>
               <select id="table-name"></select>
             </div>
             <div class="field">
-              <label for="line-code">Measure</label>
+              <label for="line-code" data-i18n="measure.measure">Measure</label>
               <select id="line-code"></select>
             </div>
             <div id="frequency-field" class="field" hidden>
-              <label for="frequency">Frequency</label>
+              <label for="frequency" data-i18n="measure.frequency">Frequency</label>
               <select id="frequency">
-                <option value="A">Annual</option>
-                <option value="Q">Quarterly</option>
+                <option value="A" data-i18n="measure.annual">Annual</option>
+                <option value="Q" data-i18n="measure.quarterly">Quarterly</option>
               </select>
             </div>
             <div id="quarterly-mode-field" class="field" hidden>
-              <label for="quarterly-mode">Quarterly calculation</label>
+              <label for="quarterly-mode" data-i18n="measure.quarterlyCalculation">Quarterly calculation</label>
               <select id="quarterly-mode">
-                <option value="quarterly">Quarterly</option>
-                <option value="cumulative">Quarterly cumulative</option>
+                <option value="quarterly" data-i18n="measure.quarterly">Quarterly</option>
+                <option value="cumulative" data-i18n="measure.quarterlyCumulative">Quarterly cumulative</option>
               </select>
             </div>
             <div class="field year-field">
-              <label for="year">Years</label>
+              <label for="year" data-i18n="measure.years">Years</label>
               <select id="year"></select>
             </div>
           </div>
@@ -187,14 +191,14 @@
         <section class="panel output-panel" aria-labelledby="output-title">
           <header class="panel-heading">
             <div>
-              <span class="section-kicker">03 · Output</span>
-              <h2 id="output-title">Run and export</h2>
+              <span class="section-kicker" data-i18n="output.kicker">03 · Output</span>
+              <h2 id="output-title" data-i18n="output.title">Run and export</h2>
             </div>
             <span class="badge">Excel</span>
           </header>
           <div class="output-controls">
             <div class="field filename-field">
-              <label for="filename">Export filename</label>
+              <label for="filename" data-i18n="output.filename">Export filename</label>
               <div>
                 <input id="filename" value="BEA_Gross_Domestic_Product" maxlength="120" />
                 <span>.xlsx</span>
@@ -202,10 +206,10 @@
             </div>
             <button id="run-query" class="primary-button" type="submit">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
-              <span>Run query</span>
+              <span data-i18n="output.run">Run query</span>
             </button>
           </div>
-          <p class="privacy-line">
+          <p class="privacy-line" data-i18n="output.privacy">
             Requests are sent only to the U.S. Bureau of Economic Analysis.
           </p>
         </section>
@@ -214,13 +218,13 @@
       <section id="results" class="results-section" aria-labelledby="results-title">
         <header class="results-heading">
           <div>
-            <span class="section-kicker">Results</span>
-            <h2 id="results-title">Query results</h2>
-            <p id="results-subtitle">Choose a geography and measure, then run the query.</p>
+            <span class="section-kicker" data-i18n="results.kicker">Results</span>
+            <h2 id="results-title" data-i18n="results.title">Query results</h2>
+            <p id="results-subtitle" data-i18n="results.idleSubtitle">Choose a geography and measure, then run the query.</p>
           </div>
           <button id="export-button" class="export-button" type="button" disabled>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 20h14" /></svg>
-            Export Excel
+            <span data-i18n="results.export">Export Excel</span>
           </button>
         </header>
 
@@ -228,37 +232,37 @@
           <span class="empty-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
           </span>
-          <strong>Ready when you are.</strong>
-          <p>Your results and a five-row preview will appear here.</p>
+          <strong data-i18n="results.ready">Ready when you are.</strong>
+          <p data-i18n="results.readyDetail">Your results and a five-row preview will appear here.</p>
         </div>
 
         <div id="loading-state" class="result-state" hidden aria-live="polite">
           <span class="spinner" aria-hidden="true"></span>
-          <strong>Loading official BEA data</strong>
-          <p id="loading-message">Preparing the request…</p>
+          <strong data-i18n="results.loadingTitle">Loading official BEA data</strong>
+          <p id="loading-message" data-i18n="results.preparing">Preparing the request…</p>
         </div>
 
         <div id="error-state" class="result-state error-state" hidden role="alert">
-          <strong>We couldn’t complete this query.</strong>
+          <strong data-i18n="results.errorTitle">We couldn’t complete this query.</strong>
           <p id="error-message"></p>
         </div>
 
         <div id="success-state" hidden>
           <div class="result-summary">
             <div>
-              <span>Scope</span>
+              <span data-i18n="results.scope">Scope</span>
               <strong id="result-scope">—</strong>
             </div>
             <div>
-              <span>Records</span>
+              <span data-i18n="results.records">Records</span>
               <strong id="result-records">0</strong>
             </div>
             <div>
-              <span>Periods</span>
+              <span data-i18n="results.periods">Periods</span>
               <strong id="result-periods">0</strong>
             </div>
             <div>
-              <span>Missing</span>
+              <span data-i18n="results.missing">Missing</span>
               <strong id="result-missing">0</strong>
             </div>
           </div>
@@ -266,11 +270,11 @@
             <table>
               <thead>
                 <tr>
-                  <th scope="col">Geography</th>
-                  <th scope="col">Type</th>
-                  <th scope="col">Period</th>
-                  <th id="metric-heading" scope="col">Value</th>
-                  <th scope="col">Status</th>
+                  <th scope="col" data-i18n="results.geography">Geography</th>
+                  <th scope="col" data-i18n="results.type">Type</th>
+                  <th scope="col" data-i18n="results.period">Period</th>
+                  <th id="metric-heading" scope="col" data-i18n="results.value">Value</th>
+                  <th scope="col" data-i18n="results.status">Status</th>
                 </tr>
               </thead>
               <tbody id="result-body"></tbody>
@@ -282,24 +286,24 @@
 
       <section id="about" class="about-section" aria-labelledby="about-title">
         <div class="about-heading">
-          <span class="eyebrow">About the project</span>
-          <h2 id="about-title">Built to make official economic data easier to use.</h2>
+          <span class="eyebrow" data-i18n="about.eyebrow">About the project</span>
+          <h2 id="about-title" data-i18n="about.title">Built to make official economic data easier to use.</h2>
         </div>
         <div class="about-copy">
-          <p>
+          <p data-i18n="about.p1">
             U.S. BEA GDP Tools is a free, open-source project for retrieving
             GDP and population data from the U.S. Bureau of Economic Analysis.
             Metro Studio is the project’s web, Windows, and Android application.
             It supports national, state, and metropolitan analysis, with
             county-level detail retained for MSA and CSA exports.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             The tool focuses on current-dollar GDP, real GDP in chained
             dollars, and population. Data is requested directly through the
             BEA API, so the latest available periods follow BEA’s official
             release schedule.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             BEA announced in 2025 that it would stop publishing GDP and
             personal income estimates for county-aggregate geographies,
             including MSAs and CSAs. This project automates the otherwise
@@ -307,7 +311,7 @@
             into metropolitan estimates. MSA and CSA membership follows OMB
             Bulletin 23-01, issued in July 2023.
           </p>
-          <p class="about-note">
+          <p class="about-note" data-i18n="about.note">
             Metropolitan results are estimates generated by this tool from
             BEA county data; they are not official metropolitan estimates
             published by BEA. Windows and Android applications are also
@@ -319,20 +323,20 @@
 
     <footer id="sources" class="site-footer">
       <div>
-        <a class="brand footer-brand" href="/" aria-label="Metro Studio home">
+        <a class="brand footer-brand" href="/" aria-label="Metro Studio home" data-i18n-aria-label="a11y.home">
           <span class="brand-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M5 18V10m5 8V6m5 12v-5m4 5H3" /></svg>
           </span>
           <span>Metro Studio</span>
         </a>
-        <p>Free, open-source tools for exploring official U.S. economic data.</p>
+        <p data-i18n="footer.description">Free, open-source tools for exploring official U.S. economic data.</p>
       </div>
-      <nav aria-label="Data sources and project links">
-        <span>Data sources</span>
-        <a href="https://www.bea.gov/" target="_blank" rel="noreferrer">U.S. Bureau of Economic Analysis</a>
-        <a href="https://www.bea.gov/help/faq/1481" target="_blank" rel="noreferrer">BEA metropolitan-data notice</a>
-        <a href="https://www.whitehouse.gov/wp-content/uploads/2023/07/OMB-Bulletin-23-01.pdf" target="_blank" rel="noreferrer">OMB Bulletin 23-01</a>
-        <a id="github-link" href="https://github.com/BillydavisUSA/U.S.-BEA-GDP-Tools" target="_blank" rel="noreferrer">U.S. BEA GDP Tools on GitHub</a>
+      <nav aria-label="Data sources and project links" data-i18n-aria-label="a11y.footerNav">
+        <span data-i18n="footer.sources">Data sources</span>
+        <a href="https://www.bea.gov/" target="_blank" rel="noreferrer" data-i18n="footer.bea">U.S. Bureau of Economic Analysis</a>
+        <a href="https://www.bea.gov/help/faq/1481" target="_blank" rel="noreferrer" data-i18n="footer.notice">BEA metropolitan-data notice</a>
+        <a href="https://www.whitehouse.gov/wp-content/uploads/2023/07/OMB-Bulletin-23-01.pdf" target="_blank" rel="noreferrer" data-i18n="footer.omb">OMB Bulletin 23-01</a>
+        <a id="github-link" href="https://github.com/BillydavisUSA/U.S.-BEA-GDP-Tools" target="_blank" rel="noreferrer" data-i18n="footer.github">U.S. BEA GDP Tools on GitHub</a>
       </nav>
     </footer>
 

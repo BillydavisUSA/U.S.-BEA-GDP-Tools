@@ -187,8 +187,40 @@ const queryCompletionExpression = `(async () => {
     queryCompletesIntoResults:
       !document.querySelector("#success-state").hidden
       && document.querySelectorAll("#result-body tr").length === 1
-      && document.querySelector("#result-scope").textContent === "United States",
+      && ["United States", "美国"].includes(document.querySelector("#result-scope").textContent),
     noResultRenderError: document.querySelector("#error-state").hidden
+  };
+})()`;
+
+const languageToggleExpression = `(() => {
+  const toggle = document.querySelector("#language-toggle");
+  if (document.documentElement.lang === "zh-CN") toggle.click();
+  const before = {
+    level: document.querySelector("#geography-level").value,
+    statusVisible: !document.querySelector("#success-state").hidden
+  };
+  toggle.click();
+  const rect = toggle.getBoundingClientRect();
+  const chineseWorks =
+    document.documentElement.lang === "zh-CN"
+    && document.querySelector("#scope-title").textContent === "选择地理区域"
+    && document.querySelector("#results-title").textContent === "查询结果"
+    && document.querySelector("#result-scope").textContent === "美国"
+    && toggle.textContent.trim() === "EN";
+  const statePreserved =
+    document.querySelector("#geography-level").value === before.level
+    && !document.querySelector("#success-state").hidden === before.statusVisible;
+  toggle.click();
+  return {
+    languageToggleAccessible:
+      rect.width >= 44
+      && rect.height >= 44
+      && Boolean(toggle.getAttribute("aria-label")),
+    bilingualToggleWorks:
+      chineseWorks
+      && document.documentElement.lang === "en"
+      && document.querySelector("#scope-title").textContent === "Choose geography",
+    languageSwitchPreservesQuery: statePreserved
   };
 })()`;
 
@@ -239,8 +271,20 @@ async function inspectViewport(cdp, width, height, name) {
       && report.geometry.output.top > report.geometry.measure.bottom;
   report.responsivePlacement = responsive;
   report.resultsFollowQuery = report.geometry.results.top > report.geometry.output.bottom;
+  const initialScreenshot = await cdp.send(
+    "Page.captureScreenshot",
+    { format: "png", fromSurface: true, captureBeyondViewport: false },
+    sessionId,
+  );
+  mkdirSync(artifacts, { recursive: true });
+  writeFileSync(
+    join(artifacts, `web-layout-${name}-top.png`),
+    initialScreenshot.data,
+    "base64",
+  );
   Object.assign(report, await evaluate(cdp, sessionId, interactionExpression));
   Object.assign(report, await evaluate(cdp, sessionId, queryCompletionExpression));
+  Object.assign(report, await evaluate(cdp, sessionId, languageToggleExpression));
 
   const screenshot = await cdp.send(
     "Page.captureScreenshot",

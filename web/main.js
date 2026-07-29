@@ -1,4 +1,5 @@
 import "./styles.css";
+import { createI18n } from "./i18n.js";
 import metroDataset from "../src/data/metro-areas.json";
 import stateDataset from "../src/data/states.json";
 import { buildAreaCountyRows, buildAreaYearMatrix } from "../src/excel.js";
@@ -21,6 +22,8 @@ const API_ENDPOINT = "/api/bea";
 const API_BATCH_SIZE = 75;
 const API_CONCURRENCY = 3;
 const PREVIEW_LIMIT = 5;
+const i18n = createI18n();
+const t = (key, parameters) => i18n.t(key, parameters);
 const COUNTRY_AREA = Object.freeze({
   id: "country-us",
   type: "country",
@@ -31,56 +34,56 @@ const COUNTRY_AREA = Object.freeze({
 
 const TABLE_CONFIG = Object.freeze({
   CAGDP1: Object.freeze({
-    label: "GDP",
+    labelKey: "measure.gdp",
     filename: "BEA_Gross_Domestic_Product",
     firstYear: 2001,
     lastYear: 2024,
     defaultLineCode: "3",
     lineCodes: Object.freeze([
-      Object.freeze({ value: "1", label: "Real GDP" }),
-      Object.freeze({ value: "3", label: "Current-dollar GDP" }),
+      Object.freeze({ value: "1", labelKey: "measure.realGdp" }),
+      Object.freeze({ value: "3", labelKey: "measure.currentGdp" }),
     ]),
   }),
   CAINC1: Object.freeze({
-    label: "Population",
+    labelKey: "measure.population",
     filename: "BEA_Population",
     firstYear: 2001,
     lastYear: 2024,
     defaultLineCode: "2",
     lineCodes: Object.freeze([
-      Object.freeze({ value: "2", label: "Population" }),
+      Object.freeze({ value: "2", labelKey: "measure.population" }),
     ]),
   }),
   SAGDP1: Object.freeze({
-    label: "GDP",
+    labelKey: "measure.gdp",
     filename: "BEA_State_GDP",
     firstYear: 1997,
     lastYear: 2025,
     defaultLineCode: "3",
     lineCodes: Object.freeze([
-      Object.freeze({ value: "1", label: "Real GDP" }),
-      Object.freeze({ value: "3", label: "Current-dollar GDP" }),
+      Object.freeze({ value: "1", labelKey: "measure.realGdp" }),
+      Object.freeze({ value: "3", labelKey: "measure.currentGdp" }),
     ]),
   }),
   SAINC1: Object.freeze({
-    label: "Population",
+    labelKey: "measure.population",
     filename: "BEA_State_Population",
     firstYear: 1929,
     lastYear: 2025,
     defaultLineCode: "2",
     lineCodes: Object.freeze([
-      Object.freeze({ value: "2", label: "Population" }),
+      Object.freeze({ value: "2", labelKey: "measure.population" }),
     ]),
   }),
   NIPA_GDP: Object.freeze({
-    label: "GDP",
+    labelKey: "measure.gdp",
     filename: "BEA_United_States_GDP",
     firstYear: 1929,
     lastYear: 2025,
     defaultLineCode: "current",
     lineCodes: Object.freeze([
-      Object.freeze({ value: "current", label: "Current-dollar GDP" }),
-      Object.freeze({ value: "real", label: "Real GDP" }),
+      Object.freeze({ value: "current", labelKey: "measure.currentGdp" }),
+      Object.freeze({ value: "real", labelKey: "measure.realGdp" }),
     ]),
   }),
 });
@@ -104,6 +107,8 @@ const COUNTRY_TABLES = Object.freeze({
 
 const elements = {
   form: document.querySelector("#query"),
+  languageToggle: document.querySelector("#language-toggle"),
+  languageToggleLabel: document.querySelector("#language-toggle-label"),
   geographyLevel: document.querySelector("#geography-level"),
   coverageBadge: document.querySelector("#coverage-badge"),
   metroTypeField: document.querySelector("#metro-type-field"),
@@ -167,11 +172,16 @@ const state = {
   source: "",
   unsupportedFips: [],
   controller: null,
+  errorMessage: "",
+  loadingCompleted: 0,
+  loadingTotal: 0,
 };
 
-const numberFormatter = new Intl.NumberFormat("en-US", {
-  maximumFractionDigits: 4,
-});
+function formatNumber(value) {
+  return new Intl.NumberFormat(i18n.language === "zh" ? "zh-CN" : "en-US", {
+    maximumFractionDigits: 4,
+  }).format(value);
+}
 
 function configureGithubLink() {
   const candidate = String(
@@ -200,17 +210,23 @@ function getCountryTableSelection() {
 
 function getMetricLabel(lineCode = elements.lineCode.value, tableName = elements.tableName.value) {
   const normalizedTable = String(tableName).toUpperCase();
-  if (normalizedTable.endsWith("INC1")) return "Population";
-  if (/^T(?:101|801)05$/u.test(normalizedTable)) return "Current-dollar GDP";
-  if (/^T(?:101|801)06$/u.test(normalizedTable)) return "Real GDP";
-  return String(lineCode) === "1" ? "Real GDP" : "Current-dollar GDP";
+  if (normalizedTable.endsWith("INC1")) return t("measure.population");
+  if (/^T(?:101|801)05$/u.test(normalizedTable)) return t("measure.currentGdp");
+  if (/^T(?:101|801)06$/u.test(normalizedTable)) return t("measure.realGdp");
+  return String(lineCode) === "1" ? t("measure.realGdp") : t("measure.currentGdp");
 }
 
 function getUnitLabel(unit, tableName = elements.tableName.value) {
   const normalizedTable = String(tableName).toUpperCase();
-  if (normalizedTable.endsWith("INC1")) return "persons";
-  if (/^T(?:101|801)0[56]$/u.test(normalizedTable)) return unit || "millions of dollars";
-  return unit === "Thousands of dollars" ? "thousands of dollars" : unit || "thousands of dollars";
+  if (normalizedTable.endsWith("INC1")) return t("unit.persons");
+  if (/^T(?:101|801)0[56]$/u.test(normalizedTable)) {
+    return !unit || /millions of dollars/iu.test(unit) ? t("unit.millions") : unit;
+  }
+  return !unit || /thousands of dollars/iu.test(unit) ? t("unit.thousands") : unit;
+}
+
+function getAreaName(area) {
+  return area?.type === "country" ? t("scope.countryName") : area?.name ?? "";
 }
 
 function normalizeSearch(value) {
@@ -237,6 +253,7 @@ function closeSearchResults() {
 
 function setStatus(status, message = "") {
   state.status = status;
+  state.errorMessage = status === "error" ? message : "";
   elements.emptyState.hidden = status !== "idle";
   elements.loadingState.hidden = status !== "loading";
   elements.errorState.hidden = status !== "error";
@@ -244,8 +261,8 @@ function setStatus(status, message = "") {
   elements.exportButton.disabled = status !== "success";
   elements.runQuery.disabled = status === "loading";
   elements.runQuery.querySelector("span").textContent = status === "loading"
-    ? "Running query…"
-    : "Run query";
+    ? t("output.running")
+    : t("output.run");
   if (status === "error") elements.errorMessage.textContent = message;
 }
 
@@ -255,7 +272,7 @@ function resetResult() {
     state.aggregated = [];
     state.resultAreas = [];
     setStatus("idle");
-    elements.resultsSubtitle.textContent = "Choose a geography and measure, then run the query.";
+    elements.resultsSubtitle.textContent = t("results.idleSubtitle");
   }
 }
 
@@ -283,21 +300,27 @@ function renderSelection() {
   elements.selectionSummary.hidden = false;
   elements.selectionName.textContent = allSelected
     ? level === "state"
-      ? "All states"
+      ? t("scope.allStates")
       : state.areaType === "msa"
-        ? "All metropolitan statistical areas"
+        ? t("scope.allMsas")
         : state.areaType === "csa"
-          ? "All combined statistical areas"
-          : "All metro areas"
-    : area.name;
+          ? t("scope.allCsas")
+          : t("scope.allMetros")
+    : getAreaName(area);
   elements.selectionDetail.textContent = allSelected
-    ? `${state.selectedAreas.length} ${level === "state" ? "states" : "areas"} selected`
+    ? t(level === "state" ? "scope.stateSelected" : "scope.areaSelected", {
+        count: formatNumber(state.selectedAreas.length),
+      })
     : area.type === "state"
-      ? `State FIPS ${area.code}`
-      : `${area.type.toUpperCase()} ${area.code} · ${area.fips.length} county geographies`;
+      ? t("scope.stateFips", { code: area.code })
+      : t("scope.countyGeographies", {
+          type: area.type.toUpperCase(),
+          code: area.code,
+          count: formatNumber(area.fips.length),
+        });
 }
 
-function renderScopeControls(clearSelection = true) {
+function renderScopeControls(clearSelection = true, resetSearch = true) {
   const level = elements.geographyLevel.value;
   const isCounty = level === "county";
   const isState = level === "state";
@@ -307,15 +330,19 @@ function renderScopeControls(clearSelection = true) {
   elements.selectionRow.hidden = isCountry;
   elements.countrySummary.hidden = !isCountry;
   elements.coverageBadge.textContent = isCountry
-    ? "1 country"
-    : isState ? `${stateDataset.areas.length} states` : `${metroDataset.areas.length} areas`;
-  elements.searchLabel.textContent = isState ? "Search states" : "Search metro areas";
+    ? t("scope.oneCountry")
+    : isState
+      ? t("scope.stateCount", { count: formatNumber(stateDataset.areas.length) })
+      : t("scope.areaCount", { count: formatNumber(metroDataset.areas.length) });
+  elements.searchLabel.textContent = isState ? t("scope.searchStates") : t("scope.searchMetro");
   elements.areaSearch.placeholder = isState
-    ? "e.g. New York or 36"
-    : "e.g. New York or 35620";
-  elements.areaSearch.value = "";
-  elements.clearSearch.hidden = true;
-  closeSearchResults();
+    ? t("scope.statePlaceholder")
+    : t("scope.metroPlaceholder");
+  if (resetSearch) {
+    elements.areaSearch.value = "";
+    elements.clearSearch.hidden = true;
+    closeSearchResults();
+  }
 
   if (clearSelection) {
     setSelectedAreas(isCountry ? [COUNTRY_AREA] : [], isCountry ? "fixed" : "");
@@ -327,13 +354,16 @@ function renderSelectAll() {
   const level = elements.geographyLevel.value;
   const areas = getAvailableAreas();
   elements.selectAllLabel.textContent = level === "state"
-    ? "Select all states"
+    ? t("scope.selectAllStates")
     : state.areaType === "msa"
-      ? "Select all metropolitan statistical areas"
+      ? t("scope.selectAllMsas")
       : state.areaType === "csa"
-        ? "Select all combined statistical areas"
-        : "Select all metro areas";
-  elements.selectAllCount.textContent = `${areas.length} ${level === "state" ? "states" : "areas"}`;
+        ? t("scope.selectAllCsas")
+        : t("scope.selectAllMetros");
+  elements.selectAllCount.textContent = t(
+    level === "state" ? "scope.stateCount" : "scope.areaCount",
+    { count: formatNumber(areas.length) },
+  );
 }
 
 function createSearchResult(area) {
@@ -346,8 +376,12 @@ function createSearchResult(area) {
   const detail = document.createElement("small");
   name.textContent = area.name;
   detail.textContent = area.type === "state"
-    ? `State FIPS ${area.code}`
-    : `${area.type.toUpperCase()} ${area.code} · ${area.fips.length} counties`;
+    ? t("scope.stateFips", { code: area.code })
+    : t("scope.counties", {
+        type: area.type.toUpperCase(),
+        code: area.code,
+        count: formatNumber(area.fips.length),
+      });
   copy.append(name, detail);
   const badge = document.createElement("span");
   badge.className = "type-badge";
@@ -377,7 +411,7 @@ function renderSearchResults() {
       ? matches.map(createSearchResult)
       : [Object.assign(document.createElement("p"), {
           className: "search-empty",
-          textContent: "No matching geography found.",
+          textContent: t("scope.noMatch"),
         })]),
   );
   elements.searchResults.hidden = false;
@@ -410,7 +444,7 @@ function syncMeasureControls(updateFilename = true) {
   elements.tableName.replaceChildren(...allowed.map((value) => {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = TABLE_CONFIG[value].label;
+    option.textContent = t(TABLE_CONFIG[value].labelKey);
     return option;
   }));
   elements.tableName.value = level === "country"
@@ -424,10 +458,10 @@ function syncMeasureControls(updateFilename = true) {
 function syncLineCodeControls(updateFilename = true) {
   const config = getTableConfig();
   const previous = elements.lineCode.value;
-  elements.lineCode.replaceChildren(...config.lineCodes.map(({ value, label }) => {
+  elements.lineCode.replaceChildren(...config.lineCodes.map(({ value, labelKey }) => {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = label;
+    option.textContent = t(labelKey);
     return option;
   }));
   elements.lineCode.value = config.lineCodes.some(({ value }) => value === previous)
@@ -451,9 +485,9 @@ function syncYearControls() {
     : getTableConfig();
   const previous = elements.year.value || "ALL";
   const choices = [
-    ["ALL", `All years (${config.firstYear}–${config.lastYear})`],
-    ["LAST5", "Latest 5 years"],
-    ["LAST10", "Latest 10 years"],
+    ["ALL", t("measure.allYears", { first: config.firstYear, last: config.lastYear })],
+    ["LAST5", t("measure.latest5")],
+    ["LAST10", t("measure.latest10")],
   ];
   for (let year = config.lastYear; year >= config.firstYear; year -= 1) {
     choices.push([String(year), String(year)]);
@@ -471,8 +505,8 @@ function validateQuery() {
   elements.scopeError.textContent = "";
   if (elements.geographyLevel.value !== "country" && state.selectedAreas.length === 0) {
     elements.scopeError.textContent = elements.geographyLevel.value === "state"
-      ? "Select a state or choose all states."
-      : "Select a metro area or choose all metro areas.";
+      ? t("scope.validationState")
+      : t("scope.validationMetro");
     elements.searchGroup.scrollIntoView({ behavior: "smooth", block: "center" });
     elements.areaSearch.focus();
     return false;
@@ -506,7 +540,7 @@ async function fetchBatch(parameters, codes, signal) {
     headers: { Accept: "application/json" },
     signal,
   });
-  if (!response.ok) throw new Error(`BEA API request failed (HTTP ${response.status}).`);
+  if (!response.ok) throw new Error(t("error.http", { status: response.status }));
   return parseBeaPayload(await response.json());
 }
 
@@ -525,6 +559,30 @@ function buildResultAreas(aggregated, areas, level) {
   ])).values()];
 }
 
+function getResultScopeLabel() {
+  if (state.resultLevel === "country") return t("scope.countryName");
+  if (state.resultAreas.length === 1) return getAreaName(state.resultAreas[0]);
+  if (state.resultLevel === "state") return t("results.allStates");
+  if (state.areaType === "msa") return t("results.allMsas");
+  if (state.areaType === "csa") return t("results.allCsas");
+  return t("results.allMetros");
+}
+
+function renderResultSummary() {
+  const scope = getResultScopeLabel();
+  const missing = state.aggregated.filter((row) => row.status === "missing").length;
+  const periodCount = new Set(state.aggregated.map((row) => row.year)).size;
+  elements.resultScope.textContent = scope;
+  elements.resultRecords.textContent = formatNumber(state.records.length);
+  elements.resultPeriods.textContent = formatNumber(periodCount);
+  elements.resultMissing.textContent = formatNumber(missing);
+  elements.metricHeading.textContent =
+    `${getMetricLabel(state.parameters?.LINECODE, state.parameters?.TABLENAME)} `
+    + `(${getUnitLabel(state.meta.unit, state.parameters?.TABLENAME)})`;
+  elements.resultsSubtitle.textContent =
+    `${scope} · ${getMetricLabel(state.parameters?.LINECODE, state.parameters?.TABLENAME)}`;
+}
+
 function showResults(parsedBatches, parameters, areas, queryContext) {
   const records = filterRecordsForTable(
     parsedBatches.flatMap((batch) => batch.records),
@@ -540,7 +598,7 @@ function showResults(parsedBatches, parameters, areas, queryContext) {
       ? mapStateRecords(records, collectAreaFips(areas))
       : aggregateByAreas(records, areas, periods);
   if (!aggregated.length) {
-    throw new Error("No records matched the selected geography, measure, and year.");
+    throw new Error(t("error.noRecords"));
   }
 
   state.records = records;
@@ -552,23 +610,7 @@ function showResults(parsedBatches, parameters, areas, queryContext) {
   state.meta = parsedBatches[0]?.meta ?? {};
   state.source = "BEA API";
 
-  const missing = aggregated.filter((row) => row.status === "missing").length;
-  const periodCount = new Set(aggregated.map((row) => row.year)).size;
-  const scope = level === "country"
-    ? "United States"
-    : state.resultAreas.length === 1
-      ? state.resultAreas[0].name
-      : level === "state"
-        ? "All states"
-        : state.areaType === "msa"
-          ? "All MSAs"
-          : state.areaType === "csa" ? "All CSAs" : "All metro areas";
-  elements.resultScope.textContent = scope;
-  elements.resultRecords.textContent = numberFormatter.format(records.length);
-  elements.resultPeriods.textContent = numberFormatter.format(periodCount);
-  elements.resultMissing.textContent = numberFormatter.format(missing);
-  elements.metricHeading.textContent = `${getMetricLabel(parameters.LINECODE, parameters.TABLENAME)} (${getUnitLabel(state.meta.unit, parameters.TABLENAME)})`;
-  elements.resultsSubtitle.textContent = `${scope} · ${getMetricLabel(parameters.LINECODE, parameters.TABLENAME)}`;
+  renderResultSummary();
   renderPreview();
   setStatus("success");
   elements.results.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -581,7 +623,7 @@ function renderPreview() {
       row.areaName,
       row.areaType.toUpperCase(),
       row.year,
-      row.status === "ok" ? numberFormatter.format(row.total) : "No data",
+      row.status === "ok" ? formatNumber(row.total) : t("results.noData"),
     ];
     values.forEach((value) => {
       const td = document.createElement("td");
@@ -593,16 +635,16 @@ function renderPreview() {
     status.className = `row-status ${row.status === "ok" ? "ok" : "missing"}`;
     status.textContent = row.status === "ok"
       ? state.resultLevel === "country"
-        ? row.calculated ? "Calculated" : "Reported"
-        : state.resultLevel === "state" ? "Reported" : "Aggregated"
-      : "No data";
+        ? row.calculated ? t("results.calculated") : t("results.reported")
+        : state.resultLevel === "state" ? t("results.reported") : t("results.aggregated")
+      : t("results.noData");
     statusCell.append(status);
     tr.append(statusCell);
     return tr;
   }));
   elements.previewNote.textContent = state.aggregated.length > PREVIEW_LIMIT
-    ? `Showing 5 of ${numberFormatter.format(state.aggregated.length)} rows. Export the workbook to view the complete dataset.`
-    : `Showing all ${numberFormatter.format(state.aggregated.length)} rows.`;
+    ? t("results.showingPartial", { count: formatNumber(state.aggregated.length) })
+    : t("results.showingAll", { count: formatNumber(state.aggregated.length) });
 }
 
 async function runQuery() {
@@ -611,7 +653,7 @@ async function runQuery() {
   const controller = new AbortController();
   state.controller = controller;
   setStatus("loading");
-  elements.resultsSubtitle.textContent = "Loading official BEA data…";
+  elements.resultsSubtitle.textContent = t("results.loadingSubtitle");
 
   const level = elements.geographyLevel.value;
   const allFips = collectAreaFips(state.selectedAreas);
@@ -634,9 +676,14 @@ async function runQuery() {
           && elements.quarterlyMode.value === "cumulative",
       }
     : null;
+  state.loadingCompleted = 0;
+  state.loadingTotal = batches.length;
   elements.loadingMessage.textContent = level === "country"
-    ? "Loading United States NIPA records."
-    : `Loading ${batches.length} request ${batches.length === 1 ? "batch" : "batches"}.`;
+    ? t("loading.country")
+    : t("loading.batches", {
+        count: formatNumber(batches.length),
+        noun: t(batches.length === 1 ? "loading.batch" : "loading.batchPlural"),
+      });
 
   try {
     const parsedBatches = new Array(batches.length);
@@ -648,7 +695,11 @@ async function runQuery() {
         nextBatch += 1;
         parsedBatches[index] = await fetchBatch(parameters, batches[index], controller.signal);
         completed += 1;
-        elements.loadingMessage.textContent = `Completed ${completed} of ${batches.length} request batches.`;
+        state.loadingCompleted = completed;
+        elements.loadingMessage.textContent = t("loading.completed", {
+          completed: formatNumber(completed),
+          total: formatNumber(batches.length),
+        });
       }
     }
     await Promise.all(
@@ -657,9 +708,11 @@ async function runQuery() {
     showResults(parsedBatches, parameters, state.selectedAreas, queryContext);
   } catch (error) {
     if (error.name === "AbortError") return;
-    const message = `${error.message || "Unable to load data."} Check the selection and try again.`;
+    const message = t("error.checkSelection", {
+      message: error.message || t("error.loadFallback"),
+    });
     setStatus("error", message);
-    elements.resultsSubtitle.textContent = "The query did not complete.";
+    elements.resultsSubtitle.textContent = t("results.failedSubtitle");
   } finally {
     if (state.controller === controller) state.controller = null;
   }
@@ -735,9 +788,9 @@ async function exportExcel() {
     XLSX.writeFile(workbook, `${sanitizeFilename(elements.filename.value)}.xlsx`, {
       compression: true,
     });
-    showToast("Excel workbook created.");
+    showToast(t("toast.exported"));
   } catch (error) {
-    setStatus("error", `Unable to create the Excel workbook: ${error.message}`);
+    setStatus("error", t("error.export", { message: error.message }));
   } finally {
     elements.exportButton.disabled = state.status !== "success";
   }
@@ -751,6 +804,70 @@ function showToast(message) {
   toastTimer = window.setTimeout(() => {
     elements.toast.hidden = true;
   }, 3200);
+}
+
+function refreshMeasureOptionLabels() {
+  [...elements.tableName.options].forEach((option) => {
+    const config = TABLE_CONFIG[option.value];
+    if (config) option.textContent = t(config.labelKey);
+  });
+  const config = getTableConfig();
+  [...elements.lineCode.options].forEach((option) => {
+    const lineCode = config.lineCodes.find(({ value }) => value === option.value);
+    if (lineCode) option.textContent = t(lineCode.labelKey);
+  });
+  syncYearControls();
+}
+
+function refreshStatusCopy() {
+  elements.runQuery.querySelector("span").textContent = state.status === "loading"
+    ? t("output.running")
+    : t("output.run");
+  if (state.status === "idle") {
+    elements.resultsSubtitle.textContent = t("results.idleSubtitle");
+    return;
+  }
+  if (state.status === "loading") {
+    elements.resultsSubtitle.textContent = t("results.loadingSubtitle");
+    if (state.loadingCompleted > 0) {
+      elements.loadingMessage.textContent = t("loading.completed", {
+        completed: formatNumber(state.loadingCompleted),
+        total: formatNumber(state.loadingTotal),
+      });
+    } else if (elements.geographyLevel.value === "country") {
+      elements.loadingMessage.textContent = t("loading.country");
+    } else {
+      elements.loadingMessage.textContent = t("loading.batches", {
+        count: formatNumber(state.loadingTotal),
+        noun: t(state.loadingTotal === 1 ? "loading.batch" : "loading.batchPlural"),
+      });
+    }
+    return;
+  }
+  if (state.status === "error") {
+    elements.resultsSubtitle.textContent = t("results.failedSubtitle");
+    elements.errorMessage.textContent = state.errorMessage;
+    return;
+  }
+  renderResultSummary();
+  renderPreview();
+}
+
+function applyLanguage(language, options) {
+  i18n.setLanguage(language, options);
+  const switchingToChinese = i18n.language === "en";
+  elements.languageToggleLabel.textContent = switchingToChinese ? "中文" : "EN";
+  elements.languageToggle.setAttribute(
+    "aria-label",
+    t(switchingToChinese ? "language.switchToChinese" : "language.switchToEnglish"),
+  );
+  elements.languageToggle.setAttribute("lang", switchingToChinese ? "zh-CN" : "en");
+  renderScopeControls(false, false);
+  renderSelection();
+  renderSelectAll();
+  refreshMeasureOptionLabels();
+  if (elements.areaSearch.value.trim()) renderSearchResults();
+  refreshStatusCopy();
 }
 
 elements.form.addEventListener("submit", (event) => {
@@ -797,12 +914,17 @@ elements.frequency.addEventListener("change", () => {
 elements.quarterlyMode.addEventListener("change", resetResult);
 elements.year.addEventListener("change", resetResult);
 elements.exportButton.addEventListener("click", exportExcel);
+elements.languageToggle.addEventListener("click", () => {
+  applyLanguage(i18n.language === "en" ? "zh" : "en");
+});
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".search-group")) closeSearchResults();
 });
 
 configureGithubLink();
+i18n.translateDocument();
 renderScopeControls(false);
 setSelectedAreas([], "");
 syncMeasureControls(true);
 setStatus("idle");
+applyLanguage(i18n.language, { persist: false });

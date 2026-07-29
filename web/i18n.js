@@ -1,0 +1,331 @@
+const LANGUAGE_STORAGE_KEY = "metro-studio-web-language";
+
+const messages = Object.freeze({
+  en: Object.freeze({
+    "meta.title": "Metro Studio — U.S. Economic Data Explorer",
+    "meta.description": "Explore official U.S. GDP and population data by metro area, state, or country.",
+    "a11y.skip": "Skip to query builder",
+    "a11y.home": "Metro Studio home",
+    "a11y.coverage": "Available geography coverage",
+    "a11y.metroType": "Metro area type",
+    "a11y.clearSearch": "Clear search",
+    "a11y.clearSelection": "Clear selection",
+    "a11y.footerNav": "Data sources and project links",
+    "language.switchToChinese": "切换至中文",
+    "language.switchToEnglish": "Switch to English",
+    "header.sources": "Data sources",
+    "hero.eyebrow": "Official U.S. economic data",
+    "hero.title": "Metro, state, and national data in one query.",
+    "hero.description": "Search geographic areas, choose a BEA measure, and export a ready-to-use Excel workbook.",
+    "hero.msas": "MSAs",
+    "hero.csas": "CSAs",
+    "hero.states": "States and D.C.",
+    "scope.kicker": "01 · Scope",
+    "scope.title": "Choose geography",
+    "scope.level": "Geographic level",
+    "scope.county": "County Level",
+    "scope.state": "State Level",
+    "scope.country": "Country Level",
+    "scope.metroType": "Metro area type",
+    "scope.all": "All",
+    "scope.searchMetro": "Search metro areas",
+    "scope.searchStates": "Search states",
+    "scope.metroPlaceholder": "e.g. New York or 35620",
+    "scope.statePlaceholder": "e.g. New York or 36",
+    "scope.countryName": "United States",
+    "scope.countryDetail": "Country-level NIPA records",
+    "scope.allStates": "All states",
+    "scope.allMsas": "All metropolitan statistical areas",
+    "scope.allCsas": "All combined statistical areas",
+    "scope.allMetros": "All metro areas",
+    "scope.selectAllStates": "Select all states",
+    "scope.selectAllMsas": "Select all metropolitan statistical areas",
+    "scope.selectAllCsas": "Select all combined statistical areas",
+    "scope.selectAllMetros": "Select all metro areas",
+    "scope.oneCountry": "1 country",
+    "scope.areaCount": "{count} areas",
+    "scope.stateCount": "{count} states",
+    "scope.areaSelected": "{count} areas selected",
+    "scope.stateSelected": "{count} states selected",
+    "scope.stateFips": "State FIPS {code}",
+    "scope.counties": "{type} {code} · {count} counties",
+    "scope.countyGeographies": "{type} {code} · {count} county geographies",
+    "scope.noMatch": "No matching geography found.",
+    "scope.validationState": "Select a state or choose all states.",
+    "scope.validationMetro": "Select a metro area or choose all metro areas.",
+    "measure.kicker": "02 · Measure",
+    "measure.title": "Choose data",
+    "measure.dataType": "Data type",
+    "measure.measure": "Measure",
+    "measure.frequency": "Frequency",
+    "measure.annual": "Annual",
+    "measure.quarterly": "Quarterly",
+    "measure.quarterlyCalculation": "Quarterly calculation",
+    "measure.quarterlyCumulative": "Quarterly cumulative",
+    "measure.years": "Years",
+    "measure.gdp": "GDP",
+    "measure.population": "Population",
+    "measure.realGdp": "Real GDP",
+    "measure.currentGdp": "Current-dollar GDP",
+    "measure.allYears": "All years ({first}–{last})",
+    "measure.latest5": "Latest 5 years",
+    "measure.latest10": "Latest 10 years",
+    "unit.persons": "persons",
+    "unit.millions": "millions of dollars",
+    "unit.thousands": "thousands of dollars",
+    "output.kicker": "03 · Output",
+    "output.title": "Run and export",
+    "output.filename": "Export filename",
+    "output.run": "Run query",
+    "output.running": "Running query…",
+    "output.privacy": "Requests are sent only to the U.S. Bureau of Economic Analysis.",
+    "results.kicker": "Results",
+    "results.title": "Query results",
+    "results.idleSubtitle": "Choose a geography and measure, then run the query.",
+    "results.loadingSubtitle": "Loading official BEA data…",
+    "results.failedSubtitle": "The query did not complete.",
+    "results.export": "Export Excel",
+    "results.ready": "Ready when you are.",
+    "results.readyDetail": "Your results and a five-row preview will appear here.",
+    "results.loadingTitle": "Loading official BEA data",
+    "results.preparing": "Preparing the request…",
+    "results.errorTitle": "We couldn’t complete this query.",
+    "results.scope": "Scope",
+    "results.records": "Records",
+    "results.periods": "Periods",
+    "results.missing": "Missing",
+    "results.geography": "Geography",
+    "results.type": "Type",
+    "results.period": "Period",
+    "results.value": "Value",
+    "results.status": "Status",
+    "results.allStates": "All states",
+    "results.allMsas": "All MSAs",
+    "results.allCsas": "All CSAs",
+    "results.allMetros": "All metro areas",
+    "results.noData": "No data",
+    "results.calculated": "Calculated",
+    "results.reported": "Reported",
+    "results.aggregated": "Aggregated",
+    "results.showingPartial": "Showing 5 of {count} rows. Export the workbook to view the complete dataset.",
+    "results.showingAll": "Showing all {count} rows.",
+    "loading.country": "Loading United States NIPA records.",
+    "loading.batches": "Loading {count} request {noun}.",
+    "loading.batch": "batch",
+    "loading.batchPlural": "batches",
+    "loading.completed": "Completed {completed} of {total} request batches.",
+    "error.http": "BEA API request failed (HTTP {status}).",
+    "error.noRecords": "No records matched the selected geography, measure, and year.",
+    "error.loadFallback": "Unable to load data.",
+    "error.checkSelection": "{message} Check the selection and try again.",
+    "error.export": "Unable to create the Excel workbook: {message}",
+    "toast.exported": "Excel workbook created.",
+    "about.eyebrow": "About the project",
+    "about.title": "Built to make official economic data easier to use.",
+    "about.p1": "U.S. BEA GDP Tools is a free, open-source project for retrieving GDP and population data from the U.S. Bureau of Economic Analysis. Metro Studio is the project’s web, Windows, and Android application. It supports national, state, and metropolitan analysis, with county-level detail retained for MSA and CSA exports.",
+    "about.p2": "The tool focuses on current-dollar GDP, real GDP in chained dollars, and population. Data is requested directly through the BEA API, so the latest available periods follow BEA’s official release schedule.",
+    "about.p3": "BEA announced in 2025 that it would stop publishing GDP and personal income estimates for county-aggregate geographies, including MSAs and CSAs. This project automates the otherwise repetitive work of retrieving county records and combining them into metropolitan estimates. MSA and CSA membership follows OMB Bulletin 23-01, issued in July 2023.",
+    "about.note": "Metropolitan results are estimates generated by this tool from BEA county data; they are not official metropolitan estimates published by BEA. Windows and Android applications are also available for users who prefer an installed version.",
+    "footer.description": "Free, open-source tools for exploring official U.S. economic data.",
+    "footer.sources": "Data sources",
+    "footer.bea": "U.S. Bureau of Economic Analysis",
+    "footer.notice": "BEA metropolitan-data notice",
+    "footer.omb": "OMB Bulletin 23-01",
+    "footer.github": "U.S. BEA GDP Tools on GitHub",
+  }),
+  zh: Object.freeze({
+    "meta.title": "Metro Studio — 美国经济数据查询工具",
+    "meta.description": "按都会区、州或国家层级查询美国官方 GDP 与人口数据。",
+    "a11y.skip": "跳至查询工具",
+    "a11y.home": "Metro Studio 首页",
+    "a11y.coverage": "可查询的地理范围",
+    "a11y.metroType": "都会区类型",
+    "a11y.clearSearch": "清除搜索",
+    "a11y.clearSelection": "清除选择",
+    "a11y.footerNav": "数据来源与项目链接",
+    "language.switchToChinese": "切换至中文",
+    "language.switchToEnglish": "切换至英文",
+    "header.sources": "数据来源",
+    "hero.eyebrow": "美国官方经济数据",
+    "hero.title": "美国数据查询系统：全国、州、都会区GDP和人口数据",
+    "hero.description": "搜索地理区域、选择 BEA 指标，并导出可直接使用的 Excel 工作簿。",
+    "hero.msas": "大都市统计区",
+    "hero.csas": "联合统计区",
+    "hero.states": "各州及华盛顿特区",
+    "scope.kicker": "01 · 地理范围",
+    "scope.title": "选择地理区域",
+    "scope.level": "地理层级",
+    "scope.county": "县级",
+    "scope.state": "州级",
+    "scope.country": "国家级",
+    "scope.metroType": "都会区类型",
+    "scope.all": "全部",
+    "scope.searchMetro": "搜索都会区",
+    "scope.searchStates": "搜索州",
+    "scope.metroPlaceholder": "例如：New York 或 35620",
+    "scope.statePlaceholder": "例如：New York 或 36",
+    "scope.countryName": "美国",
+    "scope.countryDetail": "国家级 NIPA 数据",
+    "scope.allStates": "全部州",
+    "scope.allMsas": "全部大都市统计区",
+    "scope.allCsas": "全部联合统计区",
+    "scope.allMetros": "全部都会区",
+    "scope.selectAllStates": "选择全部州",
+    "scope.selectAllMsas": "选择全部大都市统计区",
+    "scope.selectAllCsas": "选择全部联合统计区",
+    "scope.selectAllMetros": "选择全部都会区",
+    "scope.oneCountry": "1 个国家",
+    "scope.areaCount": "{count} 个地区",
+    "scope.stateCount": "{count} 个州",
+    "scope.areaSelected": "已选择 {count} 个地区",
+    "scope.stateSelected": "已选择 {count} 个州",
+    "scope.stateFips": "州 FIPS 代码 {code}",
+    "scope.counties": "{type} {code} · {count} 个县级地区",
+    "scope.countyGeographies": "{type} {code} · {count} 个县级地区",
+    "scope.noMatch": "未找到匹配的地理区域。",
+    "scope.validationState": "请选择一个州或选择全部州。",
+    "scope.validationMetro": "请选择一个都会区或选择全部都会区。",
+    "measure.kicker": "02 · 指标",
+    "measure.title": "选择数据",
+    "measure.dataType": "数据类型",
+    "measure.measure": "指标",
+    "measure.frequency": "频率",
+    "measure.annual": "年度",
+    "measure.quarterly": "季度",
+    "measure.quarterlyCalculation": "季度计算方式",
+    "measure.quarterlyCumulative": "季度累计",
+    "measure.years": "年份",
+    "measure.gdp": "GDP",
+    "measure.population": "人口",
+    "measure.realGdp": "实际 GDP",
+    "measure.currentGdp": "现价 GDP",
+    "measure.allYears": "全部年份（{first}–{last}）",
+    "measure.latest5": "最近 5 年",
+    "measure.latest10": "最近 10 年",
+    "unit.persons": "人",
+    "unit.millions": "百万美元",
+    "unit.thousands": "千美元",
+    "output.kicker": "03 · 输出",
+    "output.title": "查询与导出",
+    "output.filename": "导出文件名",
+    "output.run": "开始查询",
+    "output.running": "正在查询…",
+    "output.privacy": "查询请求仅发送至美国经济分析局（BEA）。",
+    "results.kicker": "结果",
+    "results.title": "查询结果",
+    "results.idleSubtitle": "选择地理区域和指标后开始查询。",
+    "results.loadingSubtitle": "正在加载 BEA 官方数据…",
+    "results.failedSubtitle": "查询未完成。",
+    "results.export": "导出 Excel",
+    "results.ready": "准备就绪。",
+    "results.readyDetail": "查询结果和前 5 行预览将显示在这里。",
+    "results.loadingTitle": "正在加载 BEA 官方数据",
+    "results.preparing": "正在准备请求…",
+    "results.errorTitle": "无法完成此查询。",
+    "results.scope": "范围",
+    "results.records": "记录",
+    "results.periods": "时期",
+    "results.missing": "缺失",
+    "results.geography": "地理区域",
+    "results.type": "类型",
+    "results.period": "时期",
+    "results.value": "数值",
+    "results.status": "状态",
+    "results.allStates": "全部州",
+    "results.allMsas": "全部大都市统计区",
+    "results.allCsas": "全部联合统计区",
+    "results.allMetros": "全部都会区",
+    "results.noData": "无数据",
+    "results.calculated": "累计计算",
+    "results.reported": "官方数据",
+    "results.aggregated": "合并计算",
+    "results.showingPartial": "当前显示 {count} 行中的前 5 行。请导出工作簿查看完整数据。",
+    "results.showingAll": "已显示全部 {count} 行。",
+    "loading.country": "正在加载美国 NIPA 数据。",
+    "loading.batches": "正在加载 {count} 个请求批次。",
+    "loading.batch": "批次",
+    "loading.batchPlural": "批次",
+    "loading.completed": "已完成 {total} 个请求批次中的 {completed} 个。",
+    "error.http": "BEA API 请求失败（HTTP {status}）。",
+    "error.noRecords": "所选地理区域、指标和年份没有匹配的数据。",
+    "error.loadFallback": "无法加载数据。",
+    "error.checkSelection": "{message} 请检查当前选择后重试。",
+    "error.export": "无法创建 Excel 工作簿：{message}",
+    "toast.exported": "Excel 工作簿已创建。",
+    "about.eyebrow": "关于本项目",
+    "about.title": "让美国官方经济数据更易于获取和使用。",
+    "about.p1": "U.S. BEA GDP Tools 是一个免费、开源的项目，用于获取美国经济分析局（BEA）发布的 GDP 与人口数据。Metro Studio 是该项目的网页、Windows 和 Android 应用，支持国家、州及都会区层级分析，并在 MSA 和 CSA 导出结果中保留县级明细。",
+    "about.p2": "本工具主要提供未经季节性调整的现价 GDP、链式实际 GDP 和人口数据。数据通过 BEA API 直接获取，因此可查询的最新时期会随 BEA 官方发布进度更新。",
+    "about.p3": "BEA 于 2025 年宣布停止发布包括 MSA 和 CSA 在内的县级汇总地理区域 GDP 与个人收入估算。逐县检索并合并数据十分繁琐，因此本项目将这一流程自动化。MSA 和 CSA 的范围采用 2023 年 7 月发布的 OMB Bulletin 23-01。",
+    "about.note": "都会区结果由本工具根据 BEA 县级数据计算生成，并非 BEA 官方发布的都会区估算。偏好安装版的用户也可以使用 Windows 和 Android 应用。",
+    "footer.description": "免费、开源的美国官方经济数据查询工具。",
+    "footer.sources": "数据来源",
+    "footer.bea": "美国经济分析局（BEA）",
+    "footer.notice": "BEA 都会区数据公告",
+    "footer.omb": "OMB 公告 23-01",
+    "footer.github": "GitHub 上的 U.S. BEA GDP Tools",
+  }),
+});
+
+function normalizeLanguage(value) {
+  return String(value ?? "").toLowerCase().startsWith("zh") ? "zh" : "en";
+}
+
+function getInitialLanguage() {
+  try {
+    const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored) return normalizeLanguage(stored);
+  } catch {
+    // Storage can be unavailable in private or restricted browsing contexts.
+  }
+  return normalizeLanguage(window.navigator.language);
+}
+
+export function createI18n() {
+  let language = getInitialLanguage();
+
+  function t(key, parameters = {}) {
+    const template = messages[language][key] ?? messages.en[key] ?? key;
+    return String(template).replace(/\{(\w+)\}/gu, (_, name) => (
+      Object.hasOwn(parameters, name) ? String(parameters[name]) : `{${name}}`
+    ));
+  }
+
+  function translateDocument() {
+    document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+    document.title = t("meta.title");
+    const description = document.querySelector('meta[name="description"]');
+    if (description) description.content = t("meta.description");
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      element.textContent = t(element.dataset.i18n);
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+      element.placeholder = t(element.dataset.i18nPlaceholder);
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+      element.setAttribute("aria-label", t(element.dataset.i18nAriaLabel));
+    });
+  }
+
+  function setLanguage(nextLanguage, { persist = true } = {}) {
+    language = normalizeLanguage(nextLanguage);
+    if (persist) {
+      try {
+        window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+      } catch {
+        // Keep the in-memory language when storage is unavailable.
+      }
+    }
+    translateDocument();
+    return language;
+  }
+
+  return {
+    get language() {
+      return language;
+    },
+    t,
+    setLanguage,
+    translateDocument,
+  };
+}

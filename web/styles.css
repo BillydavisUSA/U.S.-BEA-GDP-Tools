@@ -163,6 +163,12 @@ svg {
   stroke-width: 2;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .header-link {
   display: inline-flex;
   min-height: 44px;
@@ -178,6 +184,37 @@ svg {
 .header-link:hover {
   color: var(--text);
   background: var(--surface-muted);
+}
+
+.language-toggle {
+  display: inline-flex;
+  min-width: 58px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  color: var(--accent);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1;
+  touch-action: manipulation;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.language-toggle:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.language-toggle:active {
+  background: color-mix(in srgb, var(--accent) 88%, #000);
 }
 
 main {
@@ -1012,6 +1049,10 @@ tbody tr:last-child td {
     padding-right: 4px;
   }
 
+  .header-actions {
+    gap: 2px;
+  }
+
   .hero {
     gap: 30px;
     padding: 48px 0 36px;
@@ -1077,6 +1118,12 @@ tbody tr:last-child td {
   }
 
   .header-link {
+    font-size: 13px;
+  }
+
+  .language-toggle {
+    min-width: 52px;
+    padding: 0 11px;
     font-size: 13px;
   }
 

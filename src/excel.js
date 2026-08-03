@@ -44,10 +44,17 @@ export function buildAreaYearMatrix(
   };
 }
 
-/** Build the detailed county rows used by the MSA/CSA county-data worksheet. */
-export function buildAreaCountyRows(records, areas, periods = []) {
-  const metroAreas = areas.filter((area) => area?.type === "msa" || area?.type === "csa");
-  if (metroAreas.length === 0) return [];
+/** Build detailed county rows for MSA/CSA or web-only city aggregates. */
+export function buildAreaCountyRows(
+  records,
+  areas,
+  periods = [],
+  { scopeLabel = "Metro area" } = {},
+) {
+  const aggregateAreas = areas.filter((area) => (
+    area?.type === "msa" || area?.type === "csa" || area?.type === "city"
+  ));
+  if (aggregateAreas.length === 0) return [];
 
   const recordIndex = new Map();
   const countyNames = new Map();
@@ -66,7 +73,7 @@ export function buildAreaCountyRows(records, areas, periods = []) {
   ])].sort(compareYears);
 
   const rows = [];
-  [...metroAreas]
+  [...aggregateAreas]
     .sort((a, b) => compareText(a.type, b.type) || compareText(a.name, b.name))
     .forEach((area) => {
       [...new Set((area.fips ?? []).map(normalizeGeoFips))]
@@ -100,7 +107,7 @@ export function buildAreaCountyRows(records, areas, periods = []) {
     });
 
   return [
-    ["Metro area type", "Metro area name", "Metro area code", "County GeoFips", "County name", "Year", "DataValue", "NoteRef", "Aggregation status"],
+    [`${scopeLabel} type`, `${scopeLabel} name`, `${scopeLabel} code`, "County GeoFips", "County name", "Year", "DataValue", "NoteRef", "Aggregation status"],
     ...rows,
   ];
 }

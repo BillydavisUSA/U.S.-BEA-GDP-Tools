@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Explore official U.S. GDP and population data by metro area, state, or country."
+      content="Explore official U.S. GDP and population data by metro area, city, state, or country."
     />
     <meta name="theme-color" content="#f5f7fb" />
     <title>Metro Studio — U.S. Economic Data Explorer</title>
@@ -35,9 +35,9 @@
       <section class="hero" aria-labelledby="page-title">
         <div class="hero-copy">
           <span class="eyebrow" data-i18n="hero.eyebrow">Official U.S. economic data</span>
-          <h1 id="page-title" data-i18n="hero.title">Metro, state, and national data in one query.</h1>
+          <h1 id="page-title" data-i18n="hero.title">Metro, city, state, and national data in one query.</h1>
           <p data-i18n="hero.description">
-            Search geographic areas, choose a BEA measure, and export a ready-to-use Excel workbook.
+            Search metro areas, cities, states, or the country, then export a ready-to-use Excel workbook.
           </p>
         </div>
         <dl class="hero-facts" aria-label="Available geography coverage" data-i18n-aria-label="a11y.coverage">
@@ -69,7 +69,8 @@
           <div class="field">
             <label for="geography-level" data-i18n="scope.level">Geographic level</label>
             <select id="geography-level">
-              <option value="county" data-i18n="scope.county">County Level</option>
+              <option value="county" data-i18n="scope.county">Metropolitan Level</option>
+              <option value="city" data-i18n="scope.city">City Level</option>
               <option value="state" data-i18n="scope.state">State Level</option>
               <option value="country" data-i18n="scope.country">Country Level</option>
             </select>
@@ -294,8 +295,8 @@
             U.S. BEA GDP Tools is a free, open-source project for retrieving
             GDP and population data from the U.S. Bureau of Economic Analysis.
             Metro Studio is the project’s web, Windows, and Android application.
-            It supports national, state, and metropolitan analysis, with
-            county-level detail retained for MSA and CSA exports.
+            The website supports national, state, metropolitan, and city
+            analysis, with county-level detail retained for MSA, CSA, and city exports.
           </p>
           <p data-i18n="about.p2">
             The tool focuses on current-dollar GDP, real GDP in chained

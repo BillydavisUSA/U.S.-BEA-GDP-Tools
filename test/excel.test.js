@@ -71,3 +71,16 @@ test("does not add county rows for an unrecognized imported area", () => {
     { type: "imported", code: "", name: "Imported data", fips: ["01001"] },
   ], ["2023"]), []);
 });
+
+test("exports city county detail with city-specific headings", () => {
+  const rows = buildAreaCountyRows([
+    { GeoFips: "36061", GeoName: "New York County, NY", TimePeriod: "2024", DataValue: "2,500", NoteRef: "" },
+  ], [
+    { type: "city", code: "001", name: "New York", fips: ["36061"] },
+  ], ["2024"], { scopeLabel: "City" });
+
+  assert.deepEqual(rows, [
+    ["City type", "City name", "City code", "County GeoFips", "County name", "Year", "DataValue", "NoteRef", "Aggregation status"],
+    ["CITY", "New York", "001", "36061", "New York County, NY", "2024", 2500, "", "Included"],
+  ]);
+});

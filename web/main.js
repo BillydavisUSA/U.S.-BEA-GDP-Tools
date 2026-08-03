@@ -1,5 +1,6 @@
 import "./styles.css";
 import { createI18n } from "./i18n.js";
+import cityDataset from "../src/data/city-areas.json";
 import metroDataset from "../src/data/metro-areas.json";
 import stateDataset from "../src/data/states.json";
 import { buildAreaCountyRows, buildAreaYearMatrix } from "../src/excel.js";
@@ -90,6 +91,7 @@ const TABLE_CONFIG = Object.freeze({
 
 const GEOGRAPHY_TABLES = Object.freeze({
   county: Object.freeze(["CAGDP1", "CAINC1"]),
+  city: Object.freeze(["CAGDP1", "CAINC1"]),
   state: Object.freeze(["SAGDP1", "SAINC1"]),
   country: Object.freeze(["NIPA_GDP"]),
 });
@@ -226,7 +228,26 @@ function getUnitLabel(unit, tableName = elements.tableName.value) {
 }
 
 function getAreaName(area) {
-  return area?.type === "country" ? t("scope.countryName") : area?.name ?? "";
+  if (area?.type === "country") return t("scope.countryName");
+  if (area?.type === "city" && i18n.language === "zh") {
+    return area.nameZh || area.name || "";
+  }
+  return area?.name ?? "";
+}
+
+function isCountyAggregateLevel(level = elements.geographyLevel.value) {
+  return level === "county" || level === "city";
+}
+
+function getAggregateDataset(level = elements.geographyLevel.value) {
+  return level === "city" ? cityDataset : metroDataset;
+}
+
+function getAreaTypeLabel(type) {
+  if (type === "city") return t("results.city");
+  if (type === "state") return t("results.state");
+  if (type === "country") return t("results.country");
+  return String(type ?? "").toUpperCase();
 }
 
 function normalizeSearch(value) {
@@ -239,6 +260,7 @@ function normalizeSearch(value) {
 
 function getAvailableAreas() {
   const level = elements.geographyLevel.value;
+  if (level === "city") return cityDataset.areas;
   if (level === "state") return stateDataset.areas;
   if (level === "country") return [COUNTRY_AREA];
   return state.areaType === "all"
@@ -301,6 +323,8 @@ function renderSelection() {
   elements.selectionName.textContent = allSelected
     ? level === "state"
       ? t("scope.allStates")
+      : level === "city"
+        ? t("scope.allCities")
       : state.areaType === "msa"
         ? t("scope.allMsas")
         : state.areaType === "csa"
@@ -308,12 +332,18 @@ function renderSelection() {
           : t("scope.allMetros")
     : getAreaName(area);
   elements.selectionDetail.textContent = allSelected
-    ? t(level === "state" ? "scope.stateSelected" : "scope.areaSelected", {
+    ? t(level === "state"
+      ? "scope.stateSelected"
+      : level === "city" ? "scope.citySelected" : "scope.areaSelected", {
         count: formatNumber(state.selectedAreas.length),
       })
     : area.type === "state"
       ? t("scope.stateFips", { code: area.code })
-      : t("scope.countyGeographies", {
+      : area.type === "city"
+        ? t("scope.cityGeographies", {
+          count: formatNumber(area.fips.length),
+        })
+        : t("scope.countyGeographies", {
           type: area.type.toUpperCase(),
           code: area.code,
           count: formatNumber(area.fips.length),
@@ -322,10 +352,11 @@ function renderSelection() {
 
 function renderScopeControls(clearSelection = true, resetSearch = true) {
   const level = elements.geographyLevel.value;
-  const isCounty = level === "county";
+  const isMetro = level === "county";
+  const isCity = level === "city";
   const isState = level === "state";
   const isCountry = level === "country";
-  elements.metroTypeField.hidden = !isCounty;
+  elements.metroTypeField.hidden = !isMetro;
   elements.searchGroup.hidden = isCountry;
   elements.selectionRow.hidden = isCountry;
   elements.countrySummary.hidden = !isCountry;
@@ -333,11 +364,15 @@ function renderScopeControls(clearSelection = true, resetSearch = true) {
     ? t("scope.oneCountry")
     : isState
       ? t("scope.stateCount", { count: formatNumber(stateDataset.areas.length) })
-      : t("scope.areaCount", { count: formatNumber(metroDataset.areas.length) });
-  elements.searchLabel.textContent = isState ? t("scope.searchStates") : t("scope.searchMetro");
+      : isCity
+        ? t("scope.cityCount", { count: formatNumber(cityDataset.areas.length) })
+        : t("scope.areaCount", { count: formatNumber(metroDataset.areas.length) });
+  elements.searchLabel.textContent = isState
+    ? t("scope.searchStates")
+    : isCity ? t("scope.searchCities") : t("scope.searchMetro");
   elements.areaSearch.placeholder = isState
     ? t("scope.statePlaceholder")
-    : t("scope.metroPlaceholder");
+    : isCity ? t("scope.cityPlaceholder") : t("scope.metroPlaceholder");
   if (resetSearch) {
     elements.areaSearch.value = "";
     elements.clearSearch.hidden = true;
@@ -355,13 +390,17 @@ function renderSelectAll() {
   const areas = getAvailableAreas();
   elements.selectAllLabel.textContent = level === "state"
     ? t("scope.selectAllStates")
+    : level === "city"
+      ? t("scope.selectAllCities")
     : state.areaType === "msa"
       ? t("scope.selectAllMsas")
       : state.areaType === "csa"
         ? t("scope.selectAllCsas")
         : t("scope.selectAllMetros");
   elements.selectAllCount.textContent = t(
-    level === "state" ? "scope.stateCount" : "scope.areaCount",
+    level === "state"
+      ? "scope.stateCount"
+      : level === "city" ? "scope.cityCount" : "scope.areaCount",
     { count: formatNumber(areas.length) },
   );
 }
@@ -374,10 +413,14 @@ function createSearchResult(area) {
   const copy = document.createElement("span");
   const name = document.createElement("strong");
   const detail = document.createElement("small");
-  name.textContent = area.name;
+  name.textContent = getAreaName(area);
   detail.textContent = area.type === "state"
     ? t("scope.stateFips", { code: area.code })
-    : t("scope.counties", {
+    : area.type === "city"
+      ? t("scope.cityGeographies", {
+        count: formatNumber(area.fips.length),
+      })
+      : t("scope.counties", {
         type: area.type.toUpperCase(),
         code: area.code,
         count: formatNumber(area.fips.length),
@@ -385,11 +428,11 @@ function createSearchResult(area) {
   copy.append(name, detail);
   const badge = document.createElement("span");
   badge.className = "type-badge";
-  badge.textContent = area.type.toUpperCase();
+  badge.textContent = getAreaTypeLabel(area.type);
   button.append(copy, badge);
   button.addEventListener("click", () => {
     setSelectedAreas([area], "single");
-    elements.areaSearch.value = area.name;
+    elements.areaSearch.value = getAreaName(area);
     elements.clearSearch.hidden = false;
     closeSearchResults();
   });
@@ -404,7 +447,9 @@ function renderSearchResults() {
     return;
   }
   const matches = getAvailableAreas()
-    .filter((area) => normalizeSearch(`${area.name} ${area.code}`).includes(query))
+    .filter((area) => normalizeSearch(
+      `${area.name} ${area.nameZh ?? ""} ${area.code}`,
+    ).includes(query))
     .slice(0, 20);
   elements.searchResults.replaceChildren(
     ...(matches.length
@@ -506,7 +551,9 @@ function validateQuery() {
   if (elements.geographyLevel.value !== "country" && state.selectedAreas.length === 0) {
     elements.scopeError.textContent = elements.geographyLevel.value === "state"
       ? t("scope.validationState")
-      : t("scope.validationMetro");
+      : elements.geographyLevel.value === "city"
+        ? t("scope.validationCity")
+        : t("scope.validationMetro");
     elements.searchGroup.scrollIntoView({ behavior: "smooth", block: "center" });
     elements.areaSearch.focus();
     return false;
@@ -563,6 +610,7 @@ function getResultScopeLabel() {
   if (state.resultLevel === "country") return t("scope.countryName");
   if (state.resultAreas.length === 1) return getAreaName(state.resultAreas[0]);
   if (state.resultLevel === "state") return t("results.allStates");
+  if (state.resultLevel === "city") return t("results.allCities");
   if (state.areaType === "msa") return t("results.allMsas");
   if (state.areaType === "csa") return t("results.allCsas");
   return t("results.allMetros");
@@ -617,11 +665,12 @@ function showResults(parsedBatches, parameters, areas, queryContext) {
 }
 
 function renderPreview() {
+  const resultAreas = new Map(state.resultAreas.map((area) => [area.id, area]));
   elements.resultBody.replaceChildren(...state.aggregated.slice(0, PREVIEW_LIMIT).map((row) => {
     const tr = document.createElement("tr");
     const values = [
-      row.areaName,
-      row.areaType.toUpperCase(),
+      getAreaName(resultAreas.get(row.areaId)) || row.areaName,
+      getAreaTypeLabel(row.areaType),
       row.year,
       row.status === "ok" ? formatNumber(row.total) : t("results.noData"),
     ];
@@ -662,7 +711,7 @@ async function runQuery() {
     : level === "state" && state.selectionMode === "all"
       ? ["STATE"]
       : allFips.filter((code) => !code.startsWith("72"));
-  state.unsupportedFips = level === "county"
+  state.unsupportedFips = isCountyAggregateLevel(level)
     ? allFips.filter((code) => code.startsWith("72"))
     : [];
   const parameters = buildQueryParameters(fips);
@@ -720,6 +769,7 @@ async function runQuery() {
 
 function buildParameterRows() {
   const parameters = state.parameters ?? {};
+  const aggregateDataset = getAggregateDataset(state.resultLevel);
   return [
     ["Parameter", "Description", "Value"],
     ["METHOD", "Request method", parameters.METHOD || "GETDATA"],
@@ -731,7 +781,7 @@ function buildParameterRows() {
     ["YEAR", "Years", parameters.YEAR || "ALL"],
     ["UNIT", "DataValue unit", getUnitLabel(state.meta.unit, parameters.TABLENAME)],
     ["SOURCE", "Data source", state.source],
-    ["BOUNDARIES", "Metro-area definitions", state.resultLevel === "county" ? metroDataset.source : "Not applicable"],
+    ["BOUNDARIES", "County-aggregate definitions", isCountyAggregateLevel(state.resultLevel) ? aggregateDataset.source : "Not applicable"],
   ];
 }
 
@@ -745,6 +795,8 @@ async function exportExcel() {
       ? [{ type: "country", label: "Country" }]
       : state.resultLevel === "state"
         ? [{ type: "state", label: "State" }]
+        : state.resultLevel === "city"
+          ? [{ type: "city", label: "City" }]
         : [
             { type: "msa", label: "Metropolitan Statistical Area" },
             { type: "csa", label: "Combined Statistical Area" },
@@ -766,11 +818,12 @@ async function exportExcel() {
       XLSX.utils.book_append_sheet(workbook, sheet, label);
     });
 
-    if (state.resultLevel === "county") {
+    if (isCountyAggregateLevel(state.resultLevel)) {
       const countyRows = buildAreaCountyRows(
         state.records,
         state.resultAreas,
         state.aggregated.map((row) => row.year),
+        { scopeLabel: state.resultLevel === "city" ? "City" : "Metro area" },
       );
       if (countyRows.length) {
         const sheet = XLSX.utils.aoa_to_sheet(countyRows);
@@ -779,7 +832,11 @@ async function exportExcel() {
           { wch: 10 }, { wch: 18 }, { wch: 14 }, { wch: 14 },
         ];
         sheet["!autofilter"] = { ref: `A1:I${countyRows.length}` };
-        XLSX.utils.book_append_sheet(workbook, sheet, "Metro Area County Data");
+        XLSX.utils.book_append_sheet(
+          workbook,
+          sheet,
+          state.resultLevel === "city" ? "City County Data" : "Metro Area County Data",
+        );
       }
     }
     const parameterSheet = XLSX.utils.aoa_to_sheet(buildParameterRows());

@@ -1,0 +1,1598 @@
+{
+  "source": "User-provided 美国城市geofips.xlsx · Sheet1",
+  "counts": {
+    "city": 143,
+    "total": 143
+  },
+  "areas": [
+    {
+      "id": "city-107",
+      "type": "city",
+      "code": "107",
+      "name": "Akron",
+      "nameZh": "阿克伦",
+      "fips": [
+        "39133",
+        "39153"
+      ]
+    },
+    {
+      "id": "city-093",
+      "type": "city",
+      "code": "093",
+      "name": "Albany",
+      "nameZh": "奥尔巴尼",
+      "fips": [
+        "36001",
+        "36083",
+        "36093"
+      ]
+    },
+    {
+      "id": "city-078",
+      "type": "city",
+      "code": "078",
+      "name": "Albuquerque",
+      "nameZh": "阿尔伯克基",
+      "fips": [
+        "35001"
+      ]
+    },
+    {
+      "id": "city-127",
+      "type": "city",
+      "code": "127",
+      "name": "Allentown",
+      "nameZh": "阿伦敦",
+      "fips": [
+        "42077",
+        "42095"
+      ]
+    },
+    {
+      "id": "city-121",
+      "type": "city",
+      "code": "121",
+      "name": "Anne Arundel",
+      "nameZh": "安妮阿伦德尔",
+      "fips": [
+        "24003",
+        "24027"
+      ]
+    },
+    {
+      "id": "city-012",
+      "type": "city",
+      "code": "012",
+      "name": "Atlanta",
+      "nameZh": "亚特兰大",
+      "fips": [
+        "13067",
+        "13089",
+        "13121"
+      ]
+    },
+    {
+      "id": "city-128",
+      "type": "city",
+      "code": "128",
+      "name": "Augusta",
+      "nameZh": "奥古斯塔",
+      "fips": [
+        "13073",
+        "13245",
+        "45003"
+      ]
+    },
+    {
+      "id": "city-025",
+      "type": "city",
+      "code": "025",
+      "name": "Austin",
+      "nameZh": "奥斯汀",
+      "fips": [
+        "48453"
+      ]
+    },
+    {
+      "id": "city-070",
+      "type": "city",
+      "code": "070",
+      "name": "Bakersfield",
+      "nameZh": "贝克斯菲尔德",
+      "fips": [
+        "06029"
+      ]
+    },
+    {
+      "id": "city-041",
+      "type": "city",
+      "code": "041",
+      "name": "Baltimore",
+      "nameZh": "巴尔的摩",
+      "fips": [
+        "24005",
+        "24510"
+      ]
+    },
+    {
+      "id": "city-088",
+      "type": "city",
+      "code": "088",
+      "name": "Baton Rouge",
+      "nameZh": "巴吞鲁日",
+      "fips": [
+        "22033",
+        "22121"
+      ]
+    },
+    {
+      "id": "city-065",
+      "type": "city",
+      "code": "065",
+      "name": "Birmingham",
+      "nameZh": "伯明翰",
+      "fips": [
+        "01073",
+        "01117"
+      ]
+    },
+    {
+      "id": "city-094",
+      "type": "city",
+      "code": "094",
+      "name": "Boise",
+      "nameZh": "博伊西",
+      "fips": [
+        "16001"
+      ]
+    },
+    {
+      "id": "city-017",
+      "type": "city",
+      "code": "017",
+      "name": "Boston",
+      "nameZh": "波士顿",
+      "fips": [
+        "25021",
+        "25023",
+        "25025"
+      ]
+    },
+    {
+      "id": "city-112",
+      "type": "city",
+      "code": "112",
+      "name": "Boulder",
+      "nameZh": "博尔德",
+      "fips": [
+        "08013"
+      ]
+    },
+    {
+      "id": "city-058",
+      "type": "city",
+      "code": "058",
+      "name": "Bridgeport",
+      "nameZh": "布里奇波特",
+      "fips": [
+        "09001",
+        "09120",
+        "09190"
+      ]
+    },
+    {
+      "id": "city-054",
+      "type": "city",
+      "code": "054",
+      "name": "Buffalo",
+      "nameZh": "布法罗",
+      "fips": [
+        "36029",
+        "36063"
+      ]
+    },
+    {
+      "id": "city-018",
+      "type": "city",
+      "code": "018",
+      "name": "Cambridge",
+      "nameZh": "剑桥",
+      "fips": [
+        "25009",
+        "25017"
+      ]
+    },
+    {
+      "id": "city-106",
+      "type": "city",
+      "code": "106",
+      "name": "Camden",
+      "nameZh": "卡姆登",
+      "fips": [
+        "34005",
+        "34007",
+        "34015"
+      ]
+    },
+    {
+      "id": "city-082",
+      "type": "city",
+      "code": "082",
+      "name": "Charleston",
+      "nameZh": "查尔斯顿",
+      "fips": [
+        "45015",
+        "45019",
+        "45035"
+      ]
+    },
+    {
+      "id": "city-029",
+      "type": "city",
+      "code": "029",
+      "name": "Charlotte",
+      "nameZh": "夏洛特",
+      "fips": [
+        "37119"
+      ]
+    },
+    {
+      "id": "city-120",
+      "type": "city",
+      "code": "120",
+      "name": "Chattanooga",
+      "nameZh": "查塔努加",
+      "fips": [
+        "13047",
+        "13295",
+        "47065"
+      ]
+    },
+    {
+      "id": "city-003",
+      "type": "city",
+      "code": "003",
+      "name": "Chicago",
+      "nameZh": "芝加哥",
+      "fips": [
+        "17031",
+        "17043",
+        "17063",
+        "17111",
+        "17197"
+      ]
+    },
+    {
+      "id": "city-048",
+      "type": "city",
+      "code": "048",
+      "name": "Cincinnati",
+      "nameZh": "辛辛那提",
+      "fips": [
+        "21037",
+        "21117",
+        "39061"
+      ]
+    },
+    {
+      "id": "city-043",
+      "type": "city",
+      "code": "043",
+      "name": "Cleveland",
+      "nameZh": "克里夫兰",
+      "fips": [
+        "39035"
+      ]
+    },
+    {
+      "id": "city-119",
+      "type": "city",
+      "code": "119",
+      "name": "Colombia",
+      "nameZh": "哥伦比亚",
+      "fips": [
+        "45063",
+        "45079"
+      ]
+    },
+    {
+      "id": "city-077",
+      "type": "city",
+      "code": "077",
+      "name": "Colorado Springs",
+      "nameZh": "科罗拉多泉",
+      "fips": [
+        "08041"
+      ]
+    },
+    {
+      "id": "city-034",
+      "type": "city",
+      "code": "034",
+      "name": "Columbus",
+      "nameZh": "哥伦布",
+      "fips": [
+        "39041",
+        "39045",
+        "39049"
+      ]
+    },
+    {
+      "id": "city-084",
+      "type": "city",
+      "code": "084",
+      "name": "Conroe",
+      "nameZh": "康罗",
+      "fips": [
+        "48339"
+      ]
+    },
+    {
+      "id": "city-005",
+      "type": "city",
+      "code": "005",
+      "name": "Dallas",
+      "nameZh": "达拉斯",
+      "fips": [
+        "48085",
+        "48113",
+        "48121",
+        "48139",
+        "48231",
+        "48257",
+        "48397"
+      ]
+    },
+    {
+      "id": "city-108",
+      "type": "city",
+      "code": "108",
+      "name": "Dayton",
+      "nameZh": "代顿",
+      "fips": [
+        "39057",
+        "39109",
+        "39113"
+      ]
+    },
+    {
+      "id": "city-142",
+      "type": "city",
+      "code": "142",
+      "name": "Deltona",
+      "nameZh": "德尔托纳",
+      "fips": [
+        "12035",
+        "12127"
+      ]
+    },
+    {
+      "id": "city-019",
+      "type": "city",
+      "code": "019",
+      "name": "Denver",
+      "nameZh": "丹佛",
+      "fips": [
+        "08001",
+        "08005",
+        "08031",
+        "08059"
+      ]
+    },
+    {
+      "id": "city-069",
+      "type": "city",
+      "code": "069",
+      "name": "Des Moines",
+      "nameZh": "得梅因",
+      "fips": [
+        "19153"
+      ]
+    },
+    {
+      "id": "city-015",
+      "type": "city",
+      "code": "015",
+      "name": "Detroit",
+      "nameZh": "底特律",
+      "fips": [
+        "26099",
+        "26125",
+        "26163"
+      ]
+    },
+    {
+      "id": "city-081",
+      "type": "city",
+      "code": "081",
+      "name": "Durham",
+      "nameZh": "德罕",
+      "fips": [
+        "37063"
+      ]
+    },
+    {
+      "id": "city-080",
+      "type": "city",
+      "code": "080",
+      "name": "El Paso",
+      "nameZh": "埃尔帕索",
+      "fips": [
+        "48141"
+      ]
+    },
+    {
+      "id": "city-122",
+      "type": "city",
+      "code": "122",
+      "name": "Elgin",
+      "nameZh": "埃尔金",
+      "fips": [
+        "17037",
+        "17089",
+        "17093"
+      ]
+    },
+    {
+      "id": "city-072",
+      "type": "city",
+      "code": "072",
+      "name": "Everett",
+      "nameZh": "埃弗雷特",
+      "fips": [
+        "53061"
+      ]
+    },
+    {
+      "id": "city-117",
+      "type": "city",
+      "code": "117",
+      "name": "Fairfield",
+      "nameZh": "瓦列霍",
+      "fips": [
+        "06095"
+      ]
+    },
+    {
+      "id": "city-033",
+      "type": "city",
+      "code": "033",
+      "name": "Fort Lauderdale",
+      "nameZh": "劳德代尔堡",
+      "fips": [
+        "12011"
+      ]
+    },
+    {
+      "id": "city-079",
+      "type": "city",
+      "code": "079",
+      "name": "Fort Myers",
+      "nameZh": "迈尔斯堡",
+      "fips": [
+        "12071"
+      ]
+    },
+    {
+      "id": "city-026",
+      "type": "city",
+      "code": "026",
+      "name": "Fort Worth",
+      "nameZh": "沃思堡",
+      "fips": [
+        "48251",
+        "48367",
+        "48439",
+        "48497"
+      ]
+    },
+    {
+      "id": "city-114",
+      "type": "city",
+      "code": "114",
+      "name": "Franklin",
+      "nameZh": "富兰克林",
+      "fips": [
+        "47187"
+      ]
+    },
+    {
+      "id": "city-068",
+      "type": "city",
+      "code": "068",
+      "name": "Fresno",
+      "nameZh": "弗雷斯洛",
+      "fips": [
+        "06019"
+      ]
+    },
+    {
+      "id": "city-096",
+      "type": "city",
+      "code": "096",
+      "name": "Georgetown",
+      "nameZh": "乔治敦",
+      "fips": [
+        "48491"
+      ]
+    },
+    {
+      "id": "city-074",
+      "type": "city",
+      "code": "074",
+      "name": "Grand Rapids",
+      "nameZh": "大急流城",
+      "fips": [
+        "26081"
+      ]
+    },
+    {
+      "id": "city-089",
+      "type": "city",
+      "code": "089",
+      "name": "Greensboro",
+      "nameZh": "格林斯伯勒",
+      "fips": [
+        "37081"
+      ]
+    },
+    {
+      "id": "city-086",
+      "type": "city",
+      "code": "086",
+      "name": "Greenville",
+      "nameZh": "格林威尔",
+      "fips": [
+        "45007",
+        "45045",
+        "45077"
+      ]
+    },
+    {
+      "id": "city-129",
+      "type": "city",
+      "code": "129",
+      "name": "Hammond-Gary",
+      "nameZh": "哈蒙德-加里",
+      "fips": [
+        "18073",
+        "18089",
+        "18111",
+        "18127"
+      ]
+    },
+    {
+      "id": "city-131",
+      "type": "city",
+      "code": "131",
+      "name": "Harrisburg",
+      "nameZh": "哈里斯堡",
+      "fips": [
+        "42041",
+        "42043"
+      ]
+    },
+    {
+      "id": "city-047",
+      "type": "city",
+      "code": "047",
+      "name": "Hartford",
+      "nameZh": "哈特福德",
+      "fips": [
+        "09003",
+        "09007",
+        "09013",
+        "09110",
+        "09130"
+      ]
+    },
+    {
+      "id": "city-052",
+      "type": "city",
+      "code": "052",
+      "name": "Honolulu",
+      "nameZh": "檀香山",
+      "fips": [
+        "15003"
+      ]
+    },
+    {
+      "id": "city-006",
+      "type": "city",
+      "code": "006",
+      "name": "Houston",
+      "nameZh": "休斯顿",
+      "fips": [
+        "48201"
+      ]
+    },
+    {
+      "id": "city-113",
+      "type": "city",
+      "code": "113",
+      "name": "Huntsville",
+      "nameZh": "亨茨维尔",
+      "fips": [
+        "01089"
+      ]
+    },
+    {
+      "id": "city-044",
+      "type": "city",
+      "code": "044",
+      "name": "Indianapolis",
+      "nameZh": "印第安纳波利斯",
+      "fips": [
+        "18097"
+      ]
+    },
+    {
+      "id": "city-133",
+      "type": "city",
+      "code": "133",
+      "name": "Jackson",
+      "nameZh": "杰克逊",
+      "fips": [
+        "28049",
+        "28089",
+        "28121"
+      ]
+    },
+    {
+      "id": "city-050",
+      "type": "city",
+      "code": "050",
+      "name": "Jacksonville",
+      "nameZh": "杰克逊维尔",
+      "fips": [
+        "12031"
+      ]
+    },
+    {
+      "id": "city-028",
+      "type": "city",
+      "code": "028",
+      "name": "Kansas City",
+      "nameZh": "堪萨斯城",
+      "fips": [
+        "20091",
+        "20103",
+        "20107",
+        "20121",
+        "20209",
+        "29013",
+        "29025",
+        "29037",
+        "29047",
+        "29049",
+        "29095",
+        "29107",
+        "29165",
+        "29177"
+      ]
+    },
+    {
+      "id": "city-099",
+      "type": "city",
+      "code": "099",
+      "name": "Knoxville",
+      "nameZh": "诺克斯维尔",
+      "fips": [
+        "47093"
+      ]
+    },
+    {
+      "id": "city-097",
+      "type": "city",
+      "code": "097",
+      "name": "Lakeland",
+      "nameZh": "莱克兰",
+      "fips": [
+        "12105"
+      ]
+    },
+    {
+      "id": "city-110",
+      "type": "city",
+      "code": "110",
+      "name": "Lancaster",
+      "nameZh": "兰开斯特",
+      "fips": [
+        "42071"
+      ]
+    },
+    {
+      "id": "city-027",
+      "type": "city",
+      "code": "027",
+      "name": "Las Vegas",
+      "nameZh": "拉斯维加斯",
+      "fips": [
+        "32003"
+      ]
+    },
+    {
+      "id": "city-062",
+      "type": "city",
+      "code": "062",
+      "name": "Lawrenceville",
+      "nameZh": "劳伦斯维尔",
+      "fips": [
+        "13135"
+      ]
+    },
+    {
+      "id": "city-095",
+      "type": "city",
+      "code": "095",
+      "name": "Leesburg",
+      "nameZh": "利斯堡",
+      "fips": [
+        "51107"
+      ]
+    },
+    {
+      "id": "city-104",
+      "type": "city",
+      "code": "104",
+      "name": "Little Rock",
+      "nameZh": "小石城",
+      "fips": [
+        "05119"
+      ]
+    },
+    {
+      "id": "city-021",
+      "type": "city",
+      "code": "021",
+      "name": "Long Island",
+      "nameZh": "长岛",
+      "fips": [
+        "36059",
+        "36103"
+      ]
+    },
+    {
+      "id": "city-002",
+      "type": "city",
+      "code": "002",
+      "name": "Los Angeles",
+      "nameZh": "洛杉矶",
+      "fips": [
+        "06037"
+      ]
+    },
+    {
+      "id": "city-056",
+      "type": "city",
+      "code": "056",
+      "name": "Louisville",
+      "nameZh": "路易维尔",
+      "fips": [
+        "18019",
+        "18043",
+        "21111"
+      ]
+    },
+    {
+      "id": "city-071",
+      "type": "city",
+      "code": "071",
+      "name": "Madison",
+      "nameZh": "麦迪逊",
+      "fips": [
+        "55025"
+      ]
+    },
+    {
+      "id": "city-116",
+      "type": "city",
+      "code": "116",
+      "name": "Manchester",
+      "nameZh": "曼彻斯特",
+      "fips": [
+        "33011"
+      ]
+    },
+    {
+      "id": "city-051",
+      "type": "city",
+      "code": "051",
+      "name": "Memphis",
+      "nameZh": "孟菲斯",
+      "fips": [
+        "05035",
+        "28033",
+        "47157"
+      ]
+    },
+    {
+      "id": "city-022",
+      "type": "city",
+      "code": "022",
+      "name": "Miami",
+      "nameZh": "迈阿密",
+      "fips": [
+        "12086"
+      ]
+    },
+    {
+      "id": "city-102",
+      "type": "city",
+      "code": "102",
+      "name": "Midland",
+      "nameZh": "米德兰",
+      "fips": [
+        "48135",
+        "48329"
+      ]
+    },
+    {
+      "id": "city-055",
+      "type": "city",
+      "code": "055",
+      "name": "Milwaukee",
+      "nameZh": "密尔沃基",
+      "fips": [
+        "55079",
+        "55133"
+      ]
+    },
+    {
+      "id": "city-016",
+      "type": "city",
+      "code": "016",
+      "name": "Minneapolis",
+      "nameZh": "明尼阿波利斯",
+      "fips": [
+        "27003",
+        "27037",
+        "27053",
+        "27123"
+      ]
+    },
+    {
+      "id": "city-124",
+      "type": "city",
+      "code": "124",
+      "name": "Naples",
+      "nameZh": "那不勒斯",
+      "fips": [
+        "12021"
+      ]
+    },
+    {
+      "id": "city-049",
+      "type": "city",
+      "code": "049",
+      "name": "Nashville",
+      "nameZh": "纳什维尔",
+      "fips": [
+        "47037"
+      ]
+    },
+    {
+      "id": "city-023",
+      "type": "city",
+      "code": "023",
+      "name": "New Brunswick",
+      "nameZh": "新不伦瑞克",
+      "fips": [
+        "34023",
+        "34025",
+        "34029",
+        "34035"
+      ]
+    },
+    {
+      "id": "city-083",
+      "type": "city",
+      "code": "083",
+      "name": "New Haven",
+      "nameZh": "纽黑文",
+      "fips": [
+        "09170"
+      ]
+    },
+    {
+      "id": "city-092",
+      "type": "city",
+      "code": "092",
+      "name": "New Orleans",
+      "nameZh": "新奥尔良",
+      "fips": [
+        "22051",
+        "22071",
+        "22075",
+        "22087"
+      ]
+    },
+    {
+      "id": "city-001",
+      "type": "city",
+      "code": "001",
+      "name": "New York",
+      "nameZh": "纽约",
+      "fips": [
+        "34003",
+        "34017",
+        "34031",
+        "36005",
+        "36047",
+        "36061",
+        "36079",
+        "36081",
+        "36085",
+        "36087",
+        "36119"
+      ]
+    },
+    {
+      "id": "city-024",
+      "type": "city",
+      "code": "024",
+      "name": "Newark",
+      "nameZh": "纽瓦克",
+      "fips": [
+        "34013",
+        "34019",
+        "34027",
+        "34037",
+        "34039"
+      ]
+    },
+    {
+      "id": "city-020",
+      "type": "city",
+      "code": "020",
+      "name": "Oakland",
+      "nameZh": "奥克兰",
+      "fips": [
+        "06001",
+        "06013"
+      ]
+    },
+    {
+      "id": "city-138",
+      "type": "city",
+      "code": "138",
+      "name": "Ogden",
+      "nameZh": "奥格登",
+      "fips": [
+        "49011",
+        "49057"
+      ]
+    },
+    {
+      "id": "city-061",
+      "type": "city",
+      "code": "061",
+      "name": "Oklahoma City",
+      "nameZh": "俄克拉荷马城",
+      "fips": [
+        "40017",
+        "40027",
+        "40109"
+      ]
+    },
+    {
+      "id": "city-060",
+      "type": "city",
+      "code": "060",
+      "name": "Omaha",
+      "nameZh": "奥马哈",
+      "fips": [
+        "19155",
+        "31055",
+        "31153"
+      ]
+    },
+    {
+      "id": "city-013",
+      "type": "city",
+      "code": "013",
+      "name": "Orange",
+      "nameZh": "奥兰治",
+      "fips": [
+        "06059"
+      ]
+    },
+    {
+      "id": "city-035",
+      "type": "city",
+      "code": "035",
+      "name": "Orlando",
+      "nameZh": "奥兰多",
+      "fips": [
+        "12095"
+      ]
+    },
+    {
+      "id": "city-100",
+      "type": "city",
+      "code": "100",
+      "name": "Palm Bay",
+      "nameZh": "棕榈湾",
+      "fips": [
+        "12009"
+      ]
+    },
+    {
+      "id": "city-040",
+      "type": "city",
+      "code": "040",
+      "name": "Palm Beach",
+      "nameZh": "棕榈滩",
+      "fips": [
+        "12099"
+      ]
+    },
+    {
+      "id": "city-136",
+      "type": "city",
+      "code": "136",
+      "name": "Pensacola",
+      "nameZh": "彭萨科拉",
+      "fips": [
+        "12033",
+        "12113"
+      ]
+    },
+    {
+      "id": "city-011",
+      "type": "city",
+      "code": "011",
+      "name": "Philadelphia",
+      "nameZh": "费城",
+      "fips": [
+        "42017",
+        "42029",
+        "42045",
+        "42091",
+        "42101"
+      ]
+    },
+    {
+      "id": "city-010",
+      "type": "city",
+      "code": "010",
+      "name": "Phoenix",
+      "nameZh": "菲尼克斯",
+      "fips": [
+        "04013"
+      ]
+    },
+    {
+      "id": "city-032",
+      "type": "city",
+      "code": "032",
+      "name": "Pittsburgh",
+      "nameZh": "匹兹堡",
+      "fips": [
+        "42003",
+        "42007",
+        "42125",
+        "42129"
+      ]
+    },
+    {
+      "id": "city-030",
+      "type": "city",
+      "code": "030",
+      "name": "Portland",
+      "nameZh": "波特兰",
+      "fips": [
+        "41051",
+        "41067",
+        "53011"
+      ]
+    },
+    {
+      "id": "city-143",
+      "type": "city",
+      "code": "143",
+      "name": "Portland(ME)",
+      "nameZh": "波特兰(缅因)",
+      "fips": [
+        "23005"
+      ]
+    },
+    {
+      "id": "city-090",
+      "type": "city",
+      "code": "090",
+      "name": "Providence",
+      "nameZh": "普罗维登斯",
+      "fips": [
+        "25005",
+        "44001",
+        "44003",
+        "44005",
+        "44007",
+        "44009"
+      ]
+    },
+    {
+      "id": "city-087",
+      "type": "city",
+      "code": "087",
+      "name": "Provo",
+      "nameZh": "普若佛",
+      "fips": [
+        "49049"
+      ]
+    },
+    {
+      "id": "city-046",
+      "type": "city",
+      "code": "046",
+      "name": "Raleigh",
+      "nameZh": "罗利",
+      "fips": [
+        "37183"
+      ]
+    },
+    {
+      "id": "city-098",
+      "type": "city",
+      "code": "098",
+      "name": "Reno",
+      "nameZh": "雷诺",
+      "fips": [
+        "32031"
+      ]
+    },
+    {
+      "id": "city-118",
+      "type": "city",
+      "code": "118",
+      "name": "Richmond",
+      "nameZh": "里奇蒙",
+      "fips": [
+        "51760",
+        "51041",
+        "51087"
+      ]
+    },
+    {
+      "id": "city-045",
+      "type": "city",
+      "code": "045",
+      "name": "Riverside",
+      "nameZh": "里弗赛德",
+      "fips": [
+        "06065"
+      ]
+    },
+    {
+      "id": "city-066",
+      "type": "city",
+      "code": "066",
+      "name": "Rochester",
+      "nameZh": "罗切斯特",
+      "fips": [
+        "36055"
+      ]
+    },
+    {
+      "id": "city-130",
+      "type": "city",
+      "code": "130",
+      "name": "Rockingham",
+      "nameZh": "罗金汉",
+      "fips": [
+        "33015",
+        "33017"
+      ]
+    },
+    {
+      "id": "city-139",
+      "type": "city",
+      "code": "139",
+      "name": "Roseville",
+      "nameZh": "罗斯维尔",
+      "fips": [
+        "06061"
+      ]
+    },
+    {
+      "id": "city-037",
+      "type": "city",
+      "code": "037",
+      "name": "Sacramento",
+      "nameZh": "萨克拉门托",
+      "fips": [
+        "06067",
+        "06113"
+      ]
+    },
+    {
+      "id": "city-115",
+      "type": "city",
+      "code": "115",
+      "name": "Salinas",
+      "nameZh": "萨利纳斯",
+      "fips": [
+        "06053"
+      ]
+    },
+    {
+      "id": "city-039",
+      "type": "city",
+      "code": "039",
+      "name": "Salt Lake City",
+      "nameZh": "盐湖城",
+      "fips": [
+        "49035"
+      ]
+    },
+    {
+      "id": "city-036",
+      "type": "city",
+      "code": "036",
+      "name": "San Antonio",
+      "nameZh": "圣安东尼奥",
+      "fips": [
+        "48029"
+      ]
+    },
+    {
+      "id": "city-042",
+      "type": "city",
+      "code": "042",
+      "name": "San Bernardino",
+      "nameZh": "圣贝纳迪诺",
+      "fips": [
+        "06071"
+      ]
+    },
+    {
+      "id": "city-014",
+      "type": "city",
+      "code": "014",
+      "name": "San Diego",
+      "nameZh": "圣迭戈",
+      "fips": [
+        "06073"
+      ]
+    },
+    {
+      "id": "city-007",
+      "type": "city",
+      "code": "007",
+      "name": "San Francisco",
+      "nameZh": "旧金山",
+      "fips": [
+        "06075",
+        "06081"
+      ]
+    },
+    {
+      "id": "city-009",
+      "type": "city",
+      "code": "009",
+      "name": "San Jose",
+      "nameZh": "圣何塞",
+      "fips": [
+        "06085"
+      ]
+    },
+    {
+      "id": "city-123",
+      "type": "city",
+      "code": "123",
+      "name": "San Rafael",
+      "nameZh": "圣拉斐尔",
+      "fips": [
+        "06041"
+      ]
+    },
+    {
+      "id": "city-132",
+      "type": "city",
+      "code": "132",
+      "name": "Sanford",
+      "nameZh": "桑福德",
+      "fips": [
+        "12117"
+      ]
+    },
+    {
+      "id": "city-105",
+      "type": "city",
+      "code": "105",
+      "name": "Santa Barbara",
+      "nameZh": "圣巴巴拉",
+      "fips": [
+        "06083"
+      ]
+    },
+    {
+      "id": "city-111",
+      "type": "city",
+      "code": "111",
+      "name": "Santa Rosa",
+      "nameZh": "圣塔罗莎",
+      "fips": [
+        "06097"
+      ]
+    },
+    {
+      "id": "city-125",
+      "type": "city",
+      "code": "125",
+      "name": "Sarasota",
+      "nameZh": "萨拉索塔",
+      "fips": [
+        "12081",
+        "12115"
+      ]
+    },
+    {
+      "id": "city-008",
+      "type": "city",
+      "code": "008",
+      "name": "Seattle",
+      "nameZh": "西雅图",
+      "fips": [
+        "53033"
+      ]
+    },
+    {
+      "id": "city-109",
+      "type": "city",
+      "code": "109",
+      "name": "Spokane",
+      "nameZh": "斯波坎",
+      "fips": [
+        "53063"
+      ]
+    },
+    {
+      "id": "city-134",
+      "type": "city",
+      "code": "134",
+      "name": "St. Clair",
+      "nameZh": "圣克莱尔",
+      "fips": [
+        "17119",
+        "17163"
+      ]
+    },
+    {
+      "id": "city-038",
+      "type": "city",
+      "code": "038",
+      "name": "St. Louis",
+      "nameZh": "圣路易斯",
+      "fips": [
+        "29189",
+        "29510"
+      ]
+    },
+    {
+      "id": "city-057",
+      "type": "city",
+      "code": "057",
+      "name": "St. Petersburg(US)",
+      "nameZh": "圣彼得斯堡",
+      "fips": [
+        "12103"
+      ]
+    },
+    {
+      "id": "city-091",
+      "type": "city",
+      "code": "091",
+      "name": "Stockton",
+      "nameZh": "斯托克顿",
+      "fips": [
+        "06077"
+      ]
+    },
+    {
+      "id": "city-085",
+      "type": "city",
+      "code": "085",
+      "name": "Sugar Land",
+      "nameZh": "舒格兰",
+      "fips": [
+        "48157"
+      ]
+    },
+    {
+      "id": "city-101",
+      "type": "city",
+      "code": "101",
+      "name": "Syracuse",
+      "nameZh": "雪城",
+      "fips": [
+        "36067"
+      ]
+    },
+    {
+      "id": "city-067",
+      "type": "city",
+      "code": "067",
+      "name": "Tacoma",
+      "nameZh": "塔科马",
+      "fips": [
+        "53053"
+      ]
+    },
+    {
+      "id": "city-031",
+      "type": "city",
+      "code": "031",
+      "name": "Tampa",
+      "nameZh": "坦帕",
+      "fips": [
+        "12053",
+        "12057",
+        "12101"
+      ]
+    },
+    {
+      "id": "city-135",
+      "type": "city",
+      "code": "135",
+      "name": "Toledo",
+      "nameZh": "托莱多",
+      "fips": [
+        "39095",
+        "39173"
+      ]
+    },
+    {
+      "id": "city-076",
+      "type": "city",
+      "code": "076",
+      "name": "Trenton",
+      "nameZh": "特伦顿",
+      "fips": [
+        "34021"
+      ]
+    },
+    {
+      "id": "city-064",
+      "type": "city",
+      "code": "064",
+      "name": "Tucson",
+      "nameZh": "图森",
+      "fips": [
+        "04019"
+      ]
+    },
+    {
+      "id": "city-075",
+      "type": "city",
+      "code": "075",
+      "name": "Tulsa",
+      "nameZh": "塔尔萨",
+      "fips": [
+        "40143"
+      ]
+    },
+    {
+      "id": "city-140",
+      "type": "city",
+      "code": "140",
+      "name": "Vancouver",
+      "nameZh": "温哥华",
+      "fips": [
+        "53011"
+      ]
+    },
+    {
+      "id": "city-063",
+      "type": "city",
+      "code": "063",
+      "name": "Ventura",
+      "nameZh": "文图拉",
+      "fips": [
+        "06111"
+      ]
+    },
+    {
+      "id": "city-126",
+      "type": "city",
+      "code": "126",
+      "name": "Virginia Beach",
+      "nameZh": "弗吉尼亚滩",
+      "fips": [
+        "37029",
+        "37053",
+        "37073",
+        "51093",
+        "51181",
+        "51550",
+        "51710",
+        "51740",
+        "51800",
+        "51810"
+      ]
+    },
+    {
+      "id": "city-004",
+      "type": "city",
+      "code": "004",
+      "name": "Washington",
+      "nameZh": "华盛顿",
+      "fips": [
+        "11001",
+        "24009",
+        "24017",
+        "24031",
+        "24033",
+        "51013",
+        "51107",
+        "51510",
+        "51919",
+        "51942"
+      ]
+    },
+    {
+      "id": "city-141",
+      "type": "city",
+      "code": "141",
+      "name": "Waterbury",
+      "nameZh": "沃特伯利",
+      "fips": [
+        "09140"
+      ]
+    },
+    {
+      "id": "city-053",
+      "type": "city",
+      "code": "053",
+      "name": "Waukegan",
+      "nameZh": "沃基根",
+      "fips": [
+        "17097"
+      ]
+    },
+    {
+      "id": "city-103",
+      "type": "city",
+      "code": "103",
+      "name": "Wichita",
+      "nameZh": "威奇托",
+      "fips": [
+        "20173"
+      ]
+    },
+    {
+      "id": "city-059",
+      "type": "city",
+      "code": "059",
+      "name": "Wilmington",
+      "nameZh": "威尔明顿",
+      "fips": [
+        "10003",
+        "24015",
+        "34033"
+      ]
+    },
+    {
+      "id": "city-137",
+      "type": "city",
+      "code": "137",
+      "name": "Winston-Salem",
+      "nameZh": "温斯顿塞勒姆",
+      "fips": [
+        "37067"
+      ]
+    },
+    {
+      "id": "city-073",
+      "type": "city",
+      "code": "073",
+      "name": "Worcester",
+      "nameZh": "伍斯特",
+      "fips": [
+        "25009"
+      ]
+    }
+  ]
+}

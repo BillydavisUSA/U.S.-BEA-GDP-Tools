@@ -9,6 +9,7 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-metro-data.mjs",
+    "build:data:cities": "node scripts/build-city-data.mjs",
     "update:data:virginia": "node scripts/update-virginia-bea-geofips.mjs",
     "dev": "vite",
     "build": "node node_modules/vite/bin/vite.js build",

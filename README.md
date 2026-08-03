@@ -2,7 +2,8 @@
 
 U.S. BEA GDP Tools is a free, open-source project for retrieving gross domestic
 product (GDP) and population data from the U.S. Bureau of Economic Analysis
-(BEA). It supports national, state, and metropolitan analysis. For
+(BEA). It supports national, state, and metropolitan analysis, plus a
+website-only city level built from user-provided county GeoFIPS definitions. For
 Metropolitan Statistical Areas (MSAs) and Combined Statistical Areas (CSAs),
 the project retrieves county-level records, aggregates them using current OMB
 delineations, and retains the underlying county detail in Excel exports.
@@ -34,6 +35,9 @@ additional context.
 Metro Studio is the application distributed by the U.S. BEA GDP Tools project.
 It is available as a responsive website, a Windows x64 desktop application, and
 an Android application.
+
+The city level is available on the website only. Windows and Android builds
+remain unchanged.
 
 ## Downloads
 
@@ -217,3 +221,16 @@ cities as separate rows, normalize it against a BEA Virginia county CSV first:
 npm run update:data:virginia -- "C:\path\to\Table.csv"
 npm run build:data
 ```
+
+## Updating city data for the website
+
+Prepare an Excel workbook whose first worksheet contains `name`, `nameEn`, and
+`geofips` columns. Each `geofips` cell may contain one or more county codes,
+separated by line breaks. Then run:
+
+```bash
+npm run build:data:cities -- "C:\path\to\美国城市geofips.xlsx"
+```
+
+This regenerates `src/data/city-areas.json`. City definitions are used only by
+the responsive website and are not included in the Windows or Android UI.

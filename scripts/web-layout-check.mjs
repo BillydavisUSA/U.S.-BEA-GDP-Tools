@@ -141,6 +141,21 @@ const interactionExpression = `(() => {
     && searchRect.left >= 0
     && searchRect.right <= document.documentElement.clientWidth;
 
+  geography.value = "city";
+  geography.dispatchEvent(new Event("change", { bubbles: true }));
+  search.value = "纽约";
+  search.dispatchEvent(new Event("input", { bubbles: true }));
+  const cityResultText = searchResults.textContent;
+  const citySearchWorks =
+    !searchResults.hidden
+    && searchResults.querySelectorAll(".search-result").length > 0
+    && (cityResultText.includes("New York") || cityResultText.includes("纽约"))
+    && document.querySelector("#metro-type-field").hidden
+    && document.querySelector("#coverage-badge").textContent.includes("143")
+    && document.querySelector("#select-all-label").textContent.toLowerCase().includes(
+      document.documentElement.lang === "zh-CN" ? "城市" : "cities"
+    );
+
   geography.value = "country";
   geography.dispatchEvent(new Event("change", { bubbles: true }));
   const frequency = document.querySelector("#frequency");
@@ -148,6 +163,7 @@ const interactionExpression = `(() => {
   frequency.dispatchEvent(new Event("change", { bubbles: true }));
   return {
     stateSearchWorks,
+    citySearchWorks,
     searchAvoidsMeasureOverlap,
     countryControlsWork:
       !document.querySelector("#country-summary").hidden

@@ -1,0 +1,2699 @@
+{
+  "schemaVersion": 3,
+  "minimumYear": 2001,
+  "source": "美国城市geofips.xlsx Sheet1; duplicate source codes removed; BEA combined county codes normalized",
+  "cities": [
+    {
+      "id": "new-york",
+      "nameZh": "纽约",
+      "nameEn": "New York",
+      "area": 4144.84,
+      "geoFips": [
+        "34003",
+        "34017",
+        "34031",
+        "36005",
+        "36047",
+        "36061",
+        "36079",
+        "36081",
+        "36085",
+        "36087",
+        "36119"
+      ]
+    },
+    {
+      "id": "los-angeles",
+      "nameZh": "洛杉矶",
+      "nameEn": "Los Angeles",
+      "area": 10516.01,
+      "geoFips": [
+        "06037"
+      ]
+    },
+    {
+      "id": "chicago",
+      "nameZh": "芝加哥",
+      "nameEn": "Chicago",
+      "area": 8107.08,
+      "geoFips": [
+        "17031",
+        "17043",
+        "17063",
+        "17111",
+        "17197"
+      ]
+    },
+    {
+      "id": "washington",
+      "nameZh": "华盛顿",
+      "nameEn": "Washington",
+      "area": 6029.87,
+      "geoFips": [
+        "11001",
+        "24009",
+        "24017",
+        "24031",
+        "24033",
+        "51013",
+        "51107",
+        "51510",
+        "51919",
+        "51942"
+      ]
+    },
+    {
+      "id": "dallas",
+      "nameZh": "达拉斯",
+      "nameEn": "Dallas",
+      "area": 13667.86,
+      "geoFips": [
+        "48085",
+        "48113",
+        "48121",
+        "48139",
+        "48231",
+        "48257",
+        "48397"
+      ]
+    },
+    {
+      "id": "houston",
+      "nameZh": "休斯顿",
+      "nameEn": "Houston",
+      "area": 4421.15,
+      "geoFips": [
+        "48201"
+      ]
+    },
+    {
+      "id": "san-francisco",
+      "nameZh": "旧金山",
+      "nameEn": "San Francisco",
+      "area": 1282.83,
+      "geoFips": [
+        "06075",
+        "06081"
+      ]
+    },
+    {
+      "id": "seattle",
+      "nameZh": "西雅图",
+      "nameEn": "Seattle",
+      "area": 5479.73,
+      "geoFips": [
+        "53033"
+      ]
+    },
+    {
+      "id": "san-jose",
+      "nameZh": "圣何塞",
+      "nameEn": "San Jose",
+      "area": 3343.89,
+      "geoFips": [
+        "06085"
+      ]
+    },
+    {
+      "id": "phoenix",
+      "nameZh": "菲尼克斯",
+      "nameEn": "Phoenix",
+      "area": 23833.11,
+      "geoFips": [
+        "04013"
+      ]
+    },
+    {
+      "id": "philadelphia",
+      "nameZh": "费城",
+      "nameEn": "Philadelphia",
+      "area": 5584.16,
+      "geoFips": [
+        "42017",
+        "42029",
+        "42045",
+        "42091",
+        "42101"
+      ]
+    },
+    {
+      "id": "atlanta",
+      "nameZh": "亚特兰大",
+      "nameEn": "Atlanta",
+      "area": 2937.38,
+      "geoFips": [
+        "13067",
+        "13089",
+        "13121"
+      ]
+    },
+    {
+      "id": "orange",
+      "nameZh": "奥兰治",
+      "nameEn": "Orange",
+      "area": 2053.52,
+      "geoFips": [
+        "06059"
+      ]
+    },
+    {
+      "id": "san-diego",
+      "nameZh": "圣迭戈",
+      "nameEn": "San Diego",
+      "area": 10905.04,
+      "geoFips": [
+        "06073"
+      ]
+    },
+    {
+      "id": "detroit",
+      "nameZh": "底特律",
+      "nameEn": "Detroit",
+      "area": 5072.69,
+      "geoFips": [
+        "26099",
+        "26125",
+        "26163"
+      ]
+    },
+    {
+      "id": "minneapolis",
+      "nameZh": "明尼阿波利斯",
+      "nameEn": "Minneapolis",
+      "area": 4379.11,
+      "geoFips": [
+        "27003",
+        "27037",
+        "27053",
+        "27123"
+      ]
+    },
+    {
+      "id": "boston",
+      "nameZh": "波士顿",
+      "nameEn": "Boston",
+      "area": 2882.29,
+      "geoFips": [
+        "25021",
+        "25023",
+        "25025"
+      ]
+    },
+    {
+      "id": "cambridge-us",
+      "nameZh": "剑桥(美国)",
+      "nameEn": "Cambridge(US)",
+      "area": 3393.9,
+      "geoFips": [
+        "25009",
+        "25017"
+      ]
+    },
+    {
+      "id": "denver",
+      "nameZh": "丹佛",
+      "nameEn": "Denver",
+      "area": 7464.56,
+      "geoFips": [
+        "08001",
+        "08005",
+        "08031",
+        "08059"
+      ]
+    },
+    {
+      "id": "oakland",
+      "nameZh": "奥克兰(美国)",
+      "nameEn": "Oakland",
+      "area": 3766.76,
+      "geoFips": [
+        "06001",
+        "06013"
+      ]
+    },
+    {
+      "id": "long-island",
+      "nameZh": "长岛",
+      "nameEn": "Long Island",
+      "area": 3096.28,
+      "geoFips": [
+        "36059",
+        "36103"
+      ]
+    },
+    {
+      "id": "miami",
+      "nameZh": "迈阿密",
+      "nameEn": "Miami",
+      "area": 4920.78,
+      "geoFips": [
+        "12086"
+      ]
+    },
+    {
+      "id": "new-brunswick-us",
+      "nameZh": "新不伦瑞克(美国)",
+      "nameEn": "New Brunswick(US)",
+      "area": 4422.68,
+      "geoFips": [
+        "34023",
+        "34025",
+        "34029",
+        "34035"
+      ]
+    },
+    {
+      "id": "newark",
+      "nameZh": "纽瓦克",
+      "nameEn": "Newark",
+      "area": 4237.73,
+      "geoFips": [
+        "34013",
+        "34019",
+        "34027",
+        "34037",
+        "34039"
+      ]
+    },
+    {
+      "id": "austin",
+      "nameZh": "奥斯汀",
+      "nameEn": "Austin",
+      "area": 2575.21,
+      "geoFips": [
+        "48453"
+      ]
+    },
+    {
+      "id": "fort-worth",
+      "nameZh": "沃思堡",
+      "nameEn": "Fort Worth",
+      "area": 8801.85,
+      "geoFips": [
+        "48251",
+        "48367",
+        "48439",
+        "48497"
+      ]
+    },
+    {
+      "id": "las-vegas",
+      "nameZh": "拉斯维加斯",
+      "nameEn": "Las Vegas",
+      "area": 20439.31,
+      "geoFips": [
+        "32003"
+      ]
+    },
+    {
+      "id": "kansas-city",
+      "nameZh": "堪萨斯城",
+      "nameEn": "Kansas City",
+      "area": 18794.29,
+      "geoFips": [
+        "20091",
+        "20103",
+        "20107",
+        "20121",
+        "20209",
+        "29013",
+        "29025",
+        "29037",
+        "29047",
+        "29049",
+        "29095",
+        "29107",
+        "29165",
+        "29177"
+      ]
+    },
+    {
+      "id": "charlotte",
+      "nameZh": "夏洛特",
+      "nameEn": "Charlotte",
+      "area": 1356.14,
+      "geoFips": [
+        "37119"
+      ]
+    },
+    {
+      "id": "portland",
+      "nameZh": "波特兰",
+      "nameEn": "Portland",
+      "area": 7837.31,
+      "geoFips": [
+        "41051",
+        "41067",
+        "53011"
+      ]
+    },
+    {
+      "id": "tampa",
+      "nameZh": "坦帕",
+      "nameEn": "Tampa",
+      "area": 5086.94,
+      "geoFips": [
+        "12053",
+        "12057",
+        "12101"
+      ]
+    },
+    {
+      "id": "pittsburgh",
+      "nameZh": "匹兹堡",
+      "nameEn": "Pittsburgh",
+      "area": 7897.84,
+      "geoFips": [
+        "42003",
+        "42007",
+        "42125",
+        "42129"
+      ]
+    },
+    {
+      "id": "fort-lauderdale",
+      "nameZh": "劳德代尔堡",
+      "nameEn": "Fort Lauderdale",
+      "area": 3115.52,
+      "geoFips": [
+        "12011"
+      ]
+    },
+    {
+      "id": "columbus",
+      "nameZh": "哥伦布",
+      "nameEn": "Columbus",
+      "area": 3833.01,
+      "geoFips": [
+        "39041",
+        "39045",
+        "39049"
+      ]
+    },
+    {
+      "id": "orlando",
+      "nameZh": "奥兰多",
+      "nameEn": "Orlando",
+      "area": 2338.74,
+      "geoFips": [
+        "12095"
+      ]
+    },
+    {
+      "id": "san-antonio",
+      "nameZh": "圣安东尼奥",
+      "nameEn": "San Antonio",
+      "area": 3212.52,
+      "geoFips": [
+        "48029"
+      ]
+    },
+    {
+      "id": "sacramento",
+      "nameZh": "萨克拉门托",
+      "nameEn": "Sacramento",
+      "area": 5123.69,
+      "geoFips": [
+        "06067",
+        "06113"
+      ]
+    },
+    {
+      "id": "st-louis",
+      "nameZh": "圣路易斯",
+      "nameEn": "St. Louis",
+      "area": 1475.55,
+      "geoFips": [
+        "29189",
+        "29510"
+      ]
+    },
+    {
+      "id": "salt-lake-city",
+      "nameZh": "盐湖城",
+      "nameEn": "Salt Lake City",
+      "area": 1949.88,
+      "geoFips": [
+        "49035"
+      ]
+    },
+    {
+      "id": "palm-beach",
+      "nameZh": "棕榈滩",
+      "nameEn": "Palm Beach",
+      "area": 5087.57,
+      "geoFips": [
+        "12099"
+      ]
+    },
+    {
+      "id": "baltimore",
+      "nameZh": "巴尔的摩",
+      "nameEn": "Baltimore",
+      "area": 1759.39,
+      "geoFips": [
+        "24005",
+        "24510"
+      ]
+    },
+    {
+      "id": "san-bernardino",
+      "nameZh": "圣贝纳迪诺",
+      "nameEn": "San Bernardino",
+      "area": 51976.31,
+      "geoFips": [
+        "06071"
+      ]
+    },
+    {
+      "id": "cleveland",
+      "nameZh": "克里夫兰",
+      "nameEn": "Cleveland",
+      "area": 1184.17,
+      "geoFips": [
+        "39035"
+      ]
+    },
+    {
+      "id": "indianapolis",
+      "nameZh": "印第安纳波利斯",
+      "nameEn": "Indianapolis",
+      "area": 1025.62,
+      "geoFips": [
+        "18097"
+      ]
+    },
+    {
+      "id": "riverside",
+      "nameZh": "里弗赛德",
+      "nameEn": "Riverside",
+      "area": 18671.88,
+      "geoFips": [
+        "06065"
+      ]
+    },
+    {
+      "id": "raleigh",
+      "nameZh": "罗利",
+      "nameEn": "Raleigh",
+      "area": 2161.62,
+      "geoFips": [
+        "37183"
+      ]
+    },
+    {
+      "id": "hartford",
+      "nameZh": "哈特福德",
+      "nameEn": "Hartford",
+      "area": 3759.29,
+      "geoFips": [
+        "09003",
+        "09007",
+        "09013",
+        "09110",
+        "09130"
+      ],
+      "coverage": [
+        {
+          "from": 2001,
+          "to": 2023,
+          "geoFips": [
+            "09003",
+            "09007",
+            "09013"
+          ]
+        },
+        {
+          "from": 2024,
+          "geoFips": [
+            "09110",
+            "09130"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cincinnati",
+      "nameZh": "辛辛那提",
+      "nameEn": "Cincinnati",
+      "area": 3763.49,
+      "geoFips": [
+        "21015",
+        "21037",
+        "21117",
+        "39025",
+        "39061"
+      ]
+    },
+    {
+      "id": "nashville",
+      "nameZh": "纳什维尔",
+      "nameEn": "Nashville",
+      "area": 1304.01,
+      "geoFips": [
+        "47037"
+      ]
+    },
+    {
+      "id": "jacksonville",
+      "nameZh": "杰克逊维尔",
+      "nameEn": "Jacksonville",
+      "area": 1975.18,
+      "geoFips": [
+        "12031"
+      ]
+    },
+    {
+      "id": "memphis",
+      "nameZh": "孟菲斯",
+      "nameEn": "Memphis",
+      "area": 4768.09,
+      "geoFips": [
+        "05035",
+        "28033",
+        "47157"
+      ]
+    },
+    {
+      "id": "honolulu",
+      "nameZh": "檀香山",
+      "nameEn": "Honolulu",
+      "area": 1556.03,
+      "geoFips": [
+        "15003"
+      ]
+    },
+    {
+      "id": "waukegan",
+      "nameZh": "沃基根",
+      "nameEn": "Waukegan",
+      "area": 1149.12,
+      "geoFips": [
+        "17097"
+      ]
+    },
+    {
+      "id": "buffalo",
+      "nameZh": "布法罗",
+      "nameEn": "Buffalo",
+      "area": 4053.62,
+      "geoFips": [
+        "36029",
+        "36063"
+      ]
+    },
+    {
+      "id": "milwaukee",
+      "nameZh": "密尔沃基",
+      "nameEn": "Milwaukee",
+      "area": 2049.15,
+      "geoFips": [
+        "55079",
+        "55133"
+      ]
+    },
+    {
+      "id": "louisville",
+      "nameZh": "路易维尔",
+      "nameEn": "Louisville",
+      "area": 2335.66,
+      "geoFips": [
+        "18019",
+        "18043",
+        "21111"
+      ]
+    },
+    {
+      "id": "st-petersburg-us",
+      "nameZh": "圣彼得斯堡(美国)",
+      "nameEn": "St. Petersburg(US)",
+      "area": 709.11,
+      "geoFips": [
+        "12103"
+      ]
+    },
+    {
+      "id": "bridgeport",
+      "nameZh": "布里奇波特",
+      "nameEn": "Bridgeport",
+      "area": 1741.28,
+      "geoFips": [
+        "09001",
+        "09120",
+        "09190"
+      ],
+      "coverage": [
+        {
+          "from": 2001,
+          "to": 2023,
+          "geoFips": [
+            "09001"
+          ]
+        },
+        {
+          "from": 2024,
+          "geoFips": [
+            "09120",
+            "09190"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wilmington",
+      "nameZh": "威尔明顿",
+      "nameEn": "Wilmington",
+      "area": 2860.64,
+      "geoFips": [
+        "10003",
+        "24015",
+        "34033"
+      ]
+    },
+    {
+      "id": "omaha",
+      "nameZh": "奥马哈",
+      "nameEn": "Omaha",
+      "area": 3925.95,
+      "geoFips": [
+        "19155",
+        "31055",
+        "31153"
+      ]
+    },
+    {
+      "id": "oklahoma-city",
+      "nameZh": "俄克拉荷马城",
+      "nameEn": "Oklahoma City",
+      "area": 5553.92,
+      "geoFips": [
+        "40017",
+        "40027",
+        "40109"
+      ]
+    },
+    {
+      "id": "lawrenceville",
+      "nameZh": "劳伦斯维尔",
+      "nameEn": "Lawrenceville",
+      "area": 1116.61,
+      "geoFips": [
+        "13135"
+      ]
+    },
+    {
+      "id": "ventura",
+      "nameZh": "文图拉",
+      "nameEn": "Ventura",
+      "area": 4767.6,
+      "geoFips": [
+        "06111"
+      ]
+    },
+    {
+      "id": "tucson",
+      "nameZh": "图森",
+      "nameEn": "Tucson",
+      "area": 23798.58,
+      "geoFips": [
+        "04019"
+      ]
+    },
+    {
+      "id": "birmingham",
+      "nameZh": "伯明翰(美国)",
+      "nameEn": "Birmingham",
+      "area": 4913.23,
+      "geoFips": [
+        "01073",
+        "01117"
+      ]
+    },
+    {
+      "id": "rochester",
+      "nameZh": "罗切斯特",
+      "nameEn": "Rochester",
+      "area": 1701.48,
+      "geoFips": [
+        "36055"
+      ]
+    },
+    {
+      "id": "tacoma",
+      "nameZh": "塔科马",
+      "nameEn": "Tacoma",
+      "area": 4320.11,
+      "geoFips": [
+        "53053"
+      ]
+    },
+    {
+      "id": "fresno",
+      "nameZh": "弗雷斯洛",
+      "nameEn": "Fresno",
+      "area": 15432.66,
+      "geoFips": [
+        "06019"
+      ]
+    },
+    {
+      "id": "des-moines",
+      "nameZh": "得梅因",
+      "nameEn": "Des Moines",
+      "area": 1483.34,
+      "geoFips": [
+        "19153"
+      ]
+    },
+    {
+      "id": "bakersfield",
+      "nameZh": "贝克斯菲尔德",
+      "nameEn": "Bakersfield",
+      "area": 21068.71,
+      "geoFips": [
+        "06029"
+      ]
+    },
+    {
+      "id": "madison",
+      "nameZh": "麦迪逊",
+      "nameEn": "Madison",
+      "area": 3098.91,
+      "geoFips": [
+        "55025"
+      ]
+    },
+    {
+      "id": "everett",
+      "nameZh": "埃弗雷特",
+      "nameEn": "Everett",
+      "area": 5404.05,
+      "geoFips": [
+        "53061"
+      ]
+    },
+    {
+      "id": "worcester",
+      "nameZh": "伍斯特",
+      "nameEn": "Worcester",
+      "area": 3912.64,
+      "geoFips": [
+        "25009"
+      ]
+    },
+    {
+      "id": "grand-rapids",
+      "nameZh": "大急流城",
+      "nameEn": "Grand Rapids",
+      "area": 2198.72,
+      "geoFips": [
+        "26081"
+      ]
+    },
+    {
+      "id": "tulsa",
+      "nameZh": "塔尔萨",
+      "nameEn": "Tulsa",
+      "area": 1476.92,
+      "geoFips": [
+        "40143"
+      ]
+    },
+    {
+      "id": "trenton",
+      "nameZh": "特伦顿",
+      "nameEn": "Trenton",
+      "area": 1212.64,
+      "geoFips": [
+        "34021"
+      ]
+    },
+    {
+      "id": "colorado-springs",
+      "nameZh": "科罗拉多泉",
+      "nameEn": "Colorado Springs",
+      "area": 5507.39,
+      "geoFips": [
+        "08041"
+      ]
+    },
+    {
+      "id": "albuquerque",
+      "nameZh": "阿尔伯克基",
+      "nameEn": "Albuquerque",
+      "area": 3007.61,
+      "geoFips": [
+        "35001"
+      ]
+    },
+    {
+      "id": "fort-myers",
+      "nameZh": "迈尔斯堡",
+      "nameEn": "Fort Myers",
+      "area": 2023.18,
+      "geoFips": [
+        "12071"
+      ]
+    },
+    {
+      "id": "el-paso",
+      "nameZh": "埃尔帕索",
+      "nameEn": "El Paso",
+      "area": 2625.02,
+      "geoFips": [
+        "48141"
+      ]
+    },
+    {
+      "id": "durham",
+      "nameZh": "德罕(美国)",
+      "nameEn": "Durham",
+      "area": 744.75,
+      "geoFips": [
+        "37063"
+      ]
+    },
+    {
+      "id": "charleston",
+      "nameZh": "查尔斯顿",
+      "nameEn": "Charleston",
+      "area": 6708.5,
+      "geoFips": [
+        "45015",
+        "45019",
+        "45035"
+      ]
+    },
+    {
+      "id": "new-haven",
+      "nameZh": "纽黑文",
+      "nameEn": "New Haven",
+      "area": 951.12,
+      "geoFips": [
+        "09170"
+      ],
+      "coverage": [
+        {
+          "from": 2024,
+          "geoFips": [
+            "09170"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conroe",
+      "nameZh": "康罗",
+      "nameEn": "Conroe",
+      "area": 2699.23,
+      "geoFips": [
+        "48339"
+      ]
+    },
+    {
+      "id": "sugar-land",
+      "nameZh": "舒格兰",
+      "nameEn": "Sugar Land",
+      "area": 2232.01,
+      "geoFips": [
+        "48157"
+      ]
+    },
+    {
+      "id": "greenville",
+      "nameZh": "格林威尔",
+      "nameEn": "Greenville",
+      "area": 2035.57,
+      "geoFips": [
+        "45007",
+        "45045",
+        "45077"
+      ]
+    },
+    {
+      "id": "provo",
+      "nameZh": "普若佛",
+      "nameEn": "Provo",
+      "area": 5191.53,
+      "geoFips": [
+        "49049"
+      ]
+    },
+    {
+      "id": "baton-rouge",
+      "nameZh": "巴吞鲁日",
+      "nameEn": "Baton Rouge",
+      "area": 1677.92,
+      "geoFips": [
+        "22033",
+        "22121"
+      ]
+    },
+    {
+      "id": "greensboro",
+      "nameZh": "格林斯伯勒",
+      "nameEn": "Greensboro",
+      "area": 1673.1,
+      "geoFips": [
+        "37081"
+      ]
+    },
+    {
+      "id": "providence",
+      "nameZh": "普罗维登斯",
+      "nameEn": "Providence",
+      "area": 4110.32,
+      "geoFips": [
+        "25005",
+        "44001",
+        "44003",
+        "44005",
+        "44007",
+        "44009"
+      ]
+    },
+    {
+      "id": "stockton",
+      "nameZh": "斯托克顿",
+      "nameEn": "Stockton",
+      "area": 3605.88,
+      "geoFips": [
+        "06077"
+      ]
+    },
+    {
+      "id": "new-orleans",
+      "nameZh": "新奥尔良",
+      "nameEn": "New Orleans",
+      "area": 4217.73,
+      "geoFips": [
+        "22051",
+        "22071",
+        "22075",
+        "22087"
+      ]
+    },
+    {
+      "id": "albany",
+      "nameZh": "奥尔巴尼",
+      "nameEn": "Albany",
+      "area": 3574.22,
+      "geoFips": [
+        "36001",
+        "36083",
+        "36093"
+      ]
+    },
+    {
+      "id": "boise",
+      "nameZh": "博伊西",
+      "nameEn": "Boise",
+      "area": 1117.61,
+      "geoFips": [
+        "16001"
+      ]
+    },
+    {
+      "id": "leesburg",
+      "nameZh": "利斯堡",
+      "nameEn": "Leesburg",
+      "area": 1335.75,
+      "geoFips": [
+        "51107"
+      ]
+    },
+    {
+      "id": "georgetown",
+      "nameZh": "乔治敦",
+      "nameEn": "Georgetown",
+      "area": 2890.03,
+      "geoFips": [
+        "48491"
+      ]
+    },
+    {
+      "id": "lakeland",
+      "nameZh": "莱克兰",
+      "nameEn": "Lakeland",
+      "area": 4857.41,
+      "geoFips": [
+        "12105"
+      ]
+    },
+    {
+      "id": "reno",
+      "nameZh": "雷诺",
+      "nameEn": "Reno",
+      "area": 16358.04,
+      "geoFips": [
+        "32031"
+      ]
+    },
+    {
+      "id": "knoxville",
+      "nameZh": "诺克斯维尔",
+      "nameEn": "Knoxville",
+      "area": 1316.56,
+      "geoFips": [
+        "47093"
+      ]
+    },
+    {
+      "id": "palm-bay",
+      "nameZh": "棕榈湾",
+      "nameEn": "Palm Bay",
+      "area": 2628.75,
+      "geoFips": [
+        "12009"
+      ]
+    },
+    {
+      "id": "syracuse",
+      "nameZh": "雪城",
+      "nameEn": "Syracuse",
+      "area": 2016.03,
+      "geoFips": [
+        "36067"
+      ]
+    },
+    {
+      "id": "midland",
+      "nameZh": "米德兰",
+      "nameEn": "Midland",
+      "area": 4657.42,
+      "geoFips": [
+        "48135",
+        "48329"
+      ]
+    },
+    {
+      "id": "wichita",
+      "nameZh": "威奇托",
+      "nameEn": "Wichita",
+      "area": 2582.22,
+      "geoFips": [
+        "20173"
+      ]
+    },
+    {
+      "id": "little-rock",
+      "nameZh": "小石城",
+      "nameEn": "Little Rock",
+      "area": 1964.17,
+      "geoFips": [
+        "05119"
+      ]
+    },
+    {
+      "id": "santa-barbara",
+      "nameZh": "圣巴巴拉",
+      "nameEn": "Santa Barbara",
+      "area": 7080.87,
+      "geoFips": [
+        "06083"
+      ]
+    },
+    {
+      "id": "camden",
+      "nameZh": "卡姆登",
+      "nameEn": "Camden",
+      "area": 3477.47,
+      "geoFips": [
+        "34005",
+        "34007",
+        "34015"
+      ]
+    },
+    {
+      "id": "akron",
+      "nameZh": "阿克伦",
+      "nameEn": "Akron",
+      "area": 2331.53,
+      "geoFips": [
+        "39133",
+        "39153"
+      ]
+    },
+    {
+      "id": "dayton",
+      "nameZh": "代顿",
+      "nameEn": "Dayton",
+      "area": 3319.24,
+      "geoFips": [
+        "39057",
+        "39109",
+        "39113"
+      ]
+    },
+    {
+      "id": "spokane",
+      "nameZh": "斯波坎",
+      "nameEn": "Spokane",
+      "area": 4569.32,
+      "geoFips": [
+        "53063"
+      ]
+    },
+    {
+      "id": "lancaster",
+      "nameZh": "兰开斯特",
+      "nameEn": "Lancaster",
+      "area": 2444.75,
+      "geoFips": [
+        "42071"
+      ]
+    },
+    {
+      "id": "santa-rosa",
+      "nameZh": "圣塔罗莎",
+      "nameEn": "Santa Rosa",
+      "area": 4080.1,
+      "geoFips": [
+        "06097"
+      ]
+    },
+    {
+      "id": "boulder",
+      "nameZh": "博尔德",
+      "nameEn": "Boulder",
+      "area": 2004.7,
+      "geoFips": [
+        "08013",
+        "08014"
+      ]
+    },
+    {
+      "id": "huntsville",
+      "nameZh": "亨茨维尔",
+      "nameEn": "Huntsville",
+      "area": 2076.17,
+      "geoFips": [
+        "01089"
+      ]
+    },
+    {
+      "id": "franklin",
+      "nameZh": "富兰克林",
+      "nameEn": "Franklin",
+      "area": 1509.73,
+      "geoFips": [
+        "47187"
+      ]
+    },
+    {
+      "id": "salinas",
+      "nameZh": "萨利纳斯",
+      "nameEn": "Salinas",
+      "area": 8499.61,
+      "geoFips": [
+        "06053"
+      ]
+    },
+    {
+      "id": "manchester",
+      "nameZh": "曼彻斯特(美国)",
+      "nameEn": "Manchester",
+      "area": 2270.22,
+      "geoFips": [
+        "33011"
+      ]
+    },
+    {
+      "id": "fairfield",
+      "nameZh": "瓦列霍",
+      "nameEn": "Fairfield",
+      "area": 2128.29,
+      "geoFips": [
+        "06095"
+      ]
+    },
+    {
+      "id": "richmond",
+      "nameZh": "里奇蒙",
+      "nameEn": "Richmond",
+      "area": 1857.37,
+      "geoFips": [
+        "51041",
+        "51087",
+        "51760"
+      ]
+    },
+    {
+      "id": "colombia-us",
+      "nameZh": "哥伦比亚(美国)",
+      "nameEn": "Colombia(US)",
+      "area": 3770.08,
+      "geoFips": [
+        "45063",
+        "45079"
+      ]
+    },
+    {
+      "id": "chattanooga",
+      "nameZh": "查塔努加",
+      "nameEn": "Chattanooga",
+      "area": 2980.08,
+      "geoFips": [
+        "13047",
+        "13295",
+        "47065"
+      ]
+    },
+    {
+      "id": "anne-arundel",
+      "nameZh": "安妮阿伦德尔",
+      "nameEn": "Anne Arundel",
+      "area": 1724.3,
+      "geoFips": [
+        "24003",
+        "24027"
+      ]
+    },
+    {
+      "id": "elgin",
+      "nameZh": "埃尔金",
+      "nameEn": "Elgin",
+      "area": 3809.48,
+      "geoFips": [
+        "17037",
+        "17089",
+        "17093"
+      ]
+    },
+    {
+      "id": "san-rafael",
+      "nameZh": "圣拉斐尔",
+      "nameEn": "San Rafael",
+      "area": 1347.16,
+      "geoFips": [
+        "06041"
+      ]
+    },
+    {
+      "id": "naples-us",
+      "nameZh": "那不勒斯(美国)",
+      "nameEn": "Naples(US)",
+      "area": 5172.19,
+      "geoFips": [
+        "12021"
+      ]
+    },
+    {
+      "id": "sarasota",
+      "nameZh": "萨拉索塔",
+      "nameEn": "Sarasota",
+      "area": 3363.85,
+      "geoFips": [
+        "12081",
+        "12115"
+      ]
+    },
+    {
+      "id": "virginia-beach",
+      "nameZh": "弗吉尼亚滩",
+      "nameEn": "Virginia Beach",
+      "area": 6491.55,
+      "geoFips": [
+        "37029",
+        "37053",
+        "37073",
+        "51093",
+        "51181",
+        "51550",
+        "51710",
+        "51740",
+        "51800",
+        "51810"
+      ]
+    },
+    {
+      "id": "allentown",
+      "nameZh": "阿伦敦",
+      "nameEn": "Allentown",
+      "area": 1852.16,
+      "geoFips": [
+        "42077",
+        "42095"
+      ]
+    },
+    {
+      "id": "augusta",
+      "nameZh": "奥古斯塔",
+      "nameEn": "Augusta",
+      "area": 4364.67,
+      "geoFips": [
+        "13073",
+        "13245",
+        "45003"
+      ]
+    },
+    {
+      "id": "hammond-gary",
+      "nameZh": "哈蒙德-加里",
+      "nameEn": "Hammond-Gary",
+      "area": 4865.13,
+      "geoFips": [
+        "18073",
+        "18089",
+        "18111",
+        "18127"
+      ]
+    },
+    {
+      "id": "rockingham",
+      "nameZh": "罗金汉",
+      "nameEn": "Rockingham",
+      "area": 2752.88,
+      "geoFips": [
+        "33015",
+        "33017"
+      ]
+    },
+    {
+      "id": "harrisburg",
+      "nameZh": "哈里斯堡",
+      "nameEn": "Harrisburg",
+      "area": 2772.2,
+      "geoFips": [
+        "42041",
+        "42043"
+      ]
+    },
+    {
+      "id": "sanford",
+      "nameZh": "桑福德",
+      "nameEn": "Sanford",
+      "area": 801.26,
+      "geoFips": [
+        "12117"
+      ]
+    },
+    {
+      "id": "jackson",
+      "nameZh": "杰克逊",
+      "nameEn": "Jackson",
+      "area": 6111.22,
+      "geoFips": [
+        "28049",
+        "28089",
+        "28121"
+      ]
+    },
+    {
+      "id": "st-clair",
+      "nameZh": "圣克莱尔",
+      "nameEn": "St. Clair",
+      "area": 3556.75,
+      "geoFips": [
+        "17119",
+        "17163"
+      ]
+    },
+    {
+      "id": "toledo",
+      "nameZh": "托莱多",
+      "nameEn": "Toledo",
+      "area": 2478.18,
+      "geoFips": [
+        "39095",
+        "39173"
+      ]
+    },
+    {
+      "id": "pensacola",
+      "nameZh": "彭萨科拉",
+      "nameEn": "Pensacola",
+      "area": 4323.72,
+      "geoFips": [
+        "12033",
+        "12113"
+      ]
+    },
+    {
+      "id": "winston-salem",
+      "nameZh": "温斯顿塞勒姆",
+      "nameEn": "Winston-Salem",
+      "area": 1056.83,
+      "geoFips": [
+        "37067"
+      ]
+    },
+    {
+      "id": "ogden",
+      "nameZh": "奥格登",
+      "nameEn": "Ogden",
+      "area": 2423.65,
+      "geoFips": [
+        "49011",
+        "49057"
+      ]
+    },
+    {
+      "id": "roseville",
+      "nameZh": "罗斯维尔",
+      "nameEn": "Roseville",
+      "area": 3644.3,
+      "geoFips": [
+        "06061"
+      ]
+    },
+    {
+      "id": "vancouver-us",
+      "nameZh": "温哥华(美国)",
+      "nameEn": "Vancouver(US)",
+      "area": 1627.81,
+      "geoFips": [
+        "53011"
+      ]
+    },
+    {
+      "id": "waterbury",
+      "nameZh": "沃特伯利",
+      "nameEn": "Waterbury",
+      "area": 1069.11,
+      "geoFips": [
+        "09140"
+      ],
+      "coverage": [
+        {
+          "from": 2024,
+          "geoFips": [
+            "09140"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deltona",
+      "nameZh": "德尔托纳",
+      "nameEn": "Deltona",
+      "area": 4111.11,
+      "geoFips": [
+        "12035",
+        "12127"
+      ]
+    },
+    {
+      "id": "portland-me",
+      "nameZh": "波特兰(缅因)",
+      "nameEn": "Portland(ME)",
+      "area": 2165.74,
+      "geoFips": [
+        "23005"
+      ]
+    },
+    {
+      "id": "ann-arbor",
+      "nameZh": "安娜堡",
+      "nameEn": "Ann Arbor",
+      "area": 1871.06,
+      "geoFips": [
+        "26161"
+      ]
+    },
+    {
+      "id": "anchorage",
+      "nameZh": "安克雷奇",
+      "nameEn": "Anchorage",
+      "area": 4491.16,
+      "geoFips": [
+        "02020"
+      ]
+    },
+    {
+      "id": "modesto",
+      "nameZh": "莫德斯托",
+      "nameEn": "Modesto",
+      "area": 3921.39,
+      "geoFips": [
+        "06099"
+      ]
+    },
+    {
+      "id": "manassas",
+      "nameZh": "马纳萨斯",
+      "nameEn": "Manassas",
+      "area": 915.64,
+      "geoFips": [
+        "51942"
+      ]
+    },
+    {
+      "id": "hamilton-us",
+      "nameZh": "哈密尔顿(美国)",
+      "nameEn": "Hamilton(US)",
+      "area": 1042.38,
+      "geoFips": [
+        "18057"
+      ]
+    },
+    {
+      "id": "mcallen",
+      "nameZh": "麦卡伦",
+      "nameEn": "McAllen",
+      "area": 4097.82,
+      "geoFips": [
+        "48215"
+      ]
+    },
+    {
+      "id": "castle-rock",
+      "nameZh": "城堡岩",
+      "nameEn": "Castle Rock",
+      "area": 2184.69,
+      "geoFips": [
+        "08035"
+      ]
+    },
+    {
+      "id": "springfield",
+      "nameZh": "斯普林菲尔德",
+      "nameEn": "Springfield",
+      "area": 3054.61,
+      "geoFips": [
+        "25013",
+        "25015"
+      ]
+    },
+    {
+      "id": "mobile",
+      "nameZh": "莫比尔",
+      "nameEn": "Mobile",
+      "area": 7469.45,
+      "geoFips": [
+        "01003",
+        "01097"
+      ]
+    },
+    {
+      "id": "butler",
+      "nameZh": "巴特勒",
+      "nameEn": "Butler",
+      "area": 1217.47,
+      "geoFips": [
+        "39017"
+      ]
+    },
+    {
+      "id": "fort-collins",
+      "nameZh": "科林斯堡",
+      "nameEn": "Fort Collins",
+      "area": 6822,
+      "geoFips": [
+        "08069"
+      ]
+    },
+    {
+      "id": "fort-wayne",
+      "nameZh": "韦恩堡",
+      "nameEn": "Fort Wayne",
+      "area": 1709.35,
+      "geoFips": [
+        "18003"
+      ]
+    },
+    {
+      "id": "lexington",
+      "nameZh": "列克星敦",
+      "nameEn": "Lexington",
+      "area": 739.62,
+      "geoFips": [
+        "21067"
+      ]
+    },
+    {
+      "id": "lincoln",
+      "nameZh": "林肯",
+      "nameEn": "Lincoln",
+      "area": 2192.12,
+      "geoFips": [
+        "31109"
+      ]
+    },
+    {
+      "id": "savannah",
+      "nameZh": "萨凡纳",
+      "nameEn": "Savannah",
+      "area": 1138.55,
+      "geoFips": [
+        "13051"
+      ]
+    },
+    {
+      "id": "york",
+      "nameZh": "约克",
+      "nameEn": "York",
+      "area": 2358.8,
+      "geoFips": [
+        "42133"
+      ]
+    },
+    {
+      "id": "corpus-christi",
+      "nameZh": "科珀斯克里斯蒂",
+      "nameEn": "Corpus Christi",
+      "area": 4024.84,
+      "geoFips": [
+        "48355",
+        "48409"
+      ]
+    },
+    {
+      "id": "newburgh",
+      "nameZh": "纽堡",
+      "nameEn": "Newburgh",
+      "area": 2171.23,
+      "geoFips": [
+        "36071"
+      ]
+    },
+    {
+      "id": "murfreesboro",
+      "nameZh": "默弗里斯伯勒",
+      "nameEn": "Murfreesboro",
+      "area": 1616.3,
+      "geoFips": [
+        "47149"
+      ]
+    },
+    {
+      "id": "beaumont",
+      "nameZh": "博蒙特",
+      "nameEn": "Beaumont",
+      "area": 3373.58,
+      "geoFips": [
+        "48245",
+        "48361"
+      ]
+    },
+    {
+      "id": "reading",
+      "nameZh": "雷丁",
+      "nameEn": "Reading",
+      "area": 2242.29,
+      "geoFips": [
+        "42011"
+      ]
+    },
+    {
+      "id": "st-charles",
+      "nameZh": "圣查尔斯",
+      "nameEn": "St. Charles",
+      "area": 1534.36,
+      "geoFips": [
+        "29183"
+      ]
+    },
+    {
+      "id": "texas-city",
+      "nameZh": "得克萨斯城",
+      "nameEn": "Texas City",
+      "area": 1002.46,
+      "geoFips": [
+        "48167"
+      ]
+    },
+    {
+      "id": "clayton",
+      "nameZh": "克莱顿",
+      "nameEn": "Clayton",
+      "area": 374.07,
+      "geoFips": [
+        "13063"
+      ]
+    },
+    {
+      "id": "springdale",
+      "nameZh": "斯普林代尔",
+      "nameEn": "Springdale",
+      "area": 4756.73,
+      "geoFips": [
+        "05007",
+        "05143"
+      ]
+    },
+    {
+      "id": "killeen",
+      "nameZh": "基林",
+      "nameEn": "Killeen",
+      "area": 2823.79,
+      "geoFips": [
+        "48027"
+      ]
+    },
+    {
+      "id": "green-bay",
+      "nameZh": "格林贝",
+      "nameEn": "Green Bay",
+      "area": 1375.91,
+      "geoFips": [
+        "55009"
+      ]
+    },
+    {
+      "id": "visalia",
+      "nameZh": "维塞利亚",
+      "nameEn": "Visalia",
+      "area": 12531.1,
+      "geoFips": [
+        "06107"
+      ]
+    },
+    {
+      "id": "san-luis-obispo",
+      "nameZh": "圣路易斯－奥比斯波",
+      "nameEn": "San Luis Obispo",
+      "area": 8597.45,
+      "geoFips": [
+        "06079"
+      ]
+    },
+    {
+      "id": "springfield-mo",
+      "nameZh": "斯普林菲尔德(密苏里)",
+      "nameEn": "Springfield(MO)",
+      "area": 1755.7,
+      "geoFips": [
+        "29077"
+      ]
+    },
+    {
+      "id": "fayetteville",
+      "nameZh": "费耶特维尔",
+      "nameEn": "Fayetteville",
+      "area": 1705.45,
+      "geoFips": [
+        "37051"
+      ]
+    },
+    {
+      "id": "new-london",
+      "nameZh": "新伦敦",
+      "nameEn": "New London",
+      "area": 1585.53,
+      "geoFips": [
+        "09011",
+        "09180"
+      ],
+      "coverage": [
+        {
+          "from": 2001,
+          "to": 2023,
+          "geoFips": [
+            "09011"
+          ]
+        },
+        {
+          "from": 2024,
+          "geoFips": [
+            "09180"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salem",
+      "nameZh": "塞勒姆",
+      "nameEn": "Salem",
+      "area": 5012.14,
+      "geoFips": [
+        "41047",
+        "41053"
+      ]
+    },
+    {
+      "id": "eugene",
+      "nameZh": "尤金",
+      "nameEn": "Eugene",
+      "area": 11958.36,
+      "geoFips": [
+        "41039"
+      ]
+    },
+    {
+      "id": "lansing",
+      "nameZh": "兰辛",
+      "nameEn": "Lansing",
+      "area": 4441.08,
+      "geoFips": [
+        "26037",
+        "26045",
+        "26065"
+      ]
+    },
+    {
+      "id": "tallahassee",
+      "nameZh": "塔拉哈西",
+      "nameEn": "Tallahassee",
+      "area": 1817.63,
+      "geoFips": [
+        "12073"
+      ]
+    },
+    {
+      "id": "lake-jackson",
+      "nameZh": "莱克杰克逊",
+      "nameEn": "Lake Jackson",
+      "area": 3682.26,
+      "geoFips": [
+        "48039"
+      ]
+    },
+    {
+      "id": "rehoboth",
+      "nameZh": "里霍博斯",
+      "nameEn": "Rehoboth",
+      "area": 2440.63,
+      "geoFips": [
+        "10005"
+      ]
+    },
+    {
+      "id": "canton",
+      "nameZh": "坎顿",
+      "nameEn": "Canton",
+      "area": 1503.39,
+      "geoFips": [
+        "39151"
+      ]
+    },
+    {
+      "id": "spartanburg",
+      "nameZh": "斯帕坦堡",
+      "nameEn": "Spartanburg",
+      "area": 2123.2,
+      "geoFips": [
+        "45083"
+      ]
+    },
+    {
+      "id": "myrtle-beach",
+      "nameZh": "默特尔比奇",
+      "nameEn": "Myrtle Beach",
+      "area": 2953.47,
+      "geoFips": [
+        "45051"
+      ]
+    },
+    {
+      "id": "sioux-falls",
+      "nameZh": "苏瀑",
+      "nameEn": "Sioux Falls",
+      "area": 3604.25,
+      "geoFips": [
+        "46083",
+        "46099"
+      ]
+    },
+    {
+      "id": "cedar-rapids",
+      "nameZh": "锡达拉皮兹",
+      "nameEn": "Cedar Rapids",
+      "area": 1876.88,
+      "geoFips": [
+        "19113"
+      ]
+    },
+    {
+      "id": "olympia",
+      "nameZh": "奥林匹亚",
+      "nameEn": "Olympia",
+      "area": 1907.27,
+      "geoFips": [
+        "53067"
+      ]
+    },
+    {
+      "id": "asheville",
+      "nameZh": "阿什维尔",
+      "nameEn": "Asheville",
+      "area": 1709.24,
+      "geoFips": [
+        "37021"
+      ]
+    },
+    {
+      "id": "santa-cruz",
+      "nameZh": "圣塔克鲁兹",
+      "nameEn": "Santa Cruz",
+      "area": 1155.71,
+      "geoFips": [
+        "06087"
+      ]
+    },
+    {
+      "id": "holland",
+      "nameZh": "霍兰",
+      "nameEn": "Holland",
+      "area": 3656.41,
+      "geoFips": [
+        "26005",
+        "26139"
+      ]
+    },
+    {
+      "id": "wilmington-nc",
+      "nameZh": "威尔明顿(北卡罗莱纳)",
+      "nameEn": "Wilmington(NC)",
+      "area": 2738.11,
+      "geoFips": [
+        "37019",
+        "37129"
+      ]
+    },
+    {
+      "id": "gainesville",
+      "nameZh": "盖恩斯维尔",
+      "nameEn": "Gainesville",
+      "area": 2509.2,
+      "geoFips": [
+        "12001"
+      ]
+    },
+    {
+      "id": "kalamazoo",
+      "nameZh": "卡拉马祖",
+      "nameEn": "Kalamazoo",
+      "area": 1502.97,
+      "geoFips": [
+        "26077"
+      ]
+    },
+    {
+      "id": "bellingham",
+      "nameZh": "贝灵厄姆",
+      "nameEn": "Bellingham",
+      "area": 5605.14,
+      "geoFips": [
+        "53073"
+      ]
+    },
+    {
+      "id": "elkhart",
+      "nameZh": "埃尔克哈特",
+      "nameEn": "Elkhart",
+      "area": 1212.04,
+      "geoFips": [
+        "18039"
+      ]
+    },
+    {
+      "id": "wilkes-barre",
+      "nameZh": "威尔克斯-巴里",
+      "nameEn": "Wilkes-Barre",
+      "area": 2346.6,
+      "geoFips": [
+        "42079"
+      ]
+    },
+    {
+      "id": "kissimmee",
+      "nameZh": "基西米",
+      "nameEn": "Kissimmee",
+      "area": 3900.47,
+      "geoFips": [
+        "12097"
+      ]
+    },
+    {
+      "id": "frederick",
+      "nameZh": "弗雷德里克",
+      "nameEn": "Frederick",
+      "area": 1728.64,
+      "geoFips": [
+        "24021"
+      ]
+    },
+    {
+      "id": "poughkeepsie",
+      "nameZh": "波基普西",
+      "nameEn": "Poughkeepsie",
+      "area": 5143.86,
+      "geoFips": [
+        "36027",
+        "36111"
+      ]
+    },
+    {
+      "id": "montgomery",
+      "nameZh": "蒙哥马利",
+      "nameEn": "Montgomery",
+      "area": 2071.76,
+      "geoFips": [
+        "01101"
+      ]
+    },
+    {
+      "id": "lubbock",
+      "nameZh": "拉伯克",
+      "nameEn": "Lubbock",
+      "area": 2332.81,
+      "geoFips": [
+        "48303"
+      ]
+    },
+    {
+      "id": "lafayette",
+      "nameZh": "拉法叶",
+      "nameEn": "Lafayette",
+      "area": 697.41,
+      "geoFips": [
+        "22055"
+      ]
+    },
+    {
+      "id": "south-bend",
+      "nameZh": "南本德",
+      "nameEn": "South Bend",
+      "area": 1194.98,
+      "geoFips": [
+        "18141"
+      ]
+    },
+    {
+      "id": "atlantic-city",
+      "nameZh": "大西洋城",
+      "nameEn": "Atlantic City",
+      "area": 2120.66,
+      "geoFips": [
+        "34001",
+        "34009"
+      ]
+    },
+    {
+      "id": "greeley",
+      "nameZh": "格里利",
+      "nameEn": "Greeley",
+      "area": 10403.32,
+      "geoFips": [
+        "08123"
+      ]
+    },
+    {
+      "id": "barnstable",
+      "nameZh": "巴恩斯特布尔",
+      "nameEn": "Barnstable",
+      "area": 1067.35,
+      "geoFips": [
+        "25001"
+      ]
+    },
+    {
+      "id": "rock-hill",
+      "nameZh": "石山",
+      "nameEn": "Rock Hill",
+      "area": 1802.88,
+      "geoFips": [
+        "45091"
+      ]
+    },
+    {
+      "id": "rockford",
+      "nameZh": "罗克福德",
+      "nameEn": "Rockford",
+      "area": 2075.14,
+      "geoFips": [
+        "17007",
+        "17201"
+      ]
+    },
+    {
+      "id": "delaware-city",
+      "nameZh": "特拉华(市)",
+      "nameEn": "Delaware(City)",
+      "area": 1184.44,
+      "geoFips": [
+        "39041"
+      ]
+    },
+    {
+      "id": "fargo",
+      "nameZh": "法戈",
+      "nameEn": "Fargo",
+      "area": 7304.91,
+      "geoFips": [
+        "27027",
+        "38017"
+      ]
+    },
+    {
+      "id": "crestview",
+      "nameZh": "克雷斯特维尤",
+      "nameEn": "Crestview",
+      "area": 2430.07,
+      "geoFips": [
+        "12091"
+      ]
+    },
+    {
+      "id": "lebanon",
+      "nameZh": "莱巴嫩",
+      "nameEn": "Lebanon",
+      "area": 1055.37,
+      "geoFips": [
+        "39165"
+      ]
+    },
+    {
+      "id": "st-augustine",
+      "nameZh": "圣奥古斯丁",
+      "nameEn": "St. Augustine",
+      "area": 1582.85,
+      "geoFips": [
+        "12109"
+      ]
+    },
+    {
+      "id": "waco",
+      "nameZh": "韦科",
+      "nameEn": "Waco",
+      "area": 2746.02,
+      "geoFips": [
+        "48309"
+      ]
+    },
+    {
+      "id": "calcasieu",
+      "nameZh": "卡尔克苏",
+      "nameEn": "Calcasieu",
+      "area": 2788,
+      "geoFips": [
+        "22019"
+      ]
+    },
+    {
+      "id": "bremerton",
+      "nameZh": "布雷默顿",
+      "nameEn": "Bremerton",
+      "area": 1033.33,
+      "geoFips": [
+        "53035"
+      ]
+    },
+    {
+      "id": "gainesville-ga",
+      "nameZh": "盖恩斯维尔(乔治亚)",
+      "nameEn": "Gainesville(GA)",
+      "area": 1110.56,
+      "geoFips": [
+        "13139"
+      ]
+    },
+    {
+      "id": "leesburg-fl",
+      "nameZh": "利斯堡(佛罗里达)",
+      "nameEn": "Leesburg(FL)",
+      "area": 2996,
+      "geoFips": [
+        "12069"
+      ]
+    },
+    {
+      "id": "shreveport",
+      "nameZh": "什里夫波特",
+      "nameEn": "Shreveport",
+      "area": 4672.21,
+      "geoFips": [
+        "22015",
+        "22017"
+      ]
+    },
+    {
+      "id": "aberdeen",
+      "nameZh": "阿伯丁(美国)",
+      "nameEn": "Aberdeen",
+      "area": 1143.13,
+      "geoFips": [
+        "24025"
+      ]
+    },
+    {
+      "id": "ocala",
+      "nameZh": "奥卡拉",
+      "nameEn": "Ocala",
+      "area": 4306.28,
+      "geoFips": [
+        "12083"
+      ]
+    },
+    {
+      "id": "charlottesville",
+      "nameZh": "夏洛茨维尔",
+      "nameEn": "Charlottesville",
+      "area": 1906.82,
+      "geoFips": [
+        "51901"
+      ]
+    },
+    {
+      "id": "brownsville",
+      "nameZh": "布朗斯维尔",
+      "nameEn": "Brownsville",
+      "area": 2437.72,
+      "geoFips": [
+        "48061"
+      ]
+    },
+    {
+      "id": "st-tammany",
+      "nameZh": "圣坦曼尼",
+      "nameEn": "St. Tammany",
+      "area": 2251.25,
+      "geoFips": [
+        "22103"
+      ]
+    },
+    {
+      "id": "appleton",
+      "nameZh": "阿普尔顿",
+      "nameEn": "Appleton",
+      "area": 4196.44,
+      "geoFips": [
+        "55015",
+        "55087",
+        "55139"
+      ]
+    },
+    {
+      "id": "woodbury",
+      "nameZh": "伍德伯里",
+      "nameEn": "Woodbury",
+      "area": 1096.37,
+      "geoFips": [
+        "27163"
+      ]
+    },
+    {
+      "id": "peoria",
+      "nameZh": "皮奥里亚",
+      "nameEn": "Peoria",
+      "area": 4742.62,
+      "geoFips": [
+        "17143",
+        "17179",
+        "17203"
+      ]
+    },
+    {
+      "id": "kennewick",
+      "nameZh": "肯纳威克",
+      "nameEn": "Kennewick",
+      "area": 11198.14,
+      "geoFips": [
+        "53005",
+        "53021",
+        "53071"
+      ]
+    },
+    {
+      "id": "bloomington",
+      "nameZh": "布卢明顿",
+      "nameEn": "Bloomington",
+      "area": 3072.4,
+      "geoFips": [
+        "17113"
+      ]
+    },
+    {
+      "id": "port-st-lucie",
+      "nameZh": "圣露西港",
+      "nameEn": "Port St. Lucie",
+      "area": 3186.5,
+      "geoFips": [
+        "12085",
+        "12111"
+      ]
+    },
+    {
+      "id": "bend",
+      "nameZh": "本德",
+      "nameEn": "Bend",
+      "area": 7910.3,
+      "geoFips": [
+        "41017"
+      ]
+    },
+    {
+      "id": "tyler",
+      "nameZh": "泰勒",
+      "nameEn": "Tyler",
+      "area": 2459.77,
+      "geoFips": [
+        "48423"
+      ]
+    },
+    {
+      "id": "saratoga-springs",
+      "nameZh": "萨拉托加斯普林斯",
+      "nameEn": "Saratoga Springs",
+      "area": 2185.3,
+      "geoFips": [
+        "36091"
+      ]
+    },
+    {
+      "id": "laredo",
+      "nameZh": "拉雷多",
+      "nameEn": "Laredo",
+      "area": 8742.74,
+      "geoFips": [
+        "48479"
+      ]
+    },
+    {
+      "id": "bryan",
+      "nameZh": "布赖恩",
+      "nameEn": "Bryan",
+      "area": 1531.3,
+      "geoFips": [
+        "48041"
+      ]
+    },
+    {
+      "id": "rochester-mn",
+      "nameZh": "罗切斯特(明尼苏达)",
+      "nameEn": "Rochester(MN)",
+      "area": 1695.81,
+      "geoFips": [
+        "27109"
+      ]
+    },
+    {
+      "id": "evansville",
+      "nameZh": "埃文斯维尔",
+      "nameEn": "Evansville",
+      "area": 3918.86,
+      "geoFips": [
+        "18129",
+        "18163",
+        "18173",
+        "21101"
+      ]
+    },
+    {
+      "id": "champaign",
+      "nameZh": "尚佩恩",
+      "nameEn": "Champaign",
+      "area": 2586.01,
+      "geoFips": [
+        "17019"
+      ]
+    },
+    {
+      "id": "elyria",
+      "nameZh": "伊利里亚",
+      "nameEn": "Elyria",
+      "area": 1279.31,
+      "geoFips": [
+        "39093"
+      ]
+    },
+    {
+      "id": "youngstown",
+      "nameZh": "扬斯敦",
+      "nameEn": "Youngstown",
+      "area": 2748.54,
+      "geoFips": [
+        "39099",
+        "39155"
+      ]
+    },
+    {
+      "id": "erie",
+      "nameZh": "伊利",
+      "nameEn": "Erie",
+      "area": 2082.42,
+      "geoFips": [
+        "42049"
+      ]
+    },
+    {
+      "id": "utica",
+      "nameZh": "由提卡",
+      "nameEn": "Utica",
+      "area": 7031.33,
+      "geoFips": [
+        "36043",
+        "36065"
+      ]
+    },
+    {
+      "id": "napa",
+      "nameZh": "纳帕",
+      "nameEn": "Napa",
+      "area": 2046.34,
+      "geoFips": [
+        "06055"
+      ]
+    },
+    {
+      "id": "topeka",
+      "nameZh": "托皮卡",
+      "nameEn": "Topeka",
+      "area": 1439.33,
+      "geoFips": [
+        "20177"
+      ]
+    },
+    {
+      "id": "new-braunfels",
+      "nameZh": "新布朗费尔斯",
+      "nameEn": "New Braunfels",
+      "area": 3340.23,
+      "geoFips": [
+        "48091",
+        "48187"
+      ]
+    },
+    {
+      "id": "butler-pa",
+      "nameZh": "巴特勒(宾夕法尼亚)",
+      "nameEn": "Butler(PA)",
+      "area": 2060.75,
+      "geoFips": [
+        "42019"
+      ]
+    },
+    {
+      "id": "mentor",
+      "nameZh": "门托",
+      "nameEn": "Mentor",
+      "area": 598.06,
+      "geoFips": [
+        "39085"
+      ]
+    },
+    {
+      "id": "charleston-wv",
+      "nameZh": "查尔斯顿(西弗吉尼亚)",
+      "nameEn": "Charleston(WV)",
+      "area": 2359.48,
+      "geoFips": [
+        "54039"
+      ]
+    },
+    {
+      "id": "tuscaloosa",
+      "nameZh": "塔斯卡卢萨",
+      "nameEn": "Tuscaloosa",
+      "area": 3499.68,
+      "geoFips": [
+        "01125"
+      ]
+    },
+    {
+      "id": "pecos",
+      "nameZh": "佩科斯",
+      "nameEn": "Pecos",
+      "area": 9007.76,
+      "geoFips": [
+        "48389",
+        "48475"
+      ]
+    },
+    {
+      "id": "columbus-ga",
+      "nameZh": "哥伦布(乔治亚)",
+      "nameEn": "Columbus(GA)",
+      "area": 4494.18,
+      "geoFips": [
+        "01081",
+        "01113",
+        "13215"
+      ]
+    },
+    {
+      "id": "houma",
+      "nameZh": "霍马",
+      "nameEn": "Houma",
+      "area": 6557.5,
+      "geoFips": [
+        "22057",
+        "22109"
+      ]
+    },
+    {
+      "id": "fort-smith",
+      "nameZh": "史密斯堡",
+      "nameEn": "Fort Smith",
+      "area": 8994.86,
+      "geoFips": [
+        "05033",
+        "05131",
+        "40079",
+        "40135"
+      ]
+    },
+    {
+      "id": "eau-claire",
+      "nameZh": "欧克莱尔",
+      "nameEn": "Eau Claire",
+      "area": 4367.92,
+      "geoFips": [
+        "55017",
+        "55035"
+      ]
+    },
+    {
+      "id": "duluth",
+      "nameZh": "杜鲁斯",
+      "nameEn": "Duluth",
+      "area": 20892.45,
+      "geoFips": [
+        "27137",
+        "55031"
+      ]
+    },
+    {
+      "id": "la-crosse",
+      "nameZh": "拉克罗斯",
+      "nameEn": "La Crosse",
+      "area": 4378.45,
+      "geoFips": [
+        "27055",
+        "27169",
+        "55063"
+      ]
+    },
+    {
+      "id": "davenport",
+      "nameZh": "达文波特",
+      "nameEn": "Davenport",
+      "area": 2381.5,
+      "geoFips": [
+        "17161",
+        "19163"
+      ]
+    },
+    {
+      "id": "warner-robins",
+      "nameZh": "沃纳罗宾斯",
+      "nameEn": "Warner Robins",
+      "area": 1375.86,
+      "geoFips": [
+        "13153",
+        "13225"
+      ]
+    },
+    {
+      "id": "athens-us",
+      "nameZh": "雅典(美国)",
+      "nameEn": "Athens(US)",
+      "area": 796.47,
+      "geoFips": [
+        "13059",
+        "13219"
+      ]
+    },
+    {
+      "id": "kingsport",
+      "nameZh": "金斯波特",
+      "nameEn": "Kingsport",
+      "area": 3802.84,
+      "geoFips": [
+        "47073",
+        "47163",
+        "51169"
+      ]
+    },
+    {
+      "id": "hickory",
+      "nameZh": "希科里",
+      "nameEn": "Hickory",
+      "area": 4321.4,
+      "geoFips": [
+        "37003",
+        "37023",
+        "37027",
+        "37035"
+      ]
+    },
+    {
+      "id": "johnson-city",
+      "nameZh": "约翰逊城",
+      "nameEn": "Johnson City",
+      "area": 2237.5,
+      "geoFips": [
+        "47019",
+        "47171",
+        "47179"
+      ]
+    },
+    {
+      "id": "lynchburg",
+      "nameZh": "林奇堡",
+      "nameEn": "Lynchburg",
+      "area": 4691.64,
+      "geoFips": [
+        "51009",
+        "51019",
+        "51911"
+      ]
+    },
+    {
+      "id": "hampton",
+      "nameZh": "汉普顿",
+      "nameEn": "Hampton",
+      "area": 1830.07,
+      "geoFips": [
+        "51073",
+        "51115",
+        "51650",
+        "51700",
+        "51931",
+        "51958"
+      ]
+    },
+    {
+      "id": "petersburg",
+      "nameZh": "彼得斯堡",
+      "nameEn": "Petersburg",
+      "area": 2111.83,
+      "geoFips": [
+        "51918",
+        "51941"
+      ]
+    },
+    {
+      "id": "roanoke",
+      "nameZh": "罗阿诺克",
+      "nameEn": "Roanoke",
+      "area": 2213.56,
+      "geoFips": [
+        "51023",
+        "51770",
+        "51944"
+      ]
+    },
+    {
+      "id": "fredericksburg",
+      "nameZh": "弗雷德里克斯堡",
+      "nameEn": "Fredericksburg",
+      "area": 1809.44,
+      "geoFips": [
+        "51179",
+        "51951"
+      ]
+    }
+  ]
+}

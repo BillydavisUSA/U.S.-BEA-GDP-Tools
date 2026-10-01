@@ -1,0 +1,514 @@
+{
+  "areas": [
+    {
+      "id": "state-01",
+      "type": "state",
+      "code": "01",
+      "name": "Alabama",
+      "fips": [
+        "01000"
+      ],
+      "nameZh": "阿拉巴马"
+    },
+    {
+      "id": "state-02",
+      "type": "state",
+      "code": "02",
+      "name": "Alaska",
+      "fips": [
+        "02000"
+      ],
+      "nameZh": "阿拉斯加"
+    },
+    {
+      "id": "state-04",
+      "type": "state",
+      "code": "04",
+      "name": "Arizona",
+      "fips": [
+        "04000"
+      ],
+      "nameZh": "亚利桑那"
+    },
+    {
+      "id": "state-05",
+      "type": "state",
+      "code": "05",
+      "name": "Arkansas",
+      "fips": [
+        "05000"
+      ],
+      "nameZh": "阿肯色"
+    },
+    {
+      "id": "state-06",
+      "type": "state",
+      "code": "06",
+      "name": "California",
+      "fips": [
+        "06000"
+      ],
+      "nameZh": "加利福尼亚"
+    },
+    {
+      "id": "state-08",
+      "type": "state",
+      "code": "08",
+      "name": "Colorado",
+      "fips": [
+        "08000"
+      ],
+      "nameZh": "科罗拉多"
+    },
+    {
+      "id": "state-09",
+      "type": "state",
+      "code": "09",
+      "name": "Connecticut",
+      "fips": [
+        "09000"
+      ],
+      "nameZh": "康涅狄格"
+    },
+    {
+      "id": "state-10",
+      "type": "state",
+      "code": "10",
+      "name": "Delaware",
+      "fips": [
+        "10000"
+      ],
+      "nameZh": "特拉华"
+    },
+    {
+      "id": "state-11",
+      "type": "state",
+      "code": "11",
+      "name": "District of Columbia",
+      "fips": [
+        "11000"
+      ],
+      "nameZh": "华盛顿(特区)"
+    },
+    {
+      "id": "state-12",
+      "type": "state",
+      "code": "12",
+      "name": "Florida",
+      "fips": [
+        "12000"
+      ],
+      "nameZh": "佛罗里达"
+    },
+    {
+      "id": "state-13",
+      "type": "state",
+      "code": "13",
+      "name": "Georgia",
+      "fips": [
+        "13000"
+      ],
+      "nameZh": "乔治亚"
+    },
+    {
+      "id": "state-15",
+      "type": "state",
+      "code": "15",
+      "name": "Hawaii",
+      "fips": [
+        "15000"
+      ],
+      "nameZh": "夏威夷"
+    },
+    {
+      "id": "state-16",
+      "type": "state",
+      "code": "16",
+      "name": "Idaho",
+      "fips": [
+        "16000"
+      ],
+      "nameZh": "爱达荷"
+    },
+    {
+      "id": "state-17",
+      "type": "state",
+      "code": "17",
+      "name": "Illinois",
+      "fips": [
+        "17000"
+      ],
+      "nameZh": "伊利诺伊"
+    },
+    {
+      "id": "state-18",
+      "type": "state",
+      "code": "18",
+      "name": "Indiana",
+      "fips": [
+        "18000"
+      ],
+      "nameZh": "印第安纳"
+    },
+    {
+      "id": "state-19",
+      "type": "state",
+      "code": "19",
+      "name": "Iowa",
+      "fips": [
+        "19000"
+      ],
+      "nameZh": "爱荷华"
+    },
+    {
+      "id": "state-20",
+      "type": "state",
+      "code": "20",
+      "name": "Kansas",
+      "fips": [
+        "20000"
+      ],
+      "nameZh": "堪萨斯"
+    },
+    {
+      "id": "state-21",
+      "type": "state",
+      "code": "21",
+      "name": "Kentucky",
+      "fips": [
+        "21000"
+      ],
+      "nameZh": "肯塔基"
+    },
+    {
+      "id": "state-22",
+      "type": "state",
+      "code": "22",
+      "name": "Louisiana",
+      "fips": [
+        "22000"
+      ],
+      "nameZh": "路易斯安娜"
+    },
+    {
+      "id": "state-23",
+      "type": "state",
+      "code": "23",
+      "name": "Maine",
+      "fips": [
+        "23000"
+      ],
+      "nameZh": "缅因"
+    },
+    {
+      "id": "state-24",
+      "type": "state",
+      "code": "24",
+      "name": "Maryland",
+      "fips": [
+        "24000"
+      ],
+      "nameZh": "马里兰"
+    },
+    {
+      "id": "state-25",
+      "type": "state",
+      "code": "25",
+      "name": "Massachusetts",
+      "fips": [
+        "25000"
+      ],
+      "nameZh": "马萨诸塞"
+    },
+    {
+      "id": "state-26",
+      "type": "state",
+      "code": "26",
+      "name": "Michigan",
+      "fips": [
+        "26000"
+      ],
+      "nameZh": "密歇根"
+    },
+    {
+      "id": "state-27",
+      "type": "state",
+      "code": "27",
+      "name": "Minnesota",
+      "fips": [
+        "27000"
+      ],
+      "nameZh": "明尼苏达"
+    },
+    {
+      "id": "state-28",
+      "type": "state",
+      "code": "28",
+      "name": "Mississippi",
+      "fips": [
+        "28000"
+      ],
+      "nameZh": "密西西比"
+    },
+    {
+      "id": "state-29",
+      "type": "state",
+      "code": "29",
+      "name": "Missouri",
+      "fips": [
+        "29000"
+      ],
+      "nameZh": "密苏里"
+    },
+    {
+      "id": "state-30",
+      "type": "state",
+      "code": "30",
+      "name": "Montana",
+      "fips": [
+        "30000"
+      ],
+      "nameZh": "蒙大拿"
+    },
+    {
+      "id": "state-31",
+      "type": "state",
+      "code": "31",
+      "name": "Nebraska",
+      "fips": [
+        "31000"
+      ],
+      "nameZh": "内布拉斯加"
+    },
+    {
+      "id": "state-32",
+      "type": "state",
+      "code": "32",
+      "name": "Nevada",
+      "fips": [
+        "32000"
+      ],
+      "nameZh": "内华达"
+    },
+    {
+      "id": "state-33",
+      "type": "state",
+      "code": "33",
+      "name": "New Hampshire",
+      "fips": [
+        "33000"
+      ],
+      "nameZh": "新罕布什尔"
+    },
+    {
+      "id": "state-34",
+      "type": "state",
+      "code": "34",
+      "name": "New Jersey",
+      "fips": [
+        "34000"
+      ],
+      "nameZh": "新泽西"
+    },
+    {
+      "id": "state-35",
+      "type": "state",
+      "code": "35",
+      "name": "New Mexico",
+      "fips": [
+        "35000"
+      ],
+      "nameZh": "新墨西哥"
+    },
+    {
+      "id": "state-36",
+      "type": "state",
+      "code": "36",
+      "name": "New York",
+      "fips": [
+        "36000"
+      ],
+      "nameZh": "纽约(州)"
+    },
+    {
+      "id": "state-37",
+      "type": "state",
+      "code": "37",
+      "name": "North Carolina",
+      "fips": [
+        "37000"
+      ],
+      "nameZh": "北卡罗莱纳"
+    },
+    {
+      "id": "state-38",
+      "type": "state",
+      "code": "38",
+      "name": "North Dakota",
+      "fips": [
+        "38000"
+      ],
+      "nameZh": "北达科他"
+    },
+    {
+      "id": "state-39",
+      "type": "state",
+      "code": "39",
+      "name": "Ohio",
+      "fips": [
+        "39000"
+      ],
+      "nameZh": "俄亥俄"
+    },
+    {
+      "id": "state-40",
+      "type": "state",
+      "code": "40",
+      "name": "Oklahoma",
+      "fips": [
+        "40000"
+      ],
+      "nameZh": "俄克拉荷马"
+    },
+    {
+      "id": "state-41",
+      "type": "state",
+      "code": "41",
+      "name": "Oregon",
+      "fips": [
+        "41000"
+      ],
+      "nameZh": "俄勒冈"
+    },
+    {
+      "id": "state-42",
+      "type": "state",
+      "code": "42",
+      "name": "Pennsylvania",
+      "fips": [
+        "42000"
+      ],
+      "nameZh": "宾夕法尼亚"
+    },
+    {
+      "id": "state-44",
+      "type": "state",
+      "code": "44",
+      "name": "Rhode Island",
+      "fips": [
+        "44000"
+      ],
+      "nameZh": "罗德岛"
+    },
+    {
+      "id": "state-45",
+      "type": "state",
+      "code": "45",
+      "name": "South Carolina",
+      "fips": [
+        "45000"
+      ],
+      "nameZh": "南卡罗来纳"
+    },
+    {
+      "id": "state-46",
+      "type": "state",
+      "code": "46",
+      "name": "South Dakota",
+      "fips": [
+        "46000"
+      ],
+      "nameZh": "南达科他"
+    },
+    {
+      "id": "state-47",
+      "type": "state",
+      "code": "47",
+      "name": "Tennessee",
+      "fips": [
+        "47000"
+      ],
+      "nameZh": "田纳西"
+    },
+    {
+      "id": "state-48",
+      "type": "state",
+      "code": "48",
+      "name": "Texas",
+      "fips": [
+        "48000"
+      ],
+      "nameZh": "德克萨斯"
+    },
+    {
+      "id": "state-49",
+      "type": "state",
+      "code": "49",
+      "name": "Utah",
+      "fips": [
+        "49000"
+      ],
+      "nameZh": "犹他"
+    },
+    {
+      "id": "state-50",
+      "type": "state",
+      "code": "50",
+      "name": "Vermont",
+      "fips": [
+        "50000"
+      ],
+      "nameZh": "佛蒙特"
+    },
+    {
+      "id": "state-51",
+      "type": "state",
+      "code": "51",
+      "name": "Virginia",
+      "fips": [
+        "51000"
+      ],
+      "nameZh": "弗吉尼亚"
+    },
+    {
+      "id": "state-53",
+      "type": "state",
+      "code": "53",
+      "name": "Washington",
+      "fips": [
+        "53000"
+      ],
+      "nameZh": "华盛顿(州)"
+    },
+    {
+      "id": "state-54",
+      "type": "state",
+      "code": "54",
+      "name": "West Virginia",
+      "fips": [
+        "54000"
+      ],
+      "nameZh": "西维吉尼亚"
+    },
+    {
+      "id": "state-55",
+      "type": "state",
+      "code": "55",
+      "name": "Wisconsin",
+      "fips": [
+        "55000"
+      ],
+      "nameZh": "威斯康辛"
+    },
+    {
+      "id": "state-56",
+      "type": "state",
+      "code": "56",
+      "name": "Wyoming",
+      "fips": [
+        "56000"
+      ],
+      "nameZh": "怀俄明"
+    }
+  ]
+}

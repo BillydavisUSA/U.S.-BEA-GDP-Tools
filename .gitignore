@@ -1,0 +1,17 @@
+node_modules/
+dist-web/
+.npm-cache/
+artifacts/
+.vite/
+coverage/
+*.tmp
+*.log
+.env
+.env.*
+!.env.example
+*.xlsx
+!data/list1_2023.xlsx
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
